@@ -1,0 +1,38 @@
+a {
+    color: aliceblue !important;
+}
+
+/*
+a:hover {
+    
+}
+*/
+
+.text-gold {
+    color: #5D7963 !important;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.text-gold a:hover{
+    outline-style: none;
+    text-decoration: none;
+}
+
+.bg-menu {
+    background-color: #98c9a3;
+}
+
+.pesquisa {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.icone-pesquisa {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0.5;
+    margin-left: -43px;
+    margin-top: -10px;
+}

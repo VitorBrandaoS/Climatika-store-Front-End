@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+.bg-cinza {
+    background-color: #D8E7D7;
+}
+
+.miniatura {
+    height: 230px;
+    width: 200px;
+}
+
+.marca {
+    font-size: 18px;
+    color: grey;
+}
+
+.marca:hover {
+    color: rgb(97, 97, 97);
+    text-decoration: none;
+    
+}
+
+.preco {
+    font-size: 22px;
+    letter-spacing: 2px;
+}

@@ -1,0 +1,29 @@
+.bg-rodape {
+  background-color: #798E77;
+}
+
+ul.social-network li{
+  display: inline;
+  padding:5px;
+  
+}
+
+.icone-rodape {
+  width: 25px;
+  height: 25px;
+}
+
+.icone-pagamento {
+  max-width: 42px;
+  max-height: 32px;
+  margin-left: 10px;
+  
+  margin-bottom: 15px;
+  
+  
+}
+
+.vertical-rule {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}

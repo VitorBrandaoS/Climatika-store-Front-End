@@ -1,0 +1,13 @@
+#img-bg{
+    background-color: rgb(190, 219, 194);
+
+    min-height: 610px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-fluid{
+    background-image: url('../../assets/img/patternlogin.png');
+}

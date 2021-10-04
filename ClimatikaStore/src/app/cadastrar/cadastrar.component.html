@@ -8,40 +8,34 @@
                     <h1 class="text-center mb-3">Cadastrar</h1>
 
                     <div class="form-group">
-                        <label for="nome">Nome</label>
-                        <input [(ngModel)]="usuario.nomeCompleto" class="form-control" type="text" name="nome" id="nome"
-                            placeholder="Digite seu nome">
+                        <input [(ngModel)]="usuario.nomeCompleto" class="form-control"  autocomplete="off" type="text" name="nome" id="nome"
+                            placeholder="Nome Completo">
                     </div>
 
                     <div class="form-group">
-                        <label for="cpf">CPF</label>
-                        <input [(ngModel)]="usuario.cpf" class="form-control" type="text" name="cpf" id="cpf"
-                            placeholder="Digite seu cpf">
+                        <input [(ngModel)]="usuario.cpf" class="form-control" type="text" name="cpf" id="cpf" autocomplete="off"
+                            placeholder="CPF">
                     </div>
 
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input [(ngModel)]="usuario.email" class="form-control" type="email" name="email" id="email"
-                            placeholder="Digite seu email">
+                        <input [(ngModel)]="usuario.email" class="form-control" type="email" name="email" id="email" autocomplete="off" 
+                            placeholder="Email">
                     </div>
 
 
                     <div class="form-group">
-                        <label for="senha">Senha</label>
-                        <input [(ngModel)]="usuario.senha" class="form-control" type="password" name="senha" id="senha"
-                            placeholder="Digite sua senha">
+                        <input [(ngModel)]="usuario.senha" class="form-control" type="password" name="senha" id="senha" autocomplete="off"
+                            placeholder="Senha">
                     </div>
 
                     <div class="form-group">
-                        <label for="usuario.senha">Confirmar Senha</label>
-                        <input (input)="confirmSenha($event)" class="form-control" type="password" name="confirmarSenha"
+                        <input (input)="confirmSenha($event)" class="form-control" type="password" name="confirmarSenha" autocomplete="off"
                             id="confirmarSenha" placeholder="Confirme sua senha">
                     </div>
 
                     <div class="form-group">
-                        <label for="celular">Celular</label>
-                        <input [(ngModel)]="usuario.celular" class="form-control" type="text" name="celular"
-                            id="celular" placeholder="Digite o numero do seu celular">
+                        <input [(ngModel)]="usuario.celular" class="form-control" type="text" name="celular" autocomplete="off"
+                            id="celular" placeholder="Celular/Telefone">
                     </div>
 
                     <!--
@@ -52,26 +46,23 @@
                     -->
                     
                     <div class="form-group">
-                        <label for="endereco">Endereço</label>
-                        <input [(ngModel)]="usuario.endereco" class="form-control" type="text" name="endereco"
-                            id="endereco" placeholder="Digite seu endereço">
+                        <input [(ngModel)]="usuario.endereco" class="form-control" type="text" name="endereco" autocomplete="off"
+                            id="endereco" placeholder="Endereço">
                     </div>
 
                     <div class="form-group">
-                        <label for="cidade">Cidade</label>
-                        <input [(ngModel)]="usuario.cidade" class="form-control" type="text" name="cidade" id="cidade"
-                            placeholder="Digite sua cidade">
+                        <input [(ngModel)]="usuario.cidade" class="form-control" type="text" name="cidade" id="cidade" autocomplete="off"
+                            placeholder="Cidade">
                     </div>
 
                     <div class="form-group">
-                        <label for="estado">Estado</label>
-                        <input [(ngModel)]="usuario.estado" class="form-control" type="text" name="estado" id="estado"
-                            placeholder="Digite o estado onde voce mora">
+                        <input [(ngModel)]="usuario.estado" class="form-control" type="text" name="estado" id="estado" autocomplete="off"
+                            placeholder="Estado">
                     </div>
 
                     <div class="d-flex justify-content-center fontpix">
-                        <button type="submit" class="btn btn-danger mr-4" routerLink='/entrar'>Cancelar</button>
-                        <button type="submit" class="btn btn-success" (click)="cadastrar()">Cadastrar</button>
+                        <button type="submit" class="btn btn-danger mr-4 botaocanc" routerLink='/entrar'>Cancelar</button>
+                        <button type="submit" class="btn btn-success botaocad" (click)="cadastrar()">Cadastrar</button>
                     </div>
                 </div>
             </div>

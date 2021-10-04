@@ -1,7 +1,7 @@
 #img-bg{
     background-color: rgb(190, 219, 194);
 
-    min-height: 610px;
+    min-height: 910px;
 
     background-position: center;
     background-repeat: no-repeat;
@@ -11,3 +11,74 @@
 .container-fluid{
     background-image: url('../../assets/img/patternlogin.png');
 }
+
+.campo1 {
+    float:left;
+    
+ }
+
+ /*INPUTS*/
+ input {
+    outline: none;
+    background-color: transparent;
+    border-width: 2px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-right-radius: 15px;
+    border-bottom-color: #287048;  
+    box-shadow: none; 
+  }
+
+  input:enabled{
+    box-shadow: none;
+    background-color: transparent;
+    
+}
+
+input::selection{
+    background-color: rgb(191, 216, 195);
+}
+
+  input:hover{
+      background-color: transparent;
+      box-shadow: none;
+      border-bottom-color: #84be9e;
+  }
+
+
+
+  /*FIM DE INPUTS*/
+
+/*BOTOES*/
+
+ .botaocad {
+    border: none;
+    background: rgb(98, 131, 100);
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px;
+    width: 200px;
+    color: rgb(181, 221, 188);
+    margin-left: 25px;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+
+ }
+
+    button:hover { 
+      transform: translateY(-3px);
+      box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
+    }
+
+    .botaocanc{      
+    border: none;
+     background: rgb(223, 43, 43);
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px;
+    width: 200px;
+    color: rgb(252, 212, 212);
+    margin-left: 25px;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+    }
+ /*FIM DE BOTOES*/

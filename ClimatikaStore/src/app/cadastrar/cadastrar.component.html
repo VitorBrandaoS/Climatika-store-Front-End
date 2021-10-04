@@ -9,12 +9,12 @@
 
                     <div class="form-group">
                         <label for="nome">Nome</label>
-                        <input class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                        <input [(ngModel)]="usuario.nome" class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome">
                     </div>
 
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input class="form-control" type="email" name="email" id="email" placeholder="Digite seu email">
+                        <input [(ngModel)]="usuario.email" class="form-control" type="email" name="email" id="email" placeholder="Digite seu email">
                     </div>
 
                     <div class="form-group">
@@ -24,8 +24,14 @@
 
                     <div class="form-group">
                         <label for="senha">Senha</label>
-                        <input class="form-control" type="password" name="senha" id="senha"
+                        <input (input)="confirmarSenha($event)" class="form-control" type="password" name="senha" id="senha"
                             placeholder="Digite sua senha">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="usuario.senha">Confirmar Senha</label>
+                        <input class="form-control" type="password" name="confirmarSenha" id="confirmarSenha"
+                            placeholder="Confirme sua senha">
                     </div>
 
                     <div class="form-group">
@@ -41,7 +47,7 @@
 
                     <div class="d-flex justify-content-center fontpix">
                         <button type="submit" class="btn btn-danger mr-4" routerLink='/entrar'>Cancelar</button>
-                        <button type="submit" class="btn btn-success">Cadastrar</button>
+                        <button type="submit" class="btn btn-success"(click)="cadastrar()">Cadastrar</button>
                     </div>
                 </div>
             </div>

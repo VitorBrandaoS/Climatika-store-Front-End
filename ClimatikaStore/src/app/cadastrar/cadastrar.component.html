@@ -13,36 +13,54 @@
                     </div>
 
                     <div class="form-group">
+                        <label for="cpf">CPF</label>
+                        <input [(ngModel)]="usuario.cpf" class="form-control" type="text" name="cpf" id="cpf" placeholder="Digite seu cpf">
+                    </div>
+
+                    <div class="form-group">
                         <label for="email">Email</label>
                         <input [(ngModel)]="usuario.email" class="form-control" type="email" name="email" id="email" placeholder="Digite seu email">
                     </div>
 
-                    <div class="form-group">
-                        <label for="cpf">CPF</label>
-                        <input class="form-control" type="text" name="cpf" id="cpf" placeholder="Digite seu cpf">
-                    </div>
 
                     <div class="form-group">
                         <label for="senha">Senha</label>
-                        <input (input)="confirmSenha($event)" class="form-control" type="password" name="senha" id="senha"
+                        <input [(ngModel)]="usuario.senha" class="form-control" type="password" name="senha" id="senha"
                             placeholder="Digite sua senha">
                     </div>
 
                     <div class="form-group">
                         <label for="usuario.senha">Confirmar Senha</label>
-                        <input class="form-control" type="password" name="confirmarSenha" id="confirmarSenha"
+                        <input (input)="confirmSenha($event)" class="form-control" type="password" name="confirmarSenha" id="confirmarSenha"
                             placeholder="Confirme sua senha">
                     </div>
 
                     <div class="form-group">
+                        <label for="celular">Celular</label>
+                        <input [(ngModel)]="usuario.celular" class="form-control" type="text" name="celular" id="celular" placeholder="Digite o numero do seu celular">
+                    </div>
+
+                    <div class="form-group">
                         <label for="cep">CEP</label>
-                        <input class="form-control" type="text" name="cep" id="cep" placeholder="Digite seu cep">
+                        <input [(ngModel)]="usuario.cep" class="form-control" type="text" name="cep" id="cep" placeholder="Digite seu cep">
                     </div>
 
                     <div class="form-group">
                         <label for="endereço">Endereço</label>
-                        <input class="form-control" type="text" name="endereço" id="endereço"
+                        <input [(ngModel)]="usuario.endereço" class="form-control" type="text" name="endereço" id="endereço"
                             placeholder="Digite seu endereço">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="estado">Estado</label>
+                        <input [(ngModel)]="usuario.estado" class="form-control" type="text" name="estado" id="estado"
+                            placeholder="Digite o estado onde voce mora">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cidade">Cidade</label>
+                        <input [(ngModel)]="usuario.cidade" class="form-control" type="text" name="cidade" id="cidade"
+                            placeholder="Digite sua cidade">
                     </div>
 
                     <div class="d-flex justify-content-center fontpix">

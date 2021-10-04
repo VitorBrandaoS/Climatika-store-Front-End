@@ -9,7 +9,7 @@
 
                     <div class="form-group">
                         <label for="nome">Nome</label>
-                        <input [(ngModel)]="usuario.nome" class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                        <input [(ngModel)]="usuario.nomeCompleto" class="form-control" type="text" name="nome" id="nome" placeholder="Digite seu nome">
                     </div>
 
                     <div class="form-group">
@@ -24,7 +24,7 @@
 
                     <div class="form-group">
                         <label for="senha">Senha</label>
-                        <input (input)="confirmarSenha($event)" class="form-control" type="password" name="senha" id="senha"
+                        <input (input)="confirmSenha($event)" class="form-control" type="password" name="senha" id="senha"
                             placeholder="Digite sua senha">
                     </div>
 

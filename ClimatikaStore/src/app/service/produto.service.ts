@@ -20,4 +20,7 @@ export class ProdutoService {
   postProduto(produto: Produto): Observable<Produto>{
     return this.http.post<Produto>('https://climatika-store-ecommerce.herokuapp.com/climatika/produto', produto, this.token)
   }
+  getAllProduto(): Observable<Produto[]>{
+    return this.http.get<Produto[]>('https://climatika-store-ecommerce.herokuapp.com/climatika/produto',this.token)
+  }
 }

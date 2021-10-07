@@ -11,11 +11,11 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { InicioComponent } from './inicio/inicio.component';
-<<<<<<< HEAD
+
 import { CarrinhoComponent } from './carrinho/carrinho.component';
-=======
+
 import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto.component';
->>>>>>> 4215c2c0b16979024df05071a5786d4402eca108
+
 
 
 @NgModule({
@@ -26,11 +26,11 @@ import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto
     EntrarComponent,
     CadastrarComponent,
     InicioComponent,
-<<<<<<< HEAD
-    CarrinhoComponent
-=======
+
+    CarrinhoComponent,
+
     CadastrarProdutoComponent
->>>>>>> 4215c2c0b16979024df05071a5786d4402eca108
+
   ],
   imports: [
     BrowserModule,

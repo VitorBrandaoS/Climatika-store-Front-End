@@ -2,7 +2,7 @@ import { StatusVenda } from "./StatusVenda"
 
 export class Usuario{
     public id: number
-    public cpf: string
+    // public cpf: string
     public nomeCompleto: string
     public email: string
     public senha: string

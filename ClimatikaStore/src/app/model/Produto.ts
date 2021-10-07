@@ -8,5 +8,7 @@ export class Produto{
     public quant: number
     public categoriaMae: string
     public categoriaFilha: string
+    public foto: string
+    public descricao: string
     public listaStatusVenda: StatusVenda[]
 }

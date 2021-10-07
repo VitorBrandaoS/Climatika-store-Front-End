@@ -23,4 +23,5 @@ export class AuthService {
     return this.http.post<Usuario>('https://climatika-store-ecommerce.herokuapp.com/climatika/usuario/cadastrar', usuario)
 
   }
+
 }

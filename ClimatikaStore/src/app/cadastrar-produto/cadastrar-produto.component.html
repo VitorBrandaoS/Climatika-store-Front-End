@@ -1,35 +1,60 @@
 <div class="container-fluid bg-cinza">
-    <div class="row">
-        <div class="col-md-12">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-6 mt-3 mb-4">
             <h1 class="text-center">Cadastrar Produto</h1>
             <div class="form-group">
                 <div class="form-group">
+                    <label for="Nome">Nome do Produto</label>
                     <input class="form-control"  autocomplete="off" type="text" name="nome" id="nome"
                         placeholder="Nome do Produto">
                 </div>
 
                 <div class="form-group">
-                    <input class="form-control" type="text" name="cpf" id="cpf" autocomplete="off"
+                    <label for="Nome">Marca</label>
+                    <input class="form-control" type="text" name="marca" id="marca"
                         placeholder="Marca do Produto">
-                </div>                
+                </div>    
+                
+                <div class="form-group">
+                    <label for="categoriaMae">Categoria do Produto</label>
+                    <select for="categoriaMae" class="form-control">
+                        <option value="">Selecione a categoria</option>
+                        <option value="">Cozinha</option>
+                        <option value="">Pet</option>
+                    </select>
+                </div>
 
                 <div class="form-group">
-                    <input  class="form-control" type="text" name="endereco" autocomplete="off"
+                    <label for="categoriaFilha">Sub-Categoria do Produto</label>
+                    <select for="categoriaFilha" class="form-control">
+                        <option>Selecione a Sub-Categoria</option>
+                        <option>Decoração</option>
+                        <option>Sabão em Barra</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="preco">Preço do Produto</label>
+                    <input  class="form-control" type="number" name="preco" autocomplete="off"
                         id="endereco" placeholder="Preço do produto">
                 </div>
 
                 <div class="form-group">
+                    <label for="descricao">Descrição do Produto</label>
                     <textarea class="form-control" type="email" name="email" id="email" autocomplete="off" 
                         placeholder="Descrição do produto"></textarea>
                 </div>
 
+               
+
                 <div class="form-group">
-                    <input class="form-control" type="text" name="estado" id="estado" autocomplete="off"
+                    <label for="foto">Foto do produto</label>
+                    <input class="form-control" type="text" name="foto" id="foto" autocomplete="off"
                         placeholder="Foto do produto">
                 </div>
 
                 <div class="d-flex justify-content-center fontpix">
-                    <button type="submit" class="btn btn-danger mr-4 botaocanc" >Cancelar</button>
+                    <button type="submit" class="btn btn-danger mr-4 botaocanc">Cancelar</button>
                     <button type="submit" class="btn btn-success botaocad" >Cadastrar</button>
                 </div>
             </div>

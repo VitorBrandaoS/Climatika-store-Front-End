@@ -11,7 +11,11 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { InicioComponent } from './inicio/inicio.component';
+
+import { CarrinhoComponent } from './carrinho/carrinho.component';
+
 import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto.component';
+
 
 
 @NgModule({
@@ -22,7 +26,11 @@ import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto
     EntrarComponent,
     CadastrarComponent,
     InicioComponent,
+
+    CarrinhoComponent,
+
     CadastrarProdutoComponent
+
   ],
   imports: [
     BrowserModule,

@@ -25,6 +25,7 @@ import { NossosParceirosComponent } from './nossos-parceiros/nossos-parceiros.co
 
 import { AjudeComponent } from './ajude/ajude.component';
 import { DuvidasComponent } from './duvidas/duvidas.component';
+import { ProdutoComponent } from './produto/produto.component';
 
 
 
@@ -45,6 +46,8 @@ import { DuvidasComponent } from './duvidas/duvidas.component';
     SobreComponent,
     NossosParceirosComponent,
     AjudeComponent,
+    DuvidasComponent,
+    ProdutoComponent,
     DuvidasComponent
 
   ],

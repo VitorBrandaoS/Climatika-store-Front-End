@@ -1,5 +1,5 @@
 a {
-    color: aliceblue !important;
+    color:aliceblue !important;
 }
 
 /*
@@ -14,7 +14,7 @@ a:hover {
 }
 
 .text-gold {
-    color: #5D7963 !important;
+    color: #5D7963;
     font-weight: 500;
     font-size: 20px;
 }
@@ -40,4 +40,15 @@ a:hover {
     opacity: 0.5;
     margin-left: -43px;
     margin-top: -10px;
+}
+
+input{
+    background-color: rgb(197, 204, 191);
+    border: none;
+    border-radius: 50px !important; 
+}
+
+input:enabled{
+    background-color: rgb(197, 204, 191);
+    box-shadow: #5D7963 !important;
 }

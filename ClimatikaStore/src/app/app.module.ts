@@ -17,6 +17,11 @@ import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto.component';
 import { SobreComponent } from './sobre/sobre.component';
 
+import { NossosParceirosComponent } from './nossos-parceiros/nossos-parceiros.component';
+
+import { AjudeComponent } from './ajude/ajude.component';
+
+
 
 
 @NgModule({
@@ -27,12 +32,11 @@ import { SobreComponent } from './sobre/sobre.component';
     EntrarComponent,
     CadastrarComponent,
     InicioComponent,
-
     CarrinhoComponent,
-
     CadastrarProdutoComponent,
-      SobreComponent
-
+    SobreComponent,
+    NossosParceirosComponent,
+    AjudeComponent
   ],
   imports: [
     BrowserModule,

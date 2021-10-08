@@ -8,6 +8,7 @@ import { EntrarComponent } from './entrar/entrar.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { NossosParceirosComponent } from './nossos-parceiros/nossos-parceiros.component';
+import { DuvidasComponent } from './duvidas/duvidas.component';
 
 
 const routes: Routes = [
@@ -21,7 +22,8 @@ const routes: Routes = [
 {path: 'cadastrar-produto', component:CadastrarProdutoComponent},
 {path: 'sobre', component:SobreComponent},
 {path: 'nossos-parceiros', component:NossosParceirosComponent},
-{path: 'ajude', component: AjudeComponent}
+{path: 'ajude', component: AjudeComponent},
+{path: 'duvidas', component: DuvidasComponent}
 
 
 

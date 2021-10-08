@@ -20,6 +20,7 @@ import { SobreComponent } from './sobre/sobre.component';
 import { NossosParceirosComponent } from './nossos-parceiros/nossos-parceiros.component';
 
 import { AjudeComponent } from './ajude/ajude.component';
+import { DuvidasComponent } from './duvidas/duvidas.component';
 
 
 
@@ -36,7 +37,8 @@ import { AjudeComponent } from './ajude/ajude.component';
     CadastrarProdutoComponent,
     SobreComponent,
     NossosParceirosComponent,
-    AjudeComponent
+    AjudeComponent,
+    DuvidasComponent
   ],
   imports: [
     BrowserModule,

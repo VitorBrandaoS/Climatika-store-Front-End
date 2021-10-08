@@ -1,5 +1,5 @@
 a {
-    color: aliceblue !important;
+    color:aliceblue !important;
 }
 
 /*
@@ -9,7 +9,7 @@ a:hover {
 */
 
 .text-gold {
-    color: #5D7963 !important;
+    color: #5D7963;
     font-weight: 500;
     font-size: 20px;
 }
@@ -20,7 +20,7 @@ a:hover {
 }
 
 .bg-menu {
-    background-color: #98c9a3;
+    background-color: #798e77;
 }
 
 .pesquisa {

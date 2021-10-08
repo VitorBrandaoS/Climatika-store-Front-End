@@ -15,7 +15,17 @@ import { InicioComponent } from './inicio/inicio.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 
 import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto.component';
+import { EditProdutoComponent } from './editar/edit-produto/edit-produto.component';
+import { AtualizandoProdutoComponent } from './editar/atualizando-produto/atualizando-produto.component';
+import { DeletandoProdutoComponent } from './editar/deletando-produto/deletando-produto.component';
+
+import { SobreComponent } from './sobre/sobre.component';
+
+import { NossosParceirosComponent } from './nossos-parceiros/nossos-parceiros.component';
+
 import { AjudeComponent } from './ajude/ajude.component';
+import { DuvidasComponent } from './duvidas/duvidas.component';
+
 
 
 
@@ -27,11 +37,15 @@ import { AjudeComponent } from './ajude/ajude.component';
     EntrarComponent,
     CadastrarComponent,
     InicioComponent,
-
     CarrinhoComponent,
-
     CadastrarProdutoComponent,
-      AjudeComponent
+    EditProdutoComponent,
+    AtualizandoProdutoComponent,
+    DeletandoProdutoComponent,
+    SobreComponent,
+    NossosParceirosComponent,
+    AjudeComponent,
+    DuvidasComponent
 
   ],
   imports: [

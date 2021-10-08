@@ -1,10 +1,7 @@
 <div class="container-fluid bg-cinza">
-    <div class="d-flex flex-row justify-content-end">
-        <button type="submit" class="btn btn-secondary botaocad m-2" routerLink='/editar-produto'>Editar Produto Existente ⇨</button>
-    </div>
     <div class="row d-flex justify-content-center">
         <div class="col-md-6 mt-3 mb-4">
-            <h1 class="text-center">Cadastrar Produto</h1>
+            <h1 class="text-center">Atualizar Produto</h1>
             <div class="form-group">
                 <div class="form-group">
                     <label for="Nome">Nome do Produto</label>
@@ -59,14 +56,12 @@
                 </div>
 
                 <div class="d-flex justify-content-center fontpix">
-                    <button type="submit" class="btn btn-danger mr-4 botaocanc" routerLink='/inicio'>Cancelar</button>
-                    <button type="submit" class="btn btn-success botaocad" (click)='cadastrarProduto()'>Cadastrar</button>
-                    
+                    <button type="submit" class="btn btn-danger mr-4 botaocanc" routerLink='/editar-produto'>Cancelar</button>
+                    <button type="submit" class="btn btn-success botaocad" (click)='atualizar()'>Atualizar</button>
                 </div>
-                
             </div>
-        </div>        
-    </div>    
+        </div>
+    </div>
 </div>
 
-                
+

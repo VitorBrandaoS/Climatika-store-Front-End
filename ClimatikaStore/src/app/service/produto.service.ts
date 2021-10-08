@@ -23,4 +23,13 @@ export class ProdutoService {
   getAllProduto(): Observable<Produto[]>{
     return this.http.get<Produto[]>('https://climatika-store-ecommerce.herokuapp.com/climatika/produto',this.token)
   }
+  atualizarProduto(produto: Produto): Observable<Produto>{
+    return this.http.put<Produto>("https://climatika-store-ecommerce.herokuapp.com/climatika/produto", produto, this.token)
+  }
+  deletarProduto(id: number): Observable<Produto>{
+    return this.http.delete<Produto>(`https://climatika-store-ecommerce.herokuapp.com/climatika/produto/${id}`, this.token)
+  }
+  getByIdProduto(id: number): Observable<Produto>{
+    return this.http.get<Produto>(`https://climatika-store-ecommerce.herokuapp.com/climatika/produto/${id}`, this.token)
+  }
 }

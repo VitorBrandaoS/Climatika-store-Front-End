@@ -15,6 +15,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 
 import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto.component';
+import { SobreComponent } from './sobre/sobre.component';
 
 
 
@@ -29,7 +30,8 @@ import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto
 
     CarrinhoComponent,
 
-    CadastrarProdutoComponent
+    CadastrarProdutoComponent,
+      SobreComponent
 
   ],
   imports: [

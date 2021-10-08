@@ -23,18 +23,13 @@ const routes: Routes = [
 {path: 'inicio', component:InicioComponent},
 {path: 'carrinho', component:CarrinhoComponent},
 {path: 'cadastrar-produto', component:CadastrarProdutoComponent},
-<<<<<<< HEAD
 {path: 'editar-produto', component: EditProdutoComponent},
 {path: 'atualizando-produto/:id', component: AtualizandoProdutoComponent},
-{path: 'deletando-produto/:id', component: DeletandoProdutoComponent}
-
-
-=======
+{path: 'deletando-produto/:id', component: DeletandoProdutoComponent},
 {path: 'sobre', component:SobreComponent},
 {path: 'nossos-parceiros', component:NossosParceirosComponent},
 {path: 'ajude', component: AjudeComponent},
 {path: 'duvidas', component: DuvidasComponent}
->>>>>>> b8573f05a82f5fd80268003540c08ffa41de4fcb
 
 ];
 

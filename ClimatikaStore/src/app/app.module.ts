@@ -15,7 +15,11 @@ import { InicioComponent } from './inicio/inicio.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 
 import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto.component';
+
 import { NossosParceirosComponent } from './nossos-parceiros/nossos-parceiros.component';
+
+import { AjudeComponent } from './ajude/ajude.component';
+
 
 
 
@@ -31,7 +35,11 @@ import { NossosParceirosComponent } from './nossos-parceiros/nossos-parceiros.co
     CarrinhoComponent,
 
     CadastrarProdutoComponent,
-      NossosParceirosComponent
+
+      NossosParceirosComponent,
+
+      AjudeComponent
+
 
   ],
   imports: [

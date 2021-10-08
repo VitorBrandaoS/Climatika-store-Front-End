@@ -8,6 +8,11 @@ a:hover {
 }
 */
 
+#logo{
+    width: 140px;
+    height: auto;
+}
+
 .text-gold {
     color: #5D7963 !important;
     font-weight: 500;
@@ -20,7 +25,7 @@ a:hover {
 }
 
 .bg-menu {
-    background-color: #98c9a3;
+    background-color: #798e77;
 }
 
 .pesquisa {

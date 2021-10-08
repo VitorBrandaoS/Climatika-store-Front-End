@@ -42,10 +42,9 @@
 <!-- PRODUTOS -->
 <div class="container-fluid flex align-it">
     <div class="row bg-cinza pb-4 pt-4 d-flex justify-content-center">
-
-        <a routerLink='/produto'>
-          <div class="row col-md-12 justify-content-center pr-md-5 pl-md-5 d-flex" >
-          <div class="card mr-3 mb-3"   *ngFor='let item of listaProduto' style="max-width: 15rem; max-height: 412px;">
+      
+        <div class="row col-md-12 justify-content-center pr-md-5 pl-md-5 d-flex">
+          <div class="card mr-3 mb-3 mouse-link" routerLink='/produto'   *ngFor='let item of listaProduto' style="max-width: 15rem; max-height: 412px;">
               <div class="card-body">
                   <img src="{{item.foto}}" alt="" class="miniatura">
                   <h5 class="card-title mb-1">{{item.nomeProduto}}</h5>
@@ -54,9 +53,7 @@
                   <div class="d-flex justify-content-end bg-transparent preco">R${{item.preco}}</div>
               </div>
           </div>
-        </a>
-        
-    </div>
+      </div>
         
     </div>
 </div>

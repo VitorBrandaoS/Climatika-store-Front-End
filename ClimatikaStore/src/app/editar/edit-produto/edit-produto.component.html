@@ -1,0 +1,48 @@
+<div class="d-flex flex-row justify-content-end">
+    <button type="submit" class="btn btn-secondary botaocad m-2" routerLink='/cadastrar-produto'>⇦ Voltar </button>
+</div>
+<div class="container d-flex justify-content-center">
+    
+    <div class="row m-3 p-3 layoutCarrinho border border-secondary">
+        <div class="col-md-12">
+
+            <div class="card mb-3" style="max-width: 540px;" *ngFor="let item of listaProduto">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="{{item.foto}}" class="card-img" alt="...">
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card-body">
+                            <h5 class="card-title">{{item.nomeProduto}}</h5>
+                            <p class="card-text">{{item.descricao}}</p>
+                            <p class="card-text">Marca: {{item.marca}}</p>
+                            <p class="card-text"><small class="text-muted">Categoria mãe: {{item.categoriaMae}}</small></p>
+                            <p class="card-text"><small class="text-muted">Categoria filha: {{item.categoriaFilha}}</small></p>
+                            <p class="card-text"><small class="text-muted">Preço: R${{item.preco}}</small></p>
+
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="d-flex flex-column align-self-center">
+                            <a [routerLink]="['/atualizando-produto', item.codigo]" routerLinkActive="router-link-active"><button class="btn btn-primary">Editar</button></a>
+                            <a [routerLink]="['/deletando-produto', item.codigo]" routerLinkActive="router-link-active"><button class="btn btn-danger mt-3">Deletar</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+</div>

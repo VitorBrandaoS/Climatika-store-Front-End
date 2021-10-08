@@ -15,6 +15,9 @@ import { InicioComponent } from './inicio/inicio.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 
 import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto.component';
+import { EditProdutoComponent } from './editar/edit-produto/edit-produto.component';
+import { AtualizandoProdutoComponent } from './editar/atualizando-produto/atualizando-produto.component';
+import { DeletandoProdutoComponent } from './editar/deletando-produto/deletando-produto.component';
 
 
 
@@ -29,7 +32,10 @@ import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto
 
     CarrinhoComponent,
 
-    CadastrarProdutoComponent
+    CadastrarProdutoComponent,
+      EditProdutoComponent,
+      AtualizandoProdutoComponent,
+      DeletandoProdutoComponent
 
   ],
   imports: [

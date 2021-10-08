@@ -25,9 +25,6 @@ const routes: Routes = [
 {path: 'ajude', component: AjudeComponent},
 {path: 'duvidas', component: DuvidasComponent}
 
-
-
-
 ];
 
 @NgModule({

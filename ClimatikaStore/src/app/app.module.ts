@@ -15,9 +15,19 @@ import { InicioComponent } from './inicio/inicio.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 
 import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto.component';
+<<<<<<< HEAD
 import { EditProdutoComponent } from './editar/edit-produto/edit-produto.component';
 import { AtualizandoProdutoComponent } from './editar/atualizando-produto/atualizando-produto.component';
 import { DeletandoProdutoComponent } from './editar/deletando-produto/deletando-produto.component';
+=======
+import { SobreComponent } from './sobre/sobre.component';
+
+import { NossosParceirosComponent } from './nossos-parceiros/nossos-parceiros.component';
+
+import { AjudeComponent } from './ajude/ajude.component';
+import { DuvidasComponent } from './duvidas/duvidas.component';
+
+>>>>>>> b8573f05a82f5fd80268003540c08ffa41de4fcb
 
 
 
@@ -29,14 +39,21 @@ import { DeletandoProdutoComponent } from './editar/deletando-produto/deletando-
     EntrarComponent,
     CadastrarComponent,
     InicioComponent,
-
     CarrinhoComponent,
+<<<<<<< HEAD
 
     CadastrarProdutoComponent,
       EditProdutoComponent,
       AtualizandoProdutoComponent,
       DeletandoProdutoComponent
 
+=======
+    CadastrarProdutoComponent,
+    SobreComponent,
+    NossosParceirosComponent,
+    AjudeComponent,
+    DuvidasComponent
+>>>>>>> b8573f05a82f5fd80268003540c08ffa41de4fcb
   ],
   imports: [
     BrowserModule,

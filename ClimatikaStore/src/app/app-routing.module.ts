@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AjudeComponent } from './ajude/ajude.component';
 import { CadastrarProdutoComponent } from './cadastrar-produto/cadastrar-produto.component';
 import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
@@ -8,6 +9,10 @@ import { DeletandoProdutoComponent } from './editar/deletando-produto/deletando-
 import { EditProdutoComponent } from './editar/edit-produto/edit-produto.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { SobreComponent } from './sobre/sobre.component';
+import { NossosParceirosComponent } from './nossos-parceiros/nossos-parceiros.component';
+import { DuvidasComponent } from './duvidas/duvidas.component';
+
 
 const routes: Routes = [
 
@@ -18,11 +23,18 @@ const routes: Routes = [
 {path: 'inicio', component:InicioComponent},
 {path: 'carrinho', component:CarrinhoComponent},
 {path: 'cadastrar-produto', component:CadastrarProdutoComponent},
+<<<<<<< HEAD
 {path: 'editar-produto', component: EditProdutoComponent},
 {path: 'atualizando-produto/:id', component: AtualizandoProdutoComponent},
 {path: 'deletando-produto/:id', component: DeletandoProdutoComponent}
 
 
+=======
+{path: 'sobre', component:SobreComponent},
+{path: 'nossos-parceiros', component:NossosParceirosComponent},
+{path: 'ajude', component: AjudeComponent},
+{path: 'duvidas', component: DuvidasComponent}
+>>>>>>> b8573f05a82f5fd80268003540c08ffa41de4fcb
 
 ];
 

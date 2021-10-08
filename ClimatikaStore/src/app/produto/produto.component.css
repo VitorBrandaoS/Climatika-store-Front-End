@@ -1,0 +1,20 @@
+.foto-produto {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nome-produto {
+    font-size: 38px;
+}
+
+.marca-produto {
+    font-size: 28px;
+}
+
+.preco-produto {
+    font-size: 25px;
+}
+
+.descricao {
+    font-size: 1.48rem;
+}

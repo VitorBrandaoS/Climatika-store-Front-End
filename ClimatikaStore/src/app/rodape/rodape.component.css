@@ -1,5 +1,5 @@
 .bg-rodape {
-  background-color: #798E77;
+  background-color:#798e77;
 }
 
 ul.social-network li{
@@ -14,10 +14,8 @@ ul.social-network li{
 }
 
 .icone-pagamento {
-  max-width: 42px;
   max-height: 32px;
   margin-left: 10px;
-  
   margin-bottom: 15px;
   
   

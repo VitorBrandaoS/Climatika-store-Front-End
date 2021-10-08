@@ -5,6 +5,7 @@ import { CadastrarComponent } from './cadastrar/cadastrar.component';
 import { CarrinhoComponent } from './carrinho/carrinho.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { NossosParceirosComponent } from './nossos-parceiros/nossos-parceiros.component';
 
 const routes: Routes = [
 
@@ -14,7 +15,8 @@ const routes: Routes = [
 {path:'cadastrar', component: CadastrarComponent},
 {path: 'inicio', component:InicioComponent},
 {path: 'carrinho', component:CarrinhoComponent},
-{path: 'cadastrar-produto', component:CadastrarProdutoComponent}
+{path: 'cadastrar-produto', component:CadastrarProdutoComponent},
+{path: 'nossos-parceiros', component:NossosParceirosComponent}
 
 
 ];

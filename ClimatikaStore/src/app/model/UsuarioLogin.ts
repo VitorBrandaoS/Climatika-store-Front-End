@@ -10,4 +10,5 @@ export class UsuarioLogin{
     public endereco: string
     public cidade: string
     public estado: string
+    public tipoUsuario: string
 }

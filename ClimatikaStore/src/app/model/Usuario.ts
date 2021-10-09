@@ -10,5 +10,6 @@ export class Usuario{
     public endereco: string
     public cidade: string
     public estado: string
+    public tipoUsuario: string
     public userStatusVenda: StatusVenda[]
 }

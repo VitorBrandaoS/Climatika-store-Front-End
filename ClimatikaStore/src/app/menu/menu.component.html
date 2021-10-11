@@ -63,8 +63,8 @@
             </li>            
         </ul>
         <form class="form-inline my-2 my-lg-0 justify-content-end">
-            <button class="btn btn-outline-success my-2 my-sm-0 mr-2" routerLink='/carrinho' type="submit">
-                <img src="../../assets/img/icones/cesto-branco.png" alt="carrinho de compras">
+            <button *ngIf="auth.logado()" class="btn btn-outline-success my-2 my-sm-0 mr-2" routerLink='/carrinho' type="submit">
+                <img src="../../assets/img/icones/cesto-branco.png" width="25px" height="auto" alt="carrinho de compras">
             </button>
             <button *ngIf="auth.logado() == false" class="btn btn-outline-success my-2 my-sm-0" type="submit" routerLink='/entrar'>Login</button>
         </form>
@@ -76,6 +76,7 @@
             <div class="dropdown-menu bg-dark">
               <!-- Dropdown menu links -->
               <a class="dropdown-item bg-dark" href="#">Meus Pedidos</a>
+              <a class="dropdown-item bg-dark" href="#">Meus Favoritos</a>
               <a class="dropdown-item bg-dark" href="#">Meu Cadastro</a>
               <a class="dropdown-item bg-dark" href="#">Sair</a>
             </div>

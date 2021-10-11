@@ -12,6 +12,7 @@ export class InicioComponent implements OnInit {
 
   produto: Produto = new Produto()
   listaProduto: Produto[]
+
   constructor(
     private produtoService: ProdutoService,
     private authService: AuthService
@@ -25,7 +26,11 @@ export class InicioComponent implements OnInit {
 
   getAllProdutos(){
     this.produtoService.getAllProduto().subscribe((resp: Produto[])=>{
-      this.listaProduto = resp 
+      this.listaProduto = resp
     })
+  }
+
+  produtoInfo(){
+    
   }
 }

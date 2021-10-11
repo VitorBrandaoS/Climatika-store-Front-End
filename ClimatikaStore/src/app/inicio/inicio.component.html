@@ -1,6 +1,7 @@
 <!-- CARROSEL -->
 
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+  
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="d-block w-100" src="../../assets/img/carrosel/2.png" alt="Primeiro Slide">
@@ -58,12 +59,25 @@
       <div class="card-img" style="background-image:url({{item.foto}});">    
       </div>
       
+
       <div class="card-content">
           <h5 class="nomeProduto text-center mt-2">{{item.nomeProduto}}</h5>
           
           <p class="marca text-center">{{item.marca}}</p>
           <hr class="ml-5  mr-5">
           <p class="preco ml-5">R${{item.preco}}</p>
+
+        <div class="row col-md-12 justify-content-center pr-md-5 pl-md-5 d-flex">
+          <div class="card mr-3 mb-3 mouse-link" [routerLink]="['/produto', item.codigo]"   *ngFor='let item of listaProduto' style="max-width: 15rem; max-height: 412px;">
+              <div class="card-body">
+                  <img src="{{item.foto}}" alt="" class="miniatura">
+                  <h5 class="card-title mb-1">{{item.nomeProduto}}</h5>
+                  <a src="#" class="marca">{{item.marca}}</a>
+              
+                  <div class="d-flex justify-content-end bg-transparent preco">R${{item.preco}}</div>
+              </div>
+          </div>
+
       </div>
     </div>
   </div>

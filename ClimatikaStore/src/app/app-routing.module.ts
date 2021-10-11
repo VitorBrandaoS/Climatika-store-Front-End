@@ -31,7 +31,7 @@ const routes: Routes = [
 {path: 'nossos-parceiros', component:NossosParceirosComponent},
 {path: 'ajude', component: AjudeComponent},
 {path: 'duvidas', component: DuvidasComponent},
-{path: 'produto', component: ProdutoComponent}
+{path: 'produto/:codigo', component: ProdutoComponent}
 
 ];
 

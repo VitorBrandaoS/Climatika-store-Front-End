@@ -43,4 +43,6 @@ export class CarrinhoComponent implements OnInit {
       this.produto = resp 
     })
   }
+
+  
 }

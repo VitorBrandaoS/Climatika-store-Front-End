@@ -1,6 +1,9 @@
 .foto-produto {
-    max-width: 100%;
-    max-height: 100%;
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: auto;
+
 }
 
 .nome-produto {
@@ -17,4 +20,31 @@
 
 .descricao {
     font-size: 1.48rem;
+    min-height: 260px;
+}
+
+.bg-pattern{
+    background-image: url(../../assets/img/logincadastro/patternlogin.png);
+}
+
+.w-max {
+    width: 80%;
+}
+
+.border-produto {
+    border: 1px #49735b83 solid;
+    border-radius: 20px;
+}
+
+.bg-descricao {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.589);
+    margin: 20px 0 20px 0;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 767px){
+    .border-produto{
+        border: 0px;
+    }
+    
 }

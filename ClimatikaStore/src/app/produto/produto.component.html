@@ -1,16 +1,16 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12 m-0 p-0">
-            <div class="row">
-                <div class="col-md-11 m-auto d-flex">
+            <div class="row m-0 bg-pattern">
+                <!--<div class="col-md-11 m-auto d-flex bg-success p-1">-->
         
-                    <div class="row justify-content-around">
-                        <div class="col-md-6">
+                    <div class="row justify-content-between mr-auto ml-auto mt-3 mb-3 w-max border-produto">
+                        <div class="col-md-6 col-12 pt-3">
                                 <img src="{{produto.foto}}" class="foto-produto" alt="">
                             </div>
         
-                            <div class="col-md-4 p-0">
-                                <div class="card-body">
+                            <div class="col-md-5 p-0 m-auto ">
+                                <div class="card-body bg-descricao">
                                     <h4 class="nome-produto pb-3">{{produto.nomeProduto}}</h4>
                                     <h5 class="marca-produto pb-3">Marca: {{produto.marca}}</h5>
                                     <h5 class="preco-produto pb-2">Preço: R${{produto.preco}}</h5>

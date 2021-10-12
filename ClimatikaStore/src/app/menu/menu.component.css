@@ -52,3 +52,33 @@ input:enabled{
     background-color: rgb(197, 204, 191);
     box-shadow: #5D7963 !important;
 }
+
+
+.hr-menu {
+    border-top: 1px solid white;
+    margin: 2px 15px 2px 15px;
+}
+
+.bg-verde {
+    background: #42594A;
+}
+
+.btn-login {
+    background-color: aliceblue;
+    color:#42594A;
+}
+
+.btn-login:hover {
+    background-color: #b0c68d;
+    color: aliceblue;
+    border: 1px #42594A solid;
+}
+
+.btn-verde {
+    background: #42594A;
+}
+
+.btn-verde:hover {
+    background-color: #b0c68d;
+    border: 1px #42594A solid;
+}

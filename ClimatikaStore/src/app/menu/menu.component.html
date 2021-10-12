@@ -63,22 +63,37 @@
             </li>            
         </ul>
         <form class="form-inline my-2 my-lg-0 justify-content-end">
-            <button *ngIf="auth.logado()" class="btn btn-outline-success my-2 my-sm-0 mr-2" routerLink='/carrinho' type="submit">
+            <button *ngIf="auth.logado()" class="btn btn-verde my-2 my-sm-0 mr-2" routerLink='/carrinho' type="submit">
                 <img src="../../assets/img/icones/cesto-branco.png" width="25px" height="auto" alt="carrinho de compras">
             </button>
-            <button *ngIf="auth.logado() == false" class="btn btn-outline-success my-2 my-sm-0" type="submit" routerLink='/entrar'>Login</button>
+            <button *ngIf="auth.logado() == false" class="btn btn-login my-2 my-sm-0" type="submit" routerLink='/entrar'>Login</button>
         </form>
 
+        <!-- Botão Usuário -->
         <div *ngIf="auth.logado()" class="btn-group dropleft">
-            <button type="button" class="btn btn-outline-success ml-2 rounded" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button type="button" class="btn btn-verde ml-2 rounded" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <img src="../../assets/img/icones/user.png" alt="">
             </button>
-            <div class="dropdown-menu bg-dark">
+            <div class="dropdown-menu bg-verde">
               <!-- Dropdown menu links -->
-              <a class="dropdown-item bg-dark" href="#">Meus Pedidos</a>
-              <a class="dropdown-item bg-dark" href="#">Meus Favoritos</a>
-              <a class="dropdown-item bg-dark" href="#">Meu Cadastro</a>
-              <a class="dropdown-item bg-dark" href="#">Sair</a>
+              <a class="dropdown-item btn-verde" href="#">Meus Pedidos</a>
+              <a class="dropdown-item btn-verde" href="#">Meus Favoritos</a>
+              <a class="dropdown-item btn-verde" href="#">Meu Cadastro</a>
+              <hr class="hr-menu">
+              <a class="dropdown-item btn-verde" href="#">Sair</a>
+            </div>
+        </div>
+        <!-- Botão Admin -->
+        <div *ngIf="auth.logadoAdmin()" class="btn-group dropleft">
+            <button type="button" class="btn btn-verde ml-2 rounded" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img src="../../assets/img/icones/user.png" alt="">
+            </button>
+            <div class="dropdown-menu bg-verde">
+              
+              <a class="dropdown-item btn-verde" routerLink='/cadastrar-produto'>Cadastrar Produto</a>
+              <a class="dropdown-item btn-verde" routerLink='/editar-produto'>Editar Produto</a>
+              <hr class="hr-menu">
+              <a class="dropdown-item btn-verde" href="#">Sair</a>
             </div>
         </div>
         

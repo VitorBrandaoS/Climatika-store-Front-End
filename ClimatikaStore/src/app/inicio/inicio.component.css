@@ -4,8 +4,14 @@
 
 }
 
+/*CARROSEL*/
 
-/*CARD*/
+.fad{
+    filter: brightness(50%)
+}
+
+
+/*CARDS*/
 .card {
 	width: 300px;
 	display: inline-block;
@@ -33,7 +39,7 @@
 
 
 .hover {
-    background: #b6cfb0;
+    background: #dee9de;
     border: none;
 }
 
@@ -41,7 +47,7 @@
     position: relative;
     height: 224px;
     width: 100%;
-    background-color: #b6cfb0;
+    background-color: #ced8cc;
     transition: opacity .2s ease;
     background-position: center center;
     background-repeat: no-repeat;
@@ -51,7 +57,7 @@
 
 
 .nomeProduto{
-    color: aliceblue;
+    color: rgb(146, 180, 157);
     font-family: 'Saira Condensed', sans-serif;
 
 }
@@ -63,8 +69,8 @@
 
 .preco{
     font-family: 'Saira Condensed', sans-serif;
-    color: #fff;
+    color: rgb(110, 131, 116);
 }
 
 
-/* FIM DE CARD*/
+/* FIM DE CARDS*/

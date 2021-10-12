@@ -25,3 +25,12 @@ ul.social-network li{
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
+
+.hr1{
+  margin-left: 100px;
+  line-height: 50px;
+}
+
+a{
+  text-decoration: none;
+}

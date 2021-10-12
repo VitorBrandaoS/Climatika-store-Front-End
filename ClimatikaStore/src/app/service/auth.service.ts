@@ -31,10 +31,18 @@ export class AuthService {
 
   logado() {
     let ok = false
-    if(environment.token != ''){
+    if(environment.token != '' && environment.tipoUsuario != 'adm'){
       ok = true
     }
-
+    return ok
+  }
+  // comum
+  // admin
+  logadoAdmin() {
+    let ok = false
+    if(environment.token != '' && environment.tipoUsuario == 'adm'){
+      ok = true
+    }
     return ok
   }
 

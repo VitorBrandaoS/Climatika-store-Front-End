@@ -46,4 +46,13 @@ export class AuthService {
     return ok
   }
 
+  telaCadastro(){
+    let ok = true
+    let url_atual = window.location.href;
+    if (url_atual == "http://localhost:4200/cadastrar" || url_atual == "http://localhost:4200/entrar") {
+       ok = false
+    }
+    return ok
+  }
+
 }

@@ -108,6 +108,7 @@
             </div>
 
         </ul>
+        <span class="align-items-center text-light mr-2" *ngIf="auth.logado()">Olá, {{auth.nomeUsuario()}}</span>
         <form class="form-inline my-2 my-lg-0 justify-content-end">
             <button *ngIf="auth.logado()" class="btn btn-verde my-2 my-sm-0 mr-2"
                 [routerLink]="['/carrinho', idCarrinho]" type="submit">

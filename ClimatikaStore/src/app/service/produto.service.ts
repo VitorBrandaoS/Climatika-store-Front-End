@@ -32,4 +32,10 @@ export class ProdutoService {
   getByIdProduto(id: number): Observable<Produto>{
     return this.http.get<Produto>(`https://climatika-store-ecommerce.herokuapp.com/climatika/produto/${id}`, this.token)
   }
+  getByCategoriaMae(nomeCategoria: string): Observable<Produto[]>{
+    return this.http.get<Produto[]>(`https://climatika-store-ecommerce.herokuapp.com/climatika/produto/categoria/${nomeCategoria}`, this.token)
+  }
+  getByCategoriaFilha(nomeSubCategoria: string): Observable<Produto[]>{
+    return this.http.get<Produto[]>(`https://climatika-store-ecommerce.herokuapp.com/climatika/produto/categoria/subcategoria/${nomeSubCategoria}`, this.token)
+  }
 }

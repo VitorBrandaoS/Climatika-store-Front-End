@@ -15,12 +15,13 @@ export class InicioComponent implements OnInit {
 
   constructor(
     private produtoService: ProdutoService,
-    private authService: AuthService
+    public auth: AuthService
   ){ }
 
   ngOnInit(){
   window.scroll(0,0)
-  this.getAllProdutos()
+  this.auth.findByCategoriaMae()
+  this.auth.findByCategoriaFilha()
 
   }
 

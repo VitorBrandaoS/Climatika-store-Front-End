@@ -1,4 +1,4 @@
-<app-menu></app-menu>
+<app-menu *ngIf="auth.telaCadastro()"></app-menu>
 <router-outlet></router-outlet>
 <!--<app-cadastrar-produto></app-cadastrar-produto>-->
-<app-rodape></app-rodape>
+<app-rodape *ngIf="auth.telaCadastro()"></app-rodape>

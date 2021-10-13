@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { environment } from 'src/environments/environment.prod';
 import { Produto } from '../model/Produto';
 import { StatusVenda } from '../model/StatusVenda';
+import { Usuario } from '../model/Usuario';
 import { CarrinhoService } from '../service/carrinho.service';
 import { ProdutoService } from '../service/produto.service';
 
@@ -15,8 +17,9 @@ export class CarrinhoComponent implements OnInit {
   listaProdutos: Produto[]
   codigoProduto: number
   idVenda: number
-
+  usuario: Usuario = new Usuario()
   statusVenda: StatusVenda = new StatusVenda()
+  valorTotal: number = 0
 
   constructor(
     private router: Router,
@@ -26,23 +29,28 @@ export class CarrinhoComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.codigoProduto = this.route.snapshot.params["idProduto"]
-    this.idVenda = this.route.snapshot.params["idVenda"]
-    this.findByIdProduto(this.codigoProduto)
-  }
-
-  addProduto(){
-    this.carrinhoService.adicionarItem(this.idVenda, this.codigoProduto).subscribe(() =>{
-      alert("Produto adicionado ao carrinho com sucesso!")
-      this.router.navigate(["/inicio"])
-    })
+    this.idVenda = environment.id
+    this.findByIdVenda(this.idVenda)
   }
   
-  findByIdProduto(id: number){
+  findByIdProduto(id: number){    
     this.produtoService.getByIdProduto(id).subscribe((resp: Produto) =>{
       this.produto = resp 
     })
   }
 
+  findByIdVenda(id: number){
+    this.carrinhoService.getByIdVenda(id).subscribe((resp: StatusVenda) => {
+      this.statusVenda = resp
+    })
+  }
   
+  calculoTotal(){
+    this.statusVenda.listaProduto.forEach(element => {
+      let valor = element.preco
+      let quant = element.quant
+      this.valorTotal = this.valorTotal + (valor * quant)
+      return this.valorTotal
+    });
+  }
 }

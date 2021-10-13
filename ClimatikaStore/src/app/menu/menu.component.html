@@ -1,6 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-menu flex-column">
     <div class="container-fluid">
-        <a class="navbar-brand" routerLink="/inicio"><img id="logo" src="../../assets/img/logo/menulogo.png" alt="home"></a>
+        <a class="navbar-brand" routerLink="/inicio"><img id="logo" src="../../assets/img/logo/menulogo.png"
+                alt="home"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -13,14 +14,14 @@
                     <a routerLink='/ajude' class="text-gold" rel="noopener noreferrer">Ajude o Planeta</a>
                 </li>
                 <li class="nav-link" href="#">
-                    <a routerLink='/nossos-parceiros' class="text-gold" target="_blank" rel="noopener noreferrer">Nossos Parceiros</a>
+                    <a routerLink='/nossos-parceiros' class="text-gold" target="_blank" rel="noopener noreferrer">Nossos
+                        Parceiros</a>
                 </li>
                 <li class="nav-link" href="#">
                     <a routerLink='/sobre' class="text-gold" rel="noopener noreferrer">Sobre</a>
                 </li>
-
             </ul>
-            
+
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2 pesquisa" type="search" placeholder="Pesquise o seu produto"
                     aria-label="Search">
@@ -34,67 +35,127 @@
     </div>
     <div class="container-fluid">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Todas as Categorias
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Cozinha
+                </button>
+                <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item bg-verde btn-outline-info" href="#">Limpeza</a>
+                    <a class="dropdown-item bg-verde" href="#">Lava-Louças</a>
+                    <a class="dropdown-item bg-verde" href="#">Utensílios</a>
+                    <a class="dropdown-item bg-verde" href="#">Embalagens</a>
                 </div>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link text-light" href="#">Cozinha<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link text-light" href="#">Banheiro<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link text-light" href="#">Jardim<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link text-light" href="#">Moda e Beleza<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link text-light" href="#">Pet<span class="sr-only">(current)</span></a>
-            </li>            
+            </div>
+
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Banheiro
+                </button>
+                <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item bg-verde" href="#">Aromatizantes</a>
+                    <a class="dropdown-item bg-verde" href="#">Acessórios</a>
+                    <a class="dropdown-item bg-verde" href="#">Limpeza</a>
+                    <a class="dropdown-item bg-verde" href="#">Toalhas</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Moda e Beleza
+                </button>
+                <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item bg-verde" href="#">Sabonetes para o Corpo</a>
+                    <a class="dropdown-item bg-verde" href="#">Maquiagens</a>
+                    <a class="dropdown-item bg-verde" href="#">Roupas</a>
+                    <a class="dropdown-item bg-verde" href="#">Acessórios de Moda</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Higiene Pessoal
+                </button>
+                <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item bg-verde" href="#">Pele</a>
+                    <a class="dropdown-item bg-verde" href="#">Cosméticos</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Pet
+                </button>
+                <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item bg-verde" href="#">Roupas e Acessórios para Pets</a>
+                </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Jardim
+                </button>
+                <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item bg-verde" href="#">Vasos</a>
+                    <a class="dropdown-item bg-verde" href="#">Kits de Compostagem</a>
+                    <a class="dropdown-item bg-verde" href="#">Limpeza</a>
+                </div>
+            </div>
+
         </ul>
+        <span class="align-items-center text-light mr-3" *ngIf="auth.logado()">Olá, {{auth.nomeUsuario()}}!</span>
         <form class="form-inline my-2 my-lg-0 justify-content-end">
-            <button *ngIf="auth.logado()" class="btn btn-verde my-2 my-sm-0 mr-2" routerLink='/carrinho' type="submit">
-                <img src="../../assets/img/icones/cesto-branco.png" width="25px" height="auto" alt="carrinho de compras">
+            <button *ngIf="auth.logado()" class="btn btn-verde my-2 my-sm-0 mr-2"
+                [routerLink]="['/carrinho', idCarrinho]" type="submit">
+                <img src="../../assets/img/icones/cesto-branco.png" width="25px" height="auto"
+                    alt="carrinho de compras">
             </button>
-            <button *ngIf="auth.logado() == false" class="btn btn-login my-2 my-sm-0" type="submit" routerLink='/entrar'>Login</button>
+            <button *ngIf="auth.logado() == false" class="btn btn-login my-2 my-sm-0" type="submit"
+                routerLink='/entrar'>Login</button>
         </form>
 
         <!-- Botão Usuário -->
         <div *ngIf="auth.logado()" class="btn-group dropleft">
-            <button type="button" class="btn btn-verde ml-2 rounded" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="../../assets/img/icones/user.png" alt="">
+            <button type="button" class="btn btn-verde ml-2 rounded" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <img src="../../assets/img/icones/user.png" alt="">
             </button>
             <div class="dropdown-menu bg-verde">
-              <!-- Dropdown menu links -->
-              <a class="dropdown-item btn-verde" href="#">Meus Pedidos</a>
-              <a class="dropdown-item btn-verde" href="#">Meus Favoritos</a>
-              <a class="dropdown-item btn-verde" href="#">Meu Cadastro</a>
-              <hr class="hr-menu">
-              <a class="dropdown-item btn-verde" href="#">Sair</a>
-            </div>
-        </div>
-        <!-- Botão Admin -->
-        <div *ngIf="auth.logadoAdmin()" class="btn-group dropleft">
-            <button type="button" class="btn btn-verde ml-2 rounded" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="../../assets/img/icones/user.png" alt="">
-            </button>
-            <div class="dropdown-menu bg-verde">
-              
-              <a class="dropdown-item btn-verde" routerLink='/cadastrar-produto'>Cadastrar Produto</a>
-              <a class="dropdown-item btn-verde" routerLink='/editar-produto'>Editar Produto</a>
-              <hr class="hr-menu">
-              <a class="dropdown-item btn-verde" href="#">Sair</a>
+                <!-- Dropdown menu links -->
+                <a class="dropdown-item btn-verde" href="#">Meus Pedidos</a>
+                <a class="dropdown-item btn-verde" href="#">Meus Favoritos</a>
+                <a class="dropdown-item btn-verde" href="#">Meu Cadastro</a>
+                <div *ngIf="auth.logadoAdmin()">
+                    <hr class="hr-menu">
+                    <p class="ml-4 mb-0 text-light">Funções Admin</p>
+                    <hr class="hr-menu">                    
+                    <a class="dropdown-item btn-verde" routerLink='/cadastrar-produto'>Cadastrar Produto</a>
+                    <a class="dropdown-item btn-verde" routerLink='/editar-produto'>Editar Produto</a>
+                </div>
+                <hr class="hr-menu">
+                <a class="dropdown-item btn-verde" href="#">Sair</a>
             </div>
         </div>
         
+        <!-- Botão Admin 
+        <div *ngIf="auth.logadoAdmin()" class="btn-group dropleft">
+            <button type="button" class="btn btn-danger ml-2 rounded" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <img src="../../assets/img/icones/user.png" alt="">
+            </button>
+            <div class="dropdown-menu bg-verde">
+
+                <a class="dropdown-item btn-verde" routerLink='/cadastrar-produto'>Cadastrar Produto</a>
+                <a class="dropdown-item btn-verde" routerLink='/editar-produto'>Editar Produto</a>
+                <hr class="hr-menu">
+                <a class="dropdown-item btn-verde" href="#">Sair</a>
+            </div>
+        </div>
+        -->
     </div>
+</nav>

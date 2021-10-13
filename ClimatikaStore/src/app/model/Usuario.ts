@@ -11,5 +11,5 @@ export class Usuario{
     public cidade: string
     public estado: string
     public tipoUsuario: string
-    public userStatusVenda: StatusVenda[]
+    public userStatusVenda: StatusVenda
 }

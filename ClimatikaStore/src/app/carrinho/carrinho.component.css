@@ -1,7 +1,20 @@
 .layoutCarrinho{
+    width: 80%;
     height: 500px;
+    border: 2px;
+    border-style: groove;
+    border-radius: 30px;
+    border-color: #5b866e9d;
 }
 
 .fundoCarrinho{
     background-image: url("../../assets/img/logincadastro/patternlogin.png");
+    border-radius: 30px;
+}
+
+.lista-prod {
+    overflow: auto;
+    scroll-behavior: smooth;
+    height: 100%;
+    margin-bottom: 30px;
 }

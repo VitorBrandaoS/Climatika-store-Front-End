@@ -29,9 +29,15 @@ export class AuthService {
 
   }
 
+  nomeUsuario() {
+    let nome = environment.nomeCompleto
+
+    return nome
+  }
+
   logado() {
     let ok = false
-    if(environment.token != '' && environment.tipoUsuario != 'adm'){
+    if(environment.token != ''){
       ok = true
     }
     return ok
@@ -42,6 +48,15 @@ export class AuthService {
     let ok = false
     if(environment.token != '' && environment.tipoUsuario == 'adm'){
       ok = true
+    }
+    return ok
+  }
+
+  telaCadastro(){
+    let ok = true
+    let url_atual = window.location.href;
+    if (url_atual == "http://localhost:4200/cadastrar" || url_atual == "http://localhost:4200/entrar") {
+       ok = false
     }
     return ok
   }

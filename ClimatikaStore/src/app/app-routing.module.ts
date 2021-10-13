@@ -22,7 +22,7 @@ const routes: Routes = [
 {path:'entrar', component: EntrarComponent},
 {path:'cadastrar', component: CadastrarComponent},
 {path: 'inicio', component:InicioComponent},
-{path: 'carrinho', component:CarrinhoComponent},
+{path: 'carrinho/:idVenda', component:CarrinhoComponent},
 {path: 'cadastrar-produto', component:CadastrarProdutoComponent},
 {path: 'editar-produto', component: EditProdutoComponent},
 {path: 'atualizando-produto/:id', component: AtualizandoProdutoComponent},

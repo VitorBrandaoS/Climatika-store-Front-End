@@ -33,17 +33,71 @@
     </div>
     <div class="container-fluid">
         <ul class="navbar-nav mr-auto">
-            <li>
-                <button type="button" class="btn btn-verde ml-2 rounded" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <p>Cozinha</p>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Cozinha
                 </button>
-                <div class="dropdown-menu">
-                    
-                    <a class="dropdown-item" routerLink='/cadastrar-produto'>Cadastrar Produto</a>
-                    <a class="dropdown-item" routerLink='/editar-produto'>Editar Produto</a>
-                    <hr class="hr-menu">
-                    <a class="dropdown-item" href="#">Sair</a>
-                </div></li>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item bg-verde" href="#">Limpeza</a>
+                  <a class="dropdown-item bg-verde" href="#">Lava-Louças</a>
+                  <a class="dropdown-item bg-verde" href="#">Utensílios</a>
+                  <a class="dropdown-item bg-verde" href="#">Embalagens</a>
+                </div>
+              </div>
+
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Banheiro
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item bg-verde" href="#">Aromatizantes</a>
+                <a class="dropdown-item bg-verde" href="#">Acessórios</a>
+                <a class="dropdown-item bg-verde" href="#">Limpeza</a>
+                <a class="dropdown-item bg-verde" href="#">Toalhas</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Moda e Beleza
+            </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item bg-verde" href="#">Sabonetes para o Corpo</a>
+                <a class="dropdown-item bg-verde" href="#">Maquiagens</a>
+                <a class="dropdown-item bg-verde" href="#">Roupas</a>
+                <a class="dropdown-item bg-verde" href="#">Acessórios de Moda</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Higiene Pessoal
+                </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item bg-verde" href="#">Pele</a>
+                    <a class="dropdown-item bg-verde" href="#">Cosméticos</a>
+                  </div>
+                </div>
+            
+            <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Pet
+            </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item bg-verde" href="#">Roupas e Acessórios para Pets</a>
+              </div>
+            </div>
+
+            <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Jardim
+            </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item bg-verde" href="#">Vasos</a>
+                <a class="dropdown-item bg-verde" href="#">Kits de Compostagem</a>
+                <a class="dropdown-item bg-verde" href="#">Limpeza</a>
+              </div>
+            </div>
               
         </ul>
         <form class="form-inline my-2 my-lg-0 justify-content-end">

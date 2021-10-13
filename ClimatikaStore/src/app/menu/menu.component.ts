@@ -10,11 +10,14 @@ import { AuthService } from '../service/auth.service';
 })
 export class MenuComponent implements OnInit {
 
+  idCarrinho: number
+
   constructor(
     public auth : AuthService
   ) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.idCarrinho = environment.id
   }
 
 }

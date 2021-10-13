@@ -3,5 +3,5 @@ export const environment = {
   token: '',
   nomeCompleto: '',
   id: 0,
-  tipoUsuario: ''
+  tipoUsuario: '',
 };

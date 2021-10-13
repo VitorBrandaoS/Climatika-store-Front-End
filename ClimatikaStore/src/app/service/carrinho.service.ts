@@ -18,15 +18,16 @@ export class CarrinhoService {
   }
 
   criarStatusVenda(statusVenda: StatusVenda): Observable<StatusVenda>{
-    return this.http.post<StatusVenda>(`https://climatika-store-ecommerce.herokuapp.com/climatika/status/add`, statusVenda, this.token)
+    return this.http.post<StatusVenda>("https://climatika-store-ecommerce.herokuapp.com/climatika/status/add", statusVenda, this.token)
   }
 
-  adicionarItem(idVenda: number, idProduto: number): Observable<StatusVenda>{
-    return this.http.post<StatusVenda>(`https://climatika-store-ecommerce.herokuapp.com/climatika/status/add/produto/${idVenda}/${idProduto}`, this.token)
+  adicionarItem(idProduto: number, idVenda: number): Observable<StatusVenda>{
+    return this.http.post<StatusVenda>(`https://climatika-store-ecommerce.herokuapp.com/climatika/status/add/produto/${idProduto}/${idVenda}`, this.token)
   }
 
   getByIdVenda(id: number): Observable<StatusVenda> {
     return this.http.get<StatusVenda>(`https://climatika-store-ecommerce.herokuapp.com/climatika/status/${id}`, this.token)
   }
+
 
 }

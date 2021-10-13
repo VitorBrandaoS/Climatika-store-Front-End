@@ -16,7 +16,8 @@
                                     <h5 class="preco-produto pb-2">Preço: R${{produto.preco}}</h5>
                                     <hr>
                                     <div class="buttons">
-                                        <button class="btn btn-success">Adicionar ao Carrinho</button>
+                                        <!--[routerLink]="['/carrinho', statusVenda.id]"-->
+                                        <a (click)="addProduto()"><button class="btn btn-success">Adicionar ao Carrinho</button></a>
                                     </div>
                                 
                                     <div class="descricao mt-3">

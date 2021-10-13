@@ -60,7 +60,7 @@
 
     <div class="row col-md-12 justify-content-center pr-md-5 pl-md-5 d-flex">
 
-      <div class="card hover" *ngFor='let item of listaProduto' [routerLink]="['/produto', item.codigo]">
+      <div class="card hover" *ngFor='let item of auth.listaProduto' [routerLink]="['/produto', item.codigo]">
         <div class="card-img" style="background-image:url({{item.foto}});">
         </div>
 

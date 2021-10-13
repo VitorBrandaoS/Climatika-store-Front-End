@@ -41,10 +41,12 @@
                     Cozinha
                 </button>
                 <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item bg-verde btn-outline-info" href="#">Limpeza</a>
-                    <a class="dropdown-item bg-verde" href="#">Lava-Louças</a>
-                    <a class="dropdown-item bg-verde" href="#">Utensílios</a>
-                    <a class="dropdown-item bg-verde" href="#">Embalagens</a>
+                    <button [(ngModel)]='auth.valor' value="Cozinha" class="dropdown-item bg-verde btn-outline-info" >Cozinha</button>
+                    <hr class="dropdown-item">
+                    <a value="Limpeza" class="dropdown-item bg-verde btn-outline-info" >Limpeza</a>
+                    <a value="Lava-Louças" class="dropdown-item bg-verde" >Lava-Louças</a>
+                    <a value="Utensílios" class="dropdown-item bg-verde" >Utensílios</a>
+                    <a value="Embalagens" class="dropdown-item bg-verde" >Embalagens</a>
                 </div>
             </div>
 

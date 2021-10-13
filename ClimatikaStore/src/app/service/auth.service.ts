@@ -5,14 +5,20 @@ import { Usuario } from '../model/Usuario';
 import { environment } from 'src/environments/environment.prod';
 
 import { UsuarioLogin } from '../model/UsuarioLogin';
+import { ProdutoService } from './produto.service';
+import { Produto } from '../model/Produto';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
+  listaProduto: Produto[]
+  valor = ''
+
   constructor(
-    private http: HttpClient
+    private http: HttpClient,
+    private produtoService: ProdutoService
   ) { }
 
   token={
@@ -50,6 +56,33 @@ export class AuthService {
       ok = true
     }
     return ok
+  }
+
+  getAllProdutos(){
+    this.produtoService.getAllProduto().subscribe((resp: Produto[])=>{
+      this.listaProduto = resp
+    })
+  }
+
+  findByCategoriaMae(){
+    if(this.valor == ''){
+      this.getAllProdutos()
+    } else{
+        this.produtoService.getByCategoriaMae(this.valor).subscribe((resp: Produto[] ) =>{
+        this.listaProduto = resp
+      })
+    }
+  }
+  
+  findByCategoriaFilha(){
+    if(this.valor == ''){
+      this.getAllProdutos()
+    } else{
+      this.produtoService.getByCategoriaFilha(this.valor).subscribe((resp: Produto[]) =>{
+        this.listaProduto = resp
+      })
+    }
+  
   }
 
 }

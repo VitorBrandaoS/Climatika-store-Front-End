@@ -18,7 +18,6 @@
                 <li class="nav-link" href="#">
                     <a routerLink='/sobre' class="text-gold" rel="noopener noreferrer">Sobre</a>
                 </li>
-
             </ul>
             
             <form class="form-inline my-2 my-lg-0">
@@ -34,42 +33,18 @@
     </div>
     <div class="container-fluid">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Cozinha
-                </a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Banheiro
-                </a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Moda e Beleza
-                </a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Pele e Cosméticos
-                </a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Pet
-                </a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Jardim
-                </a>
-            </li>       
+            <li>
+                <button type="button" class="btn btn-verde ml-2 rounded" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <p>Cozinha</p>
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <a class="dropdown-item" routerLink='/cadastrar-produto'>Cadastrar Produto</a>
+                    <a class="dropdown-item" routerLink='/editar-produto'>Editar Produto</a>
+                    <hr class="hr-menu">
+                    <a class="dropdown-item" href="#">Sair</a>
+                </div></li>
+              
         </ul>
         <form class="form-inline my-2 my-lg-0 justify-content-end">
             <button *ngIf="auth.logado()" class="btn btn-verde my-2 my-sm-0 mr-2" routerLink='/carrinho' type="submit">

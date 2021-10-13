@@ -40,8 +40,8 @@
                     aria-haspopup="true" aria-expanded="false">
                     Cozinha
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item bg-verde" href="#">Limpeza</a>
+                <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item bg-verde btn-outline-info" href="#">Limpeza</a>
                     <a class="dropdown-item bg-verde" href="#">Lava-Louças</a>
                     <a class="dropdown-item bg-verde" href="#">Utensílios</a>
                     <a class="dropdown-item bg-verde" href="#">Embalagens</a>
@@ -53,7 +53,7 @@
                     aria-haspopup="true" aria-expanded="false">
                     Banheiro
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item bg-verde" href="#">Aromatizantes</a>
                     <a class="dropdown-item bg-verde" href="#">Acessórios</a>
                     <a class="dropdown-item bg-verde" href="#">Limpeza</a>
@@ -66,7 +66,7 @@
                     aria-haspopup="true" aria-expanded="false">
                     Moda e Beleza
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item bg-verde" href="#">Sabonetes para o Corpo</a>
                     <a class="dropdown-item bg-verde" href="#">Maquiagens</a>
                     <a class="dropdown-item bg-verde" href="#">Roupas</a>
@@ -79,7 +79,7 @@
                     aria-haspopup="true" aria-expanded="false">
                     Higiene Pessoal
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item bg-verde" href="#">Pele</a>
                     <a class="dropdown-item bg-verde" href="#">Cosméticos</a>
                 </div>
@@ -90,7 +90,7 @@
                     aria-haspopup="true" aria-expanded="false">
                     Pet
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item bg-verde" href="#">Roupas e Acessórios para Pets</a>
                 </div>
             </div>
@@ -100,7 +100,7 @@
                     aria-haspopup="true" aria-expanded="false">
                     Jardim
                 </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item bg-verde" href="#">Vasos</a>
                     <a class="dropdown-item bg-verde" href="#">Kits de Compostagem</a>
                     <a class="dropdown-item bg-verde" href="#">Limpeza</a>
@@ -108,7 +108,7 @@
             </div>
 
         </ul>
-        <span class="align-items-center text-light mr-2" *ngIf="auth.logado()">Olá, {{auth.nomeUsuario()}}</span>
+        <span class="align-items-center text-light mr-3" *ngIf="auth.logado()">Olá, {{auth.nomeUsuario()}}!</span>
         <form class="form-inline my-2 my-lg-0 justify-content-end">
             <button *ngIf="auth.logado()" class="btn btn-verde my-2 my-sm-0 mr-2"
                 [routerLink]="['/carrinho', idCarrinho]" type="submit">

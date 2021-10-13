@@ -1,76 +1,104 @@
-<div class="container-fluid">
+<div class="container" id="container">
+    <div class="form-container log-in-container">
+        <form action="#">
+            <h1>Cadastrar</h1>
 
-    <div class="row d-flex align-items-center">
-        <div class="col-md-6">
+            <div class="wrapper">
+            <div class="form-group">
+                <input [(ngModel)]="usuario.nomeCompleto" class="form-control"  autocomplete="off" type="text" name="nome" id="nome" required>
+                <div class="underline"></div>
+                <label>nome</label>
+             </div>
 
-            <div class="row d-flex justify-content-center">
-                <div class="col-md-6">
-                    <h1 class="text-center mb-3">Cadastrar</h1>
-
-                    <div class="form-group">
-                        <input [(ngModel)]="usuario.nomeCompleto" class="form-control"  autocomplete="off" type="text" name="nome" id="nome"
-                            placeholder="Nome Completo">
-                    </div>
-
-                    <!--
-                    <div class="form-group">
-                        <input [(ngModel)]="usuario.cpf" class="form-control" type="text" name="cpf" id="cpf" autocomplete="off"
-                            placeholder="CPF">
-                    </div>
-                    -->
-
-                    <div class="form-group">
-                        <input [(ngModel)]="usuario.email" class="form-control" type="email" name="email" id="email" autocomplete="off" 
-                            placeholder="Email">
-                    </div>
+             <div class="form-group">
+                 <input [(ngModel)]="usuario.email" class="form-control" type="email" name="email" id="email" autocomplete="off" required>
+                 <div class="underline"></div>
+                 <label>email</label>
+             </div>
 
 
-                    <div class="form-group">
-                        <input [(ngModel)]="usuario.senha" class="form-control" type="password" name="senha" id="senha" autocomplete="off"
-                            placeholder="Senha">
-                    </div>
+             <div class="form-group">
+                 <input [(ngModel)]="usuario.senha" class="form-control" type="password" name="senha" id="senha" autocomplete="off" required>
+                 <div class="underline"></div>
+                     <label>senha</label>
+             </div>
 
-                    <div class="form-group">
-                        <input (input)="confirmSenha($event)" class="form-control" type="password" name="confirmarSenha" autocomplete="off"
-                            id="confirmarSenha" placeholder="Confirme sua senha">
-                    </div>
+             <div class="form-group">
+                 <input (input)="confirmSenha($event)" class="form-control" type="password" name="confirmarSenha" autocomplete="off"
+                     id="confirmarSenha" required>
+                     <div class="underline"></div>
+                     <label>confirme sua senha</label>
+             </div>
 
-                    <div class="form-group">
-                        <input [(ngModel)]="usuario.celular" class="form-control" type="text" name="celular" autocomplete="off"
-                            id="celular" placeholder="Celular/Telefone">
-                    </div>
+             <div class="form-group">
+                 <input [(ngModel)]="usuario.celular" class="form-control" type="text" name="celular" autocomplete="off"
+                     id="celular" required>
+                     <div class="underline"></div>
+                     <label>telefone/celular</label>
+             </div>
 
-                    <!--
-                    <div class="form-group">
-                        <label for="cep">CEP</label>
-                        <input [(ngModel)]="usuario.cep" class="form-control" type="text" name="cep" id="cep" placeholder="Digite seu cep">
-                    </div>
-                    -->
-                    
-                    <div class="form-group">
-                        <input [(ngModel)]="usuario.endereco" class="form-control" type="text" name="endereco" autocomplete="off"
-                            id="endereco" placeholder="Endereço">
-                    </div>
+             <div class="form-group">
+                 <input [(ngModel)]="usuario.endereco" class="form-control" type="text" name="endereco" autocomplete="off"
+                     id="endereco" required>
+                     <div class="underline"></div>
+                     <label>endereço</label>
+             </div>
 
-                    <div class="form-group">
-                        <input [(ngModel)]="usuario.cidade" class="form-control" type="text" name="cidade" id="cidade" autocomplete="off"
-                            placeholder="Cidade">
-                    </div>
+             <div class="form-group">
+                 <input [(ngModel)]="usuario.cidade" class="form-control" type="text" name="cidade" id="cidade" autocomplete="off"
+                 required>
+                 <div class="underline"></div>
+                 <label>cidade</label>
+             </div>
 
-                    <div class="form-group">
-                        <input [(ngModel)]="usuario.estado" class="form-control" type="text" name="estado" id="estado" autocomplete="off"
-                            placeholder="Estado">
-                    </div>
+             <div class="sel">
+                 <label for="estado" class="mr-2">estado </label>
+                 <div class="underline"></div>
 
-                    <div class="d-flex justify-content-center fontpix">
-                        <button type="submit" class="btn btn-danger mr-4 botaocanc" routerLink='/entrar'>Cancelar</button>
-                        <button type="submit" class="btn btn-success botaocad" (click)="cadastrar()">Cadastrar</button>
-                    </div>
-                </div>
+                     <select [(ngModel)]="usuario.estado" name="estado" id="estado" required>
+                         <option value="AC">AC</option> 
+                         <option value="AL">AL</option>
+                         <option value="AP">AP</option> 
+                         <option value="AM">AM</option> 
+                         <option value="BA">BA</option>
+                         <option value="CE">CE</option>
+                         <option value="DF">DF</option>
+                         <option value="ES">ES</option> 
+                         <option value="GO">GO</option> 
+                         <option value="MA">MA</option>
+                         <option value="MT">MT</option>
+                         <option value="MS">MS</option> 
+                         <option value="MG">MG</option>
+                         <option value="PA">PA</option>
+                         <option value="PB">PB</option>
+                         <option value="PR">PR</option> 
+                         <option value="PE">PE</option> 
+                         <option value="PI">PI</option> 
+                         <option value="RJ">RJ</option> 
+                         <option value="RN">RN</option>
+                         <option value="RS">RS</option>
+                         <option value="RO">RO</option>
+                         <option value="RR">RR</option> 
+                         <option value="SC">SC</option> 
+                         <option value="SP">SP</option>
+                         <option value="SE">SE</option> 
+                         <option value="TO">TO</option>
+                     </select>
+             </div>
+             
+
+             <div class="d-flex justify-content-center fontpix mt-4 mr-3">
+                 <button type="submit" class="btn btn-danger mr-4 botaocanc" routerLink='/entrar'>Cancelar</button>
+                 <button type="submit" class="btn btn-success botaocad" (click)="cadastrar()">Cadastrar</button>
+             </div>
+            </div>
+        </form>
+    </div>
+    <div class="overlay-container">
+        <div class="overlay">
+            <div class="overlay-panel overlay-right bgcad">
+                
             </div>
         </div>
-
-        <div class="col-md-6" id="img-bg"></div>
-
     </div>
 </div>

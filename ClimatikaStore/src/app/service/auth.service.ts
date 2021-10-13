@@ -29,6 +29,12 @@ export class AuthService {
 
   }
 
+  nomeUsuario() {
+    let nome = environment.nomeCompleto
+
+    return nome
+  }
+
   logado() {
     let ok = false
     if(environment.token != ''){

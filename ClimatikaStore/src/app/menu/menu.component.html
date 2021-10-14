@@ -11,20 +11,18 @@
             <ul class="navbar-nav mr-auto text-gold">
 
                 <li class="nav-link" href="#">
-                    <a routerLink='/ajude' class="text-gold" rel="noopener noreferrer">Ajude o Planeta</a>
+                    <a routerLink='/ajude' class="text-g" rel="noopener noreferrer">Ajude o Planeta</a>
                 </li>
                 <li class="nav-link" href="#">
-                    <a routerLink='/nossos-parceiros' class="text-gold" target="_blank" rel="noopener noreferrer">Nossos
+                    <a routerLink='/nossos-parceiros' class="text-g" target="_blank" rel="noopener noreferrer">Nossos
                         Parceiros</a>
                 </li>
                 <li class="nav-link" href="#">
-                    <a routerLink='/sobre' class="text-gold" rel="noopener noreferrer">Sobre</a>
+                    <a routerLink='/sobre' class="text-g" rel="noopener noreferrer">Sobre</a>
                 </li>
             </ul>
-
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2 pesquisa" type="search" placeholder="Pesquise o seu produto"
-                    aria-label="Search">
+                <input type="text" class="form-control mr-sm-2 pesquisa"  placeholder="Pesquise pelo nome do produto"  [(ngModel)]="auth.valor" [ngModelOptions]="{standalone: true}" (keyup)="auth.findByNomeProduto()" >
 
                 <a class="" type="submit">
                     <img src="../../assets/img/icones/pesquisar.png" class="icone-pesquisa" alt="" srcset="">
@@ -35,100 +33,100 @@
     </div>
     <div class="container-fluid">
         <ul class="navbar-nav mr-auto">
-            <button (click)="auth.getAllProdutos()"  class="btn" type="button" aria-haspopup="true" aria-expanded="false">
+            <button [routerLink]="['/inicio']" routerLinkActive="router-link-active"  (click)="auth.getAllProdutos()"  class="btn dropitem" type="button" aria-haspopup="true" aria-expanded="false">
             Todos Produtos
             </button>
             <div class="dropdown">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                <button class="btn dropdown-toggle dropitem" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Cozinha
                 </button>
                 <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
-                    <a (click)="auth.findByCategoriaMae('cozinha')" class="dropdown-item bg-verde btn-outline-info" >Cozinha</a>
-                    <hr class="mt-1 mb-1">
-                    <a (click)="auth.findByCategoriaFilha('embalagens')" value="Embalagens" class="dropdown-item bg-verde" >Embalagens</a>
-                    <a (click)="auth.findByCategoriaFilha('lava-louças')" value="Lava-Louças" class="dropdown-item bg-verde" >Lava-Louças</a>
-                    <a (click)="auth.findByCategoriaFilha('cozinha limpeza')" value="Limpeza" class="dropdown-item bg-verde btn-outline-info" >Limpeza</a>
-                    <a (click)="auth.findByCategoriaFilha('utensílios')" value="Utensílios" class="dropdown-item bg-verde" >Utensílios</a>
+                    <a (click)="auth.findByCategoriaMae('cozinha')"  routerLinkActive="router-link-active"  class="dropdown-item bg-verde btn-outline-info dropitem" >Cozinha</a>
+                    <hr class="mt-1 mb-1"> 
+                    <a (click)="auth.findByCategoriaFilha('embalagens')" value="Embalagens"  class="dropdown-item bg-verde dropitem" >Embalagens</a>
+                    <a (click)="auth.findByCategoriaFilha('lava-louças')"  value="Lava-Louças" class="dropdown-item bg-verde dropitem" >Lava-Louças</a>
+                    <a (click)="auth.findByCategoriaFilha('cozinha limpeza')"  value="Limpeza" class="dropdown-item bg-verde btn-outline-info dropitem" >Limpeza</a>
+                    <a (click)="auth.findByCategoriaFilha('utensílios')"  value="Utensílios" class="dropdown-item bg-verde dropitem" >Utensílios</a>
 
                     
                 </div>
             </div>
 
             <div class="dropdown">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                <button class="btn dropdown-toggle dropitem" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Banheiro
                 </button>
                 <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
-                    <a (click)="auth.findByCategoriaMae('banheiro')" class="dropdown-item bg-verde">Banheiro</a>
+                    <a (click)="auth.findByCategoriaMae('banheiro')" class="dropdown-item bg-verde dropitem">Banheiro</a>
                     <hr class="mt-1 mb-1">
-                    <a (click)="auth.findByCategoriaFilha('acessórios')" class="dropdown-item bg-verde">Acessórios</a>
-                    <a (click)="auth.findByCategoriaFilha('aromatizantes')" class="dropdown-item bg-verde">Aromatizantes</a>
-                    <a (click)="auth.findByCategoriaFilha('banheiro limpeza')" class="dropdown-item bg-verde">Limpeza</a>
-                    <a (click)="auth.findByCategoriaFilha('toalhas')" class="dropdown-item bg-verde">Toalhas</a>
+                    <a (click)="auth.findByCategoriaFilha('acessórios')" class="dropdown-item bg-verde dropitem">Acessórios</a>
+                    <a (click)="auth.findByCategoriaFilha('aromatizantes')" class="dropdown-item bg-verde dropitem">Aromatizantes</a>
+                    <a (click)="auth.findByCategoriaFilha('banheiro limpeza')" class="dropdown-item bg-verde dropitem">Limpeza</a>
+                    <a (click)="auth.findByCategoriaFilha('toalhas')" class="dropdown-item bg-verde dropitem">Toalhas</a>
 
                     
                 </div>
             </div>
 
             <div class="dropdown">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                <button class="btn dropdown-toggle dropitem" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Moda e Beleza
                 </button>
                 <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
-                    <a (click)="auth.findByCategoriaMae('moda e beleza')" class="dropdown-item bg-verde">Moda e Beleza</a>
+                    <a (click)="auth.findByCategoriaMae('moda e beleza')" class="dropdown-item bg-verde dropitem">Moda e Beleza</a>
                     <hr class="mt-1 mb-1">
-                    <a (click)="auth.findByCategoriaFilha('acessórios de moda')" class="dropdown-item bg-verde">Acessórios de Moda</a>
-                    <a (click)="auth.findByCategoriaFilha('cosméticos')" class="dropdown-item bg-verde">Cosméticos</a>
-                    <a (click)="auth.findByCategoriaFilha('maquiagens')" class="dropdown-item bg-verde">Maquiagens</a>
-                    <a (click)="auth.findByCategoriaFilha('roupas')" class="dropdown-item bg-verde">Roupas</a>
+                    <a (click)="auth.findByCategoriaFilha('acessórios de moda')" class="dropdown-item bg-verde dropitem">Acessórios de Moda</a>
+                    <a (click)="auth.findByCategoriaFilha('cosméticos')" class="dropdown-item bg-verde dropitem">Cosméticos</a>
+                    <a (click)="auth.findByCategoriaFilha('maquiagens')" class="dropdown-item bg-verde dropitem">Maquiagens</a>
+                    <a (click)="auth.findByCategoriaFilha('roupas')" class="dropdown-item bg-verde dropitem">Roupas</a>
                     
                     
                 </div>
             </div>
 
             <div class="dropdown">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                <button class="btn dropdown-toggle dropitem" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Higiene Pessoal
                 </button>
                 <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
-                    <a (click)="auth.findByCategoriaMae('higiene pessoal')" class="dropdown-item bg-verde">Higiene Pessoal</a>
+                    <a (click)="auth.findByCategoriaMae('higiene pessoal')" class="dropdown-item bg-verde dropitem">Higiene Pessoal</a>
                     <hr class="mt-1 mb-1">
-                    <a (click)="auth.findByCategoriaFilha('cabelo')" class="dropdown-item bg-verde">Cabelo</a>
-                    <a (click)="auth.findByCategoriaFilha('higiene bucal')" class="dropdown-item bg-verde">Higiene Bucal</a>
-                    <a (click)="auth.findByCategoriaFilha('higiene pele')" class="dropdown-item bg-verde">Pele</a>
-                    <a (click)="auth.findByCategoriaFilha('sabonetes para o corpo')" class="dropdown-item bg-verde">Sabonetes Para o Corpo</a>
+                    <a (click)="auth.findByCategoriaFilha('cabelo')" class="dropdown-item bg-verde dropitem">Cabelo</a>
+                    <a (click)="auth.findByCategoriaFilha('higiene bucal')" class="dropdown-item bg-verde dropitem">Higiene Bucal</a>
+                    <a (click)="auth.findByCategoriaFilha('higiene pele')" class="dropdown-item bg-verde dropitem">Pele</a>
+                    <a (click)="auth.findByCategoriaFilha('sabonetes para o corpo')" class="dropdown-item bg-verde dropitem">Sabonetes Para o Corpo</a>
                                        
                 </div>
             </div>
 
             <div class="dropdown">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                <button class="btn dropdown-toggle dropitem" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Pet
                 </button>
                 <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
-                    <a (click)="auth.findByCategoriaMae('pet')" class="dropdown-item bg-verde">Pet</a>
+                    <a (click)="auth.findByCategoriaMae('pet')" class="dropdown-item bg-verde dropitem">Pet</a>
                     <hr class="mt-1 mb-1">
-                    <a (click)="auth.findByCategoriaFilha('roupas e acessórios para pets')" class="dropdown-item bg-verde">Roupas e Acessórios para Pets</a>
+                    <a (click)="auth.findByCategoriaFilha('roupas e acessórios para pets')" class="dropdown-item bg-verde dropitem">Roupas e Acessórios para Pets</a>
                     
                 </div>
             </div>
 
             <div class="dropdown">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                <button class="btn dropdown-toggle dropitem" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Jardim
                 </button>
                 <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
-                    <a (click)="auth.findByCategoriaMae('jardim')" class="dropdown-item bg-verde">Jardim</a>
+                    <a (click)="auth.findByCategoriaMae('jardim')" class="dropdown-item bg-verde dropitem">Jardim</a>
                     <hr class="mt-1 mb-1">
-                    <a (click)="auth.findByCategoriaFilha('kits de compostagem')" class="dropdown-item bg-verde">Kits de Compostagem</a>
-                    <a (click)="auth.findByCategoriaFilha('jardim limpeza')" class="dropdown-item bg-verde">Limpeza</a>
-                    <a (click)="auth.findByCategoriaFilha('vasos')" class="dropdown-item bg-verde">Vasos</a>
+                    <a (click)="auth.findByCategoriaFilha('kits de compostagem')" class="dropdown-item bg-verde dropitem">Kits de Compostagem</a>
+                    <a (click)="auth.findByCategoriaFilha('jardim limpeza')" class="dropdown-item bg-verde dropitem">Limpeza</a>
+                    <a (click)="auth.findByCategoriaFilha('vasos')" class="dropdown-item bg-verde dropitem">Vasos</a>
                     
                     
                 </div>
@@ -159,10 +157,10 @@
                 <a class="dropdown-item btn-verde" routerLink='/atualizar-cadastro'>Meu Cadastro</a>
                 <div *ngIf="auth.logadoAdmin()">
                     <hr class="hr-menu">
-                    <p class="ml-4 mb-0 text-light">Funções Admin</p>
-                    <hr class="hr-menu">                    
-                    <a class="dropdown-item btn-verde" routerLink='/cadastrar-produto'>Cadastrar Produto</a>
-                    <a class="dropdown-item btn-verde" routerLink='/editar-produto'>Editar Produto</a>
+                    <p class="text-center mb-0 text-warning">Funções Admin</p>
+                    <hr class="hr-menu ">                    
+                    <a class="dropdown-item btn-adm" routerLink='/cadastrar-produto'>Cadastrar Produto</a>
+                    <a class="dropdown-item btn-adm" routerLink='/editar-produto'>Editar Produto</a>
                 </div>
                 <hr class="hr-menu">
                 <a class="dropdown-item btn-verde" href="#">Sair</a>

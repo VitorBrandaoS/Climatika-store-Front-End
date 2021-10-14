@@ -10,7 +10,6 @@ import { AuthService } from '../service/auth.service';
   styleUrls: ['./menu.component.css']
 })
 export class MenuComponent implements OnInit {
-
   idCarrinho: number
   statusVenda: StatusVenda = new StatusVenda()
   valorTotal: number = 0

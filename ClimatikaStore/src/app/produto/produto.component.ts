@@ -35,7 +35,7 @@ export class ProdutoComponent implements OnInit {
   ) { }
 
   ngOnInit() {  
-    
+    window.scroll(0,0)
     this.idProduto = this.route.snapshot.params['codigo']
     this.findProdutoById(this.idProduto)    
     this.findUserById()
@@ -57,13 +57,17 @@ export class ProdutoComponent implements OnInit {
   }
 
   addProduto(){
-    
+    if (this.idUser == 0) {
+      alert("Por favor faça o login antes de adicionar um produto.")
+      this.router.navigate(["/entrar"])
+    }
     this.carrinhoService.adicionarItem(this.idProduto, this.idVenda).subscribe(() =>{
       alert("Produto adicionado ao carrinho com sucesso!")
-      this.router.navigate(["/carrinho", this.idVenda])
+      this.router.navigate(["/carrinho"])
     })
   }
 
+  /*
   openStatusVenda(){
     if (this.statusVenda.status == 'finalizado') {
       this.idVenda = this.statusVenda.id
@@ -83,7 +87,7 @@ export class ProdutoComponent implements OnInit {
         this.router.navigate(["/carrinho"])
       })
     }    
-  }
+  }*/
 
   
 }

@@ -20,8 +20,7 @@ export class InicioComponent implements OnInit {
 
   ngOnInit(){
   window.scroll(0,0)
-  this.auth.findByCategoriaMae()
-  this.auth.findByCategoriaFilha()
+  this.auth.getAllProdutos()
 
   }
 

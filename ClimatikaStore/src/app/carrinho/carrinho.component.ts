@@ -32,7 +32,10 @@ export class CarrinhoComponent implements OnInit {
   ) {   }
 
   ngOnInit() {
-    
+    if (environment.id == 0) {
+      alert("Opá! Você precisa logar para acessar seu carrinho de compras...")
+      this.router.navigate(["/inicio"])
+    }
   }
   
   

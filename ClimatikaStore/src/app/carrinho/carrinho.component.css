@@ -18,3 +18,8 @@
     height: 100%;
     margin-bottom: 30px;
 }
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}

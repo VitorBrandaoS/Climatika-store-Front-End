@@ -71,7 +71,7 @@ export class AuthService {
     })
   }
 
-  findByCategoriaMae(nome: string){    
+  findByCategoriaMae(nome: string){
         this.produtoService.getByCategoriaMae(nome).subscribe((resp: Produto[] ) =>{
         this.listaProduto = resp
       })
@@ -105,15 +105,12 @@ export class AuthService {
   }
 
   findByIdVenda(){
-    if (environment.id == 0) {
-      alert("Opá! Você precisa logar para acessar seu carrinho de compras...")
-      this.router.navigate(["/inicio"])
-    }else{
+    
       this.carrinhoService.getByIdVenda(environment.id).subscribe((resp: StatusVenda) => {
         this.statusVenda = resp
         return this.statusVenda
       })
-    }
+   
   }
 
   calculoTotal(){ 
@@ -128,5 +125,12 @@ export class AuthService {
     });
   }
   
+  removerProduto(n: number){
+    let produto = this.statusVenda.listaProduto.findIndex(resp => resp.codigo === n)
+    alert()
+    let novaLista = this.statusVenda.listaProduto.splice(produto, 1)
+    this.statusVenda.listaProduto = novaLista
+    alert("item removido")
+  }
 
 }

@@ -1,6 +1,7 @@
 import { HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment.prod';
+import { StatusVenda } from '../model/StatusVenda';
 import { AuthService } from '../service/auth.service';
 
 @Component({
@@ -11,6 +12,8 @@ import { AuthService } from '../service/auth.service';
 export class MenuComponent implements OnInit {
 
   idCarrinho: number
+  statusVenda: StatusVenda = new StatusVenda()
+  valorTotal: number = 0
 
   constructor(
     public auth : AuthService
@@ -19,5 +22,5 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
     this.idCarrinho = environment.id
   }
-
+  
 }

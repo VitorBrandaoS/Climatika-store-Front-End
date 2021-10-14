@@ -1,7 +1,4 @@
 <div class="container-fluid bg-cinza">
-    <div class="d-flex flex-row justify-content-end">
-        <button type="submit" class="btn btn-secondary botaocad m-2" routerLink='/editar-produto'>Editar Produto Existente ⇨</button>
-    </div>
     <div class="row d-flex justify-content-center">
         <div class="col-md-6 mt-3 mb-4">
             <h1 class="text-center">Cadastrar Produto</h1>
@@ -25,8 +22,8 @@
                         <option value="Banheiro">Banheiro</option>
                         <option value="Jardim">Jardim</option>                      
                         <option value="Moda e Beleza">Moda e Beleza</option>        
-                        <option value="Pele e Cosméticos">Pele e Cosméticos</option>
-                        <option value="Pet">Pet</option>                      
+                        <option value="Higiene Pessoal">Higiene Pessoal</option>
+                        <option value="Pet">Pet</option>
                     </select>
                 </div>
 
@@ -35,30 +32,32 @@
                     <select [(ngModel)]='produto.categoriaFilha' for="categoriaFilha" class="form-control">
                         <option>Selecione a Sub-Categoria</option>
                         <option>----Cozinha----</option>
-                        <option value="Limpeza">Limpeza</option>
+                        <option value="Cozinha Limpeza">Limpeza</option>
                         <option value="Lava-Louças">Lava-Louças</option>
                         <option value="Utensílios">Utensílios</option>
                         <option value="Embalagens">Embalagens</option>
                         <option>----Banheiro----</option>
-                        <option value="Limpeza">Limpeza</option>
+                        <option value="Banheiro Limpeza">Limpeza</option>
                         <option value="Aromatizantes">Aromatizantes</option>
                         <option value="Acessórios">Acessórios</option>
                         <option value="Toalhas">Toalhas</option>
                         <option>----Moda e Beleza----</option>
-                        <option value="Acessórios de Moda">Pele</option>
                         <option value="Acessórios de Moda">Acessórios de Moda</option>
                         <option value="Maquiagens">Maquiagens</option>
                         <option value="Roupas">Roupas</option>
-                        <option value="Sabonetes para o Corpo">Sabonetes para o Corpo</option>
+                        <option value="Cosméticos">Cosméticos</option>
                         <option>----Pet----</option>
                         <option value="Roupas e Acessórios para Pets">Roupas e Acessórios para Pets</option>
                         <option>----Jardim---</option>
                         <option value="Vasos">Vasos</option>
                         <option value="Kits de Compostagem">Kits de Compostagem</option>
-                        <option value="Limpeza">Limpeza</option>
+                        <option value="Jardim Limpeza">Limpeza</option>
                         <option>----Higiene Pessoal---</option>
-                        <option value="Pele">Pele</option>
-                        <option value="Cosméticos">Cosméticos</option>
+                        <option value="Higiene Pele">Pele</option>
+                        <option value="Sabonetes para o Corpo">Sabonetes para o Corpo</option>
+                        <option value="Cabelo">Cabelo</option>
+                        <option value="Higiene Bucal">Higiene Bucal</option>                    
+                        
                     </select>
                 </div>
 

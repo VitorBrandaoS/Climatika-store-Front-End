@@ -2,11 +2,15 @@ a {
     color:aliceblue !important;
 }
 
-/*
+
+
 a:hover {
-    
+    cursor: pointer;
 }
-*/
+
+.dropitem:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
 
 #logo{
     width: 140px;
@@ -19,7 +23,11 @@ a:hover {
     font-size: 20px;
 }
 
-.text-gold a:hover{
+.text-g:hover{
+   opacity: 0.5;
+}
+
+.text-gold a:hover{    
     outline-style: none;
     text-decoration: none;
 }
@@ -78,7 +86,15 @@ input:enabled{
     background: #42594A;
 }
 
+.btn-adm {
+    background: #42594A;
+}
+.btn-adm:hover{
+    background-color: rgba(255, 201, 51, 0.719);
+}
+
 .btn-verde:hover {
     background-color: #b0c68d;
     border: 1px #42594A solid;
 }
+

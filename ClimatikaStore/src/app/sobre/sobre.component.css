@@ -1,0 +1,30 @@
+.devteam {
+    
+    width: 180px;
+    height: 180px;
+
+    background-position: center;
+    background-size: 180px;
+}
+
+.devteam:hover {
+    border: 2px solid red;
+
+}
+
+.devteam-info {
+    /**/
+    width: 180px;
+    height: 180px;
+    background-color: rgba(22, 22, 22, 0.582);
+    opacity: 0;
+}
+
+.devteam:hover .devteam-info {
+    opacity: 1;
+}
+
+.devteam-icones {
+    width: 20px;
+    height: 20px;
+}

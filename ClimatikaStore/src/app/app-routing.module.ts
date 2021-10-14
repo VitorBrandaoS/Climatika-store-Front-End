@@ -16,6 +16,7 @@ import { ProdutoComponent } from './produto/produto.component';
 import { AtualizarCadastroComponent } from './atualizar-cadastro/atualizar-cadastro.component';
 
 
+
 const routes: Routes = [
 
   {path:'', redirectTo: 'inicio', pathMatch: 'full'},

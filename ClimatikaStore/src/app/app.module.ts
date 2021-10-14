@@ -27,6 +27,7 @@ import { AjudeComponent } from './ajude/ajude.component';
 import { DuvidasComponent } from './duvidas/duvidas.component';
 import { ProdutoComponent } from './produto/produto.component';
 import { AtualizarCadastroComponent } from './atualizar-cadastro/atualizar-cadastro.component';
+import { TesteComponent } from './teste/teste.component';
 
 
 
@@ -50,7 +51,8 @@ import { AtualizarCadastroComponent } from './atualizar-cadastro/atualizar-cadas
     DuvidasComponent,
     ProdutoComponent,
     DuvidasComponent,
-    AtualizarCadastroComponent
+    AtualizarCadastroComponent,
+    TesteComponent
 
   ],
   imports: [

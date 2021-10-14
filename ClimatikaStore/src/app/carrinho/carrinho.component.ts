@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Injectable, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
 import { Produto } from '../model/Produto';
 import { StatusVenda } from '../model/StatusVenda';
 import { Usuario } from '../model/Usuario';
+import { AuthService } from '../service/auth.service';
 import { CarrinhoService } from '../service/carrinho.service';
 import { ProdutoService } from '../service/produto.service';
 
@@ -12,6 +13,7 @@ import { ProdutoService } from '../service/produto.service';
   templateUrl: './carrinho.component.html',
   styleUrls: ['./carrinho.component.css']
 })
+
 export class CarrinhoComponent implements OnInit {
   produto: Produto = new Produto()
   listaProdutos: Produto[]
@@ -25,13 +27,14 @@ export class CarrinhoComponent implements OnInit {
     private router: Router,
     private route: ActivatedRoute,
     private produtoService: ProdutoService,
-    private carrinhoService: CarrinhoService
-  ) { }
+    private carrinhoService: CarrinhoService,
+    public auth: AuthService
+  ) {   }
 
   ngOnInit() {
-    this.idVenda = environment.id
-    this.findByIdVenda(this.idVenda)
+    
   }
+  
   
   findByIdProduto(id: number){    
     this.produtoService.getByIdProduto(id).subscribe((resp: Produto) =>{
@@ -40,17 +43,26 @@ export class CarrinhoComponent implements OnInit {
   }
 
   findByIdVenda(id: number){
-    this.carrinhoService.getByIdVenda(id).subscribe((resp: StatusVenda) => {
-      this.statusVenda = resp
-    })
+    if (id == 0) {
+      alert("Opá! Você precisa logar para acessar seu carrinho de compras...")
+      this.router.navigate(["/inicio"])
+    }else{
+      this.carrinhoService.getByIdVenda(id).subscribe((resp: StatusVenda) => {
+        this.statusVenda = resp
+        return this.statusVenda
+      })
+    }
   }
   
-  calculoTotal(){
+  calculoTotal(){     
+    let total = 0
     this.statusVenda.listaProduto.forEach(element => {
       let valor = element.preco
       let quant = element.quant
-      this.valorTotal = this.valorTotal + (valor * quant)
+      total = total + (valor * quant)
+      this.valorTotal = total
       return this.valorTotal
     });
   }
+  
 }

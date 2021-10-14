@@ -35,18 +35,21 @@
     </div>
     <div class="container-fluid">
         <ul class="navbar-nav mr-auto">
+            <button (click)="auth.getAllProdutos()"  class="btn" type="button" aria-haspopup="true" aria-expanded="false">
+            Todos Produtos
+            </button>
             <div class="dropdown">
                 <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Cozinha
                 </button>
                 <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
-                    <button [(ngModel)]='auth.valor' value="Cozinha" class="dropdown-item bg-verde btn-outline-info" >Cozinha</button>
-                    <hr class="dropdown-item">
-                    <a value="Limpeza" class="dropdown-item bg-verde btn-outline-info" >Limpeza</a>
-                    <a value="Lava-Louças" class="dropdown-item bg-verde" >Lava-Louças</a>
-                    <a value="Utensílios" class="dropdown-item bg-verde" >Utensílios</a>
-                    <a value="Embalagens" class="dropdown-item bg-verde" >Embalagens</a>
+                    <a (click)="auth.findByCategoriaMae('cozinha')" class="dropdown-item bg-verde btn-outline-info" >Cozinha</a>
+                    <hr class="mt-1 mb-1">
+                    <a (click)="auth.findByCategoriaFilha('limpeza')" value="Limpeza" class="dropdown-item bg-verde btn-outline-info" >Limpeza</a>
+                    <a (click)="auth.findByCategoriaFilha('lava-louças')" value="Lava-Louças" class="dropdown-item bg-verde" >Lava-Louças</a>
+                    <a (click)="auth.findByCategoriaFilha('utensílios')" value="Utensílios" class="dropdown-item bg-verde" >Utensílios</a>
+                    <a (click)="auth.findByCategoriaFilha('embalagens')" value="Embalagens" class="dropdown-item bg-verde" >Embalagens</a>
                 </div>
             </div>
 
@@ -56,10 +59,12 @@
                     Banheiro
                 </button>
                 <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item bg-verde" href="#">Aromatizantes</a>
-                    <a class="dropdown-item bg-verde" href="#">Acessórios</a>
-                    <a class="dropdown-item bg-verde" href="#">Limpeza</a>
-                    <a class="dropdown-item bg-verde" href="#">Toalhas</a>
+                    <a (click)="auth.findByCategoriaMae('banheiro')" class="dropdown-item bg-verde">Banheiro</a>
+                    <hr class="mt-1 mb-1">
+                    <a class="dropdown-item bg-verde">Aromatizantes</a>
+                    <a class="dropdown-item bg-verde">Acessórios</a>
+                    <a class="dropdown-item bg-verde">Limpeza</a>
+                    <a class="dropdown-item bg-verde">Toalhas</a>
                 </div>
             </div>
 
@@ -69,10 +74,12 @@
                     Moda e Beleza
                 </button>
                 <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item bg-verde" href="#">Sabonetes para o Corpo</a>
-                    <a class="dropdown-item bg-verde" href="#">Maquiagens</a>
-                    <a class="dropdown-item bg-verde" href="#">Roupas</a>
-                    <a class="dropdown-item bg-verde" href="#">Acessórios de Moda</a>
+                    <a (click)="auth.findByCategoriaMae('moda e beleza')" class="dropdown-item bg-verde">Moda e Beleza</a>
+                    <hr class="mt-1 mb-1">
+                    <a class="dropdown-item bg-verde">Sabonetes para o Corpo</a>
+                    <a class="dropdown-item bg-verde">Maquiagens</a>
+                    <a class="dropdown-item bg-verde">Roupas</a>
+                    <a class="dropdown-item bg-verde">Acessórios de Moda</a>
                 </div>
             </div>
 
@@ -82,8 +89,10 @@
                     Higiene Pessoal
                 </button>
                 <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item bg-verde" href="#">Pele</a>
-                    <a class="dropdown-item bg-verde" href="#">Cosméticos</a>
+                    <a (click)="auth.findByCategoriaMae('higiene pessoal')" class="dropdown-item bg-verde">Higiene Pessoal</a>
+                    <hr class="mt-1 mb-1">
+                    <a class="dropdown-item bg-verde">Pele</a>
+                    <a class="dropdown-item bg-verde">Cosméticos</a>
                 </div>
             </div>
 
@@ -93,7 +102,10 @@
                     Pet
                 </button>
                 <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item bg-verde" href="#">Roupas e Acessórios para Pets</a>
+                    <a (click)="auth.findByCategoriaMae('pet')" class="dropdown-item bg-verde">Pet</a>
+                    <hr class="mt-1 mb-1">
+                    <a class="dropdown-item bg-verde">Roupas e Acessórios para Pets</a>
+                    
                 </div>
             </div>
 
@@ -103,9 +115,11 @@
                     Jardim
                 </button>
                 <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item bg-verde" href="#">Vasos</a>
-                    <a class="dropdown-item bg-verde" href="#">Kits de Compostagem</a>
-                    <a class="dropdown-item bg-verde" href="#">Limpeza</a>
+                    <a (click)="auth.findByCategoriaMae('jardim')" class="dropdown-item bg-verde">Jardim</a>
+                    <hr class="mt-1 mb-1">
+                    <a class="dropdown-item bg-verde">Vasos</a>
+                    <a class="dropdown-item bg-verde">Kits de Compostagem</a>
+                    <a class="dropdown-item bg-verde">Limpeza</a>
                 </div>
             </div>
 
@@ -113,7 +127,7 @@
         <span class="align-items-center text-light mr-3" *ngIf="auth.logado()">Olá, {{auth.nomeUsuario()}}!</span>
         <form class="form-inline my-2 my-lg-0 justify-content-end">
             <button *ngIf="auth.logado()" class="btn btn-verde my-2 my-sm-0 mr-2"
-                [routerLink]="['/carrinho', idCarrinho]" type="submit">
+                [routerLink]="['/carrinho']" type="submit">
                 <img src="../../assets/img/icones/cesto-branco.png" width="25px" height="auto"
                     alt="carrinho de compras">
             </button>

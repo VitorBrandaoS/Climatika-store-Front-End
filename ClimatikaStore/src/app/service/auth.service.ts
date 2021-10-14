@@ -7,6 +7,9 @@ import { environment } from 'src/environments/environment.prod';
 import { UsuarioLogin } from '../model/UsuarioLogin';
 import { ProdutoService } from './produto.service';
 import { Produto } from '../model/Produto';
+import { StatusVenda } from '../model/StatusVenda';
+import { CarrinhoService } from './carrinho.service';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -15,10 +18,14 @@ export class AuthService {
 
   listaProduto: Produto[]
   valor = ''
+  statusVenda: StatusVenda = new StatusVenda()
+  valorTotal: number = 0
 
   constructor(
     private http: HttpClient,
-    private produtoService: ProdutoService
+    private produtoService: ProdutoService,
+    private carrinhoService: CarrinhoService,
+    private router: Router
   ) { }
 
   token={
@@ -64,24 +71,17 @@ export class AuthService {
     })
   }
 
-  findByCategoriaMae(){
-    if(this.valor == ''){
-      this.getAllProdutos()
-    } else{
-        this.produtoService.getByCategoriaMae(this.valor).subscribe((resp: Produto[] ) =>{
+  findByCategoriaMae(nome: string){    
+        this.produtoService.getByCategoriaMae(nome).subscribe((resp: Produto[] ) =>{
         this.listaProduto = resp
       })
-    }
+    
   }
   
-  findByCategoriaFilha(){
-    if(this.valor == ''){
-      this.getAllProdutos()
-    } else{
-      this.produtoService.getByCategoriaFilha(this.valor).subscribe((resp: Produto[]) =>{
+  findByCategoriaFilha(nome: string){  
+      this.produtoService.getByCategoriaFilha(nome).subscribe((resp: Produto[]) =>{
         this.listaProduto = resp
       })
-    }
   }
   
   telaCadastro(){
@@ -93,5 +93,29 @@ export class AuthService {
     return ok
   }
 
+  findByIdVenda(){
+    if (environment.id == 0) {
+      alert("Opá! Você precisa logar para acessar seu carrinho de compras...")
+      this.router.navigate(["/inicio"])
+    }else{
+      this.carrinhoService.getByIdVenda(environment.id).subscribe((resp: StatusVenda) => {
+        this.statusVenda = resp
+        return this.statusVenda
+      })
+    }
+  }
+
+  calculoTotal(){ 
+    this.findByIdVenda()
+    let total = 0
+    this.statusVenda.listaProduto.forEach(element => {
+      let valor = element.preco
+      let quant = element.quant
+      total = total + (valor * quant)
+      this.valorTotal = total
+      return this.valorTotal
+    });
+  }
+  
 
 }

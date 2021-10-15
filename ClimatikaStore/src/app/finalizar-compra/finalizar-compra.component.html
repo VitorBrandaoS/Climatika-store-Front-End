@@ -1,50 +1,146 @@
-<div class="container d-flex justify-content-center">
+<div class="container-fluid bg-geral">
+  <div class="row">
+    <div class="d-flex m-3 p-3 ">
 
-    <div class="d-flex flex-row m-3 p-3 layoutCarrinho">
-        <div class="col-md-12">
+      <div class="col-md-12 d-flex flex-column">
 
+        <div class="m-auto col-md-7 col-lg-6 col-sm-12 col-12">
+          <h3 class="text-center mb-2">Frete e Dados da Compra</h3>
 
-            <div class="ml-1 pt-3 pl-3 fundoCarrinho">
-                <h2>Pagamento</h2>
-                <div class="d-block">
+          <div class="frete mt-2">
+            <p><b>Compras Acima de R$60,00 - Frete Grátis para Todo Brasil!</b></p>
+            <p>Regiões Sul e Sudeste - Frete Fixo R$22,00</p>
+            <p>Regiões Nordeste, Norte - Frete Fixo - R$28,00</p>
+            <p>Região Centro-Oeste - Frete Fixo - R$30,00</p>
+          </div>
 
-                    <hr>
-                    <p>Subtotal:</p>
-                    <input type="text" readonly>
+          <div class="frete mt-2">
+            <h4 class="mt-5">Dados da Compra:</h4>
+            <p>Nome: {{usuario.nomeCompleto}}</p>
+            <p>Endereço: {{usuario.endereco}}, {{usuario.cidade}}, {{usuario.estado}}</p>
+            <button class="btn btn-success m-2" routerLink="\atualizar-cadastro">Editar Cadastro</button>
+          </div>
 
-                    <div class="mt-3">
-                            <!-- Button trigger modal -->
-<button type="button" class="btn btn-success" data-toggle="modal" data-target="#staticBackdrop">
-    Realizar pagamento
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Compra realizada com sucesso!</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
         </div>
-        <div class="modal-body">
-          Obrigado por colaborar com nosso projeto para ajudar nosso planeta.
+
+        <div class="m-auto col-lg-7 col-md-7 col-sm-12 col-12">
+          <h3>Pagamento</h3>
+
+          <div class="container mt-4 mb-4" id="pagamentos">
+            <nav>
+              <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
+
+                <a class="nav-link active text-secondary font-weight-bold" id="nav-todasPostagens-tab" data-toggle="tab"
+                  href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Boleto</a>
+
+                <a class="nav-link text-secondary font-weight-bold" id="nav-minhasPostagens-tab" data-toggle="tab"
+                  href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Pix</a>
+
+                <a class="nav-link text-secondary font-weight-bold" id="nav-postagemTema" data-toggle="tab"
+                  href="#postagemTema" role="tab" aria-controls="nav-postagemTema" aria-selected="false">PicPay (em
+                  breve!)</a>
+              </div>
+            </nav>
+            <div class="tab-content mt-5" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-home-tab">
+
+                <div class="card-columns">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#staticBackdrop">
+                        Realizar pagamento
+                      </button>
+                      <p class="card-text"></p>
+                      <p class="card-text">
+                        <small class="text-muted">
+
+                        </small>
+                      </p>
+
+
+                    </div>
+                  </div>
+
+                </div>
+
+
+              </div>
+              <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="minhasPostagens-tab">
+
+                <div class="card-columns">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <small class="text-muted">Tema:</small>
+                      <p class="card-text"></p>
+                      <p class="card-text">
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#staticBackdrop">
+                          Realizar pagamento
+                        </button>
+                      </p>
+
+                      <a class="text-secondary mr-3">Editar</a>
+                      <a class="text-dark" href="">Apagar</a>
+
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
+
+                <div class="card-columns">
+                  <div class="card text-center">
+                    <div class="card-body">
+                      <h5 class="card-title"></h5>
+                      <p class="card-text"></p>
+                      <p class="card-text">
+                      </p>
+                      <h3>Em breve implementaremos esta e outras formas de pagamento!</h3>
+
+
+                      <p class="card-text">
+                        <small class="text-muted">
+                          autor: </small>
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Compra realizada com sucesso!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Obrigado por colaborar com nosso projeto para ajudar nosso planeta.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
-                    </div>
-                    
-            
-
-                    <a routerLink="/inicio" class="text-secondary align-self-center">← Continuar Comprando</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
 </div>

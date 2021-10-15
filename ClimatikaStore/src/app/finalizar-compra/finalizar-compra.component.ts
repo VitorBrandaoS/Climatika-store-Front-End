@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment.prod';
+import { Usuario } from '../model/Usuario';
+import { UsuarioService } from '../service/usuario.service';
 
 @Component({
   selector: 'app-finalizar-compra',
@@ -7,9 +10,29 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FinalizarCompraComponent implements OnInit {
 
-  constructor() { }
+  usuario: Usuario = new Usuario
 
-  ngOnInit(): void {
+  constructor(
+    private usuarioService: UsuarioService
+  ) { }
+
+  ngOnInit() {
+    this.findUserById()
   }
+
+  findUserById(){
+    this.usuarioService.getByIdUsuario(environment.id).subscribe((resp: Usuario) =>{
+      this.usuario = resp
+    })
+
+  }
+
+  /*
+  findByCategoriaFilha(nome: string){  
+    this.produtoService.getByCategoriaFilha(nome).subscribe((resp: Produto[]) =>{
+      this.listaProduto = resp
+    })
+}
+*/
 
 }

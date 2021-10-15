@@ -1,6 +1,5 @@
 .fundo{
-  background-image: url('../../assets/img/logincadastro/patternlogin.png');
-  height: auto;
+  background-image: url('../../assets/img/logincadastro/backgroundforest1.jpg');
   margin: 0;
 }
 
@@ -11,12 +10,14 @@ body, html{
 }
 
 
+
+
 /*CONTAINER*/
 
 
 .bgcad{
-background-image: url('../../assets/img/logincadastro/pexels-photo-5686712.jpeg');
-background-size: 800px;
+background-image: url('../../assets/img/logincadastro/lalacad.png');
+
 
 }
 
@@ -42,9 +43,13 @@ background-size: 800px;
 
 
 h3 {
-	font-weight: bold;
+  font-family: anotherday;
+  background-image: linear-gradient(rgb(168, 194, 168), rgb(86, 155, 115));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 45px;
 	margin: 0;
-  margin-top: 12px;
+  margin-top: 90px !important;
   text-align: center;
 }
 
@@ -121,9 +126,8 @@ form {
 
 
 .overlay {
-	background: #FF416C;
-	background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-	background: linear-gradient(to right, #FF4B2B, #FF416C);
+	background: rgb(230, 231, 228);
+	background: radial-gradient(rgb(239, 240, 235),rgb(230, 231, 228),  rgb(203, 212, 203));
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -194,6 +198,7 @@ input:focus{
   height: 550px;
   background: #fff;
   padding: 30px;
+  padding-top: 0px;
   flex-wrap: wrap;
 }
 
@@ -219,6 +224,7 @@ input:focus{
   
 }
 .wrapper .form-group label{
+  font-family: adam;
   position: absolute;
   bottom: 0.5px;
   font-size: 13px;
@@ -239,10 +245,17 @@ input:focus{
   transform: scaleX(1);
 }
 
+.cid{
+  width: 195px !important;
+}
+
 
   /*FIM DE INPUTS*/
 
   /*SELECT*/
+
+
+
   select:focus{
     outline: 0;
     box-shadow: 0 0 0 0;
@@ -252,55 +265,60 @@ input:focus{
     height: 30px;
     width: 20%;
     position: relative;
-    
+    text-transform: capitalize;
+    color: rgb(80, 88, 80);
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;  
   }
+
   .wrapper .sel select{
+    font-family: adam;
     height: 100%;
-    width: 15%;
+    width: 27%;
     border: none;
     font-size: 17px;
     border-bottom: 2px solid #8db39c;
+    left: 140px;
+    bottom: 25px;
   }
 
-  .sel select:focus ~ label,
-.sel select:valid ~ label{
-  transform: translateY(-20px);
-  font-size: 10px;
-  color: #81b194;
+  option:hover{
+    background: rgb(111, 160, 114);
+  }
+
+
+  .wrapper .sel label{
+    font-size: 13px;
+    text-align: start;
+    left: 60px;
+    color: rgb(184, 189, 184);
+    pointer-events: none;
+    transition: all 0.3s ease;
 }
 
-
-.wrapper .sel label{
-  font-size: 13px;
-  text-align: start;
-  left: 60px;
-  color: rgb(184, 189, 184);
-  pointer-events: none;
-  transition: all 0.3s ease;
+  .sel .underline{
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
 }
 
-.sel .underline{
-  position: absolute;
-  height: 2px;
-  width: 100%;
-  bottom: 0;
+  .sel .underline:before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    color: #81b194;
+    background: #81b194;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
 }
 
-.sel .underline:before{
-  position: absolute;
-  content: "";
-  height: 100%;
-  width: 100%;
-  color: #81b194;
-  background: #81b194;
-  transform: scaleX(0);
-  transform-origin: center;
-  transition: transform 0.3s ease;
-}
-
-.sel select:focus ~ .underline:before,
-.sel select:valid ~ .underline:before{
-  transform: scaleX(1);
+  .sel select:focus ~ .underline:before,
+  .sel select:valid ~ .underline:before{
+    transform: scaleX(1);
 }
 
   /*FIM DE SELECT*/
@@ -309,6 +327,7 @@ input:focus{
 
 
  .botaocad {
+  font-family: adam;
     border: none;
     background: rgb(98, 131, 100);
     cursor: pointer;
@@ -318,6 +337,7 @@ input:focus{
     color: rgb(181, 221, 188);
     margin-left: 25px;
     box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+    
 
  }
 
@@ -326,9 +346,11 @@ input:focus{
       box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
     }
 
-    .botaocanc{      
+    .botaocanc{  
+  
+    font-family: adam; 
     border: none;
-     background: rgb(223, 43, 43);
+    background: rgb(223, 43, 43);
     cursor: pointer;
     border-radius: 3px;
     padding: 6px;

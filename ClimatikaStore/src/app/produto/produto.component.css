@@ -1,9 +1,9 @@
 .foto-produto {
     display: block;
-    width: 80%;
-    height: auto;
-    margin: auto;
-
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+    border-radius: 10px;
 }
 
 .nome-produto {

@@ -11,10 +11,11 @@ import { StatusVenda } from '../model/StatusVenda';
 import { CarrinhoService } from './carrinho.service';
 import { Router } from '@angular/router';
 
+
 @Injectable({
   providedIn: 'root'
 })
-export class AuthService {
+export class AuthService{
 
   listaProduto: Produto[]
   valor: string
@@ -27,6 +28,7 @@ export class AuthService {
     private carrinhoService: CarrinhoService,
     private router: Router
   ) { }
+
 
   token={
     headers: new HttpHeaders().set('Authorization', environment.token)
@@ -114,23 +116,28 @@ export class AuthService {
   }
 
   calculoTotal(){ 
+    console.log("Inicio do calculo")
     this.findByIdVenda()
     let total = 0
-    this.statusVenda.listaProduto.forEach(element => {
-      let valor = element.preco
-      let quant = element.quant
-      total = total + (valor * quant)
-      this.valorTotal = total
-      return this.valorTotal
-    });
+    if (this.statusVenda.listaProduto.length == 0) {
+      this.valorTotal = 0
+    }else{
+      this.statusVenda.listaProduto.forEach((element) => {
+        let valor = element.preco
+        let quant = element.quant
+        total = total + (valor * quant)
+        this.valorTotal = total
+        return this.valorTotal
+      });
+    }    
+    console.log("Término do calculo")
   }
   
-  removerProduto(n: number){
-    let produto = this.statusVenda.listaProduto.findIndex(resp => resp.codigo === n)
-    alert()
-    let novaLista = this.statusVenda.listaProduto.splice(produto, 1)
-    this.statusVenda.listaProduto = novaLista
-    alert("item removido")
+  removerProduto(idProduto: number){
+    this.carrinhoService.removerItem(idProduto, environment.id).subscribe((resp: StatusVenda) => {
+      this.statusVenda = resp
+      this.calculoTotal()
+    })
   }
 
 }

@@ -36,6 +36,8 @@ export class CarrinhoComponent implements OnInit {
       alert("Opá! Você precisa logar para acessar seu carrinho de compras...")
       this.router.navigate(["/inicio"])
     }
+    this.auth.findByIdVenda()
+    
   }
   
   

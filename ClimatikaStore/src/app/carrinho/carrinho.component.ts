@@ -53,7 +53,7 @@ export class CarrinhoComponent implements OnInit {
       })
     }
   }
-  
+  /*
   calculoTotal(){     
     let total = 0
     this.statusVenda.listaProduto.forEach(element => {
@@ -63,6 +63,6 @@ export class CarrinhoComponent implements OnInit {
       this.valorTotal = total
       return this.valorTotal
     });
-  }
+  }*/
   
 }

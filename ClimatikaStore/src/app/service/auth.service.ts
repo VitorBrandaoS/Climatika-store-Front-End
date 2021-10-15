@@ -17,7 +17,7 @@ import { Router } from '@angular/router';
 export class AuthService {
 
   listaProduto: Produto[]
-  valor = ''
+  valor: string
   statusVenda: StatusVenda = new StatusVenda()
   valorTotal: number = 0
 
@@ -82,6 +82,17 @@ export class AuthService {
       this.produtoService.getByCategoriaFilha(nome).subscribe((resp: Produto[]) =>{
         this.listaProduto = resp
       })
+  }
+
+  findByNomeProduto(){
+    if (this.valor == "") {
+      this.getAllProdutos()
+    }else{
+      this.produtoService.getByNomeProduto(this.valor).subscribe((resp: Produto[]) => {
+        this.listaProduto = resp
+      })
+    }
+      
   }
   
   telaCadastro(){

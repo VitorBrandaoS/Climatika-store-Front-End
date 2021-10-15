@@ -14,6 +14,7 @@ import { NossosParceirosComponent } from './nossos-parceiros/nossos-parceiros.co
 import { DuvidasComponent } from './duvidas/duvidas.component';
 import { ProdutoComponent } from './produto/produto.component';
 import { AtualizarCadastroComponent } from './atualizar-cadastro/atualizar-cadastro.component';
+import { FinalizarCompraComponent } from './finalizar-compra/finalizar-compra.component';
 
 
 
@@ -34,7 +35,8 @@ const routes: Routes = [
 {path: 'ajude', component: AjudeComponent},
 {path: 'duvidas', component: DuvidasComponent},
 {path: 'produto/:codigo', component: ProdutoComponent},
-{path: 'atualizar-cadastro', component: AtualizarCadastroComponent}
+{path: 'atualizar-cadastro', component: AtualizarCadastroComponent},
+{path: 'finalizar-compra', component: FinalizarCompraComponent}
 
 ];
 

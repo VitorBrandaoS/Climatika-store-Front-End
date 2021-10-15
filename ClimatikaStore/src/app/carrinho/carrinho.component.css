@@ -18,3 +18,19 @@
     height: 100%;
     margin-bottom: 30px;
 }
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.x {
+    font-size: 10pt;
+}
+
+
+.tot{
+    align-items: center;
+    font-size: 30pt;
+    
+}

@@ -17,6 +17,7 @@ import { AtualizarCadastroComponent } from './atualizar-cadastro/atualizar-cadas
 import { FinalizarCompraComponent } from './finalizar-compra/finalizar-compra.component';
 
 
+
 const routes: Routes = [
 
   {path:'', redirectTo: 'inicio', pathMatch: 'full'},

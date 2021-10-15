@@ -1,4 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*FONTES*/
+
+@font-face {
+    font-family: adam;
+    src: url(assets/font/Adam-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: anotherday;
+    src: url(assets/font/AnotherDayV2.ttf) format('truetype');
+}
+
+
+/*FIM DE FONTES*/
+
+
 .bg-cinza {
     background-color: #D8E7D7;
 }

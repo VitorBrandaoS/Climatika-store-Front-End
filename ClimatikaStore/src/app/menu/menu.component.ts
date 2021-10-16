@@ -16,10 +16,16 @@ export class MenuComponent implements OnInit {
 
   constructor(
     public auth : AuthService
-  ) { }
+  ) { 
+    
+  }
 
   ngOnInit() {
     this.idCarrinho = environment.id
+    
   }
   
+ 
+   
+
 }

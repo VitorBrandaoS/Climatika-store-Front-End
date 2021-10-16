@@ -49,8 +49,7 @@ export class CadastrarComponent implements OnInit {
         this.openStatusVenda()
         this.router.navigate(["/entrar"])
         alert("Usuário cadastrado com sucesso!")
-      })
-      
+      })      
     }
 
   }

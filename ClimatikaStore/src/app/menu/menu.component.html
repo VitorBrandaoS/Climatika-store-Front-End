@@ -152,9 +152,12 @@
             </button>
             <div class="dropdown-menu bg-verde">
                 <!-- Dropdown menu links -->
-                <a class="dropdown-item btn-verde" href="#">Meus Pedidos</a>
-                <a class="dropdown-item btn-verde" href="#">Meus Favoritos</a>
-                <a class="dropdown-item btn-verde" routerLink='/atualizar-cadastro'>Meu Cadastro</a>
+                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+                    Tooltip on left
+                  </button>
+                <a class="dropdown-item btn-verde" data-toggle="tooltip" data-placement="left" title="Tooltip on left"><s>Meus Pedidos</s> (Em breve)</a>
+                <a class="dropdown-item btn-verde" data-toggle="tooltip" data-placement="left" title="Tooltip on left"><s>Meus Favoritos</s> (Em breve)</a>
+                <a class="dropdown-item btn-verde" routerLink='/atualizar-cadastro'>Editar Cadastro</a>
                 <div *ngIf="auth.logadoAdmin()">
                     <hr class="hr-menu">
                     <p class="text-center mb-0 text-warning">Funções Admin</p>
@@ -184,3 +187,8 @@
         -->
     </div>
 </nav>
+<script>
+    $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>

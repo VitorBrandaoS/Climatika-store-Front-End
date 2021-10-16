@@ -188,7 +188,7 @@
   
   .wrapper{
     width: 350px;
-    height: 550px;
+    height: 630px;
     background: #fff;
     padding: 30px;
     flex-wrap: wrap;
@@ -344,3 +344,7 @@
       }
    /*FIM DE BOTOES*/
   
+   .fundo{
+     background-image: url("../../assets/img/logincadastro/patternlogin.png");
+     
+   }

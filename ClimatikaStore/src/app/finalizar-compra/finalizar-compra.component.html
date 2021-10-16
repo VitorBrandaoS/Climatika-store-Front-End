@@ -1,6 +1,6 @@
 <div class="container-fluid bg-geral">
-  <div class="row">
-    <div class="d-flex m-3 p-3 ">
+  <div class="row  justify-content-center">
+    <div class="d-flex m-3 p-3">
 
       <div class="col-md-12 d-flex flex-column">
 
@@ -8,23 +8,24 @@
           <h3 class="text-center mb-2">Frete e Dados da Compra</h3>
 
           <div class="frete mt-2">
-            <p><b>Compras Acima de R$60,00 - Frete Grátis para Todo Brasil!</b></p>
+            <p><b>Compras Acima de R$100,00 - Frete Grátis para Todo o Brasil!</b></p>
             <p>Regiões Sul e Sudeste - Frete Fixo R$22,00</p>
             <p>Regiões Nordeste, Norte - Frete Fixo - R$28,00</p>
             <p>Região Centro-Oeste - Frete Fixo - R$30,00</p>
           </div>
 
           <div class="frete mt-2">
-            <h4 class="mt-5">Dados da Compra:</h4>
+            <h4 class="mt-4">Dados da Compra:</h4>
             <p>Nome: {{usuario.nomeCompleto}}</p>
-            <p>Endereço: {{usuario.endereco}}, {{usuario.cidade}}, {{usuario.estado}}</p>
-            <button class="btn btn-success m-2" routerLink="\atualizar-cadastro">Editar Cadastro</button>
+            <p>Endereço: {{usuario.endereco}} </p>
+            <p>{{usuario.cidade}}, {{usuario.estado}}</p>
+            <button class="btn btn-success m-2" routerLink="/atualizar-cadastro">Editar Cadastro</button>
           </div>
 
         </div>
 
         <div class="m-auto col-lg-7 col-md-7 col-sm-12 col-12">
-          <h3>Pagamento</h3>
+          <h3 class="text-center mt-3">Pagamento</h3>
 
           <div class="container mt-4 mb-4" id="pagamentos">
             <nav>
@@ -41,11 +42,11 @@
                   breve!)</a>
               </div>
             </nav>
-            <div class="tab-content mt-5" id="nav-tabContent">
+            <div class="tab-content mt-5 " id="nav-tabContent">
               <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-home-tab">
 
                 <div class="card-columns">
-                  <div class="card text-center">
+                  <div class="card text-center boleto">
                     <div class="card-body">
                       <h5 class="card-title"></h5>
                       <button type="button" class="btn btn-success" data-toggle="modal" data-target="#staticBackdrop">
@@ -57,8 +58,6 @@
 
                         </small>
                       </p>
-
-
                     </div>
                   </div>
 
@@ -69,20 +68,14 @@
               <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="minhasPostagens-tab">
 
                 <div class="card-columns">
-                  <div class="card text-center">
+                  <div class="card text-center pix">
                     <div class="card-body">
                       <h5 class="card-title"></h5>
-                      <small class="text-muted">Tema:</small>
-                      <p class="card-text"></p>
                       <p class="card-text">
                         <button type="button" class="btn btn-success" data-toggle="modal" data-target="#staticBackdrop">
                           Realizar pagamento
                         </button>
                       </p>
-
-                      <a class="text-secondary mr-3">Editar</a>
-                      <a class="text-dark" href="">Apagar</a>
-
                     </div>
                   </div>
 
@@ -94,19 +87,13 @@
               <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
 
                 <div class="card-columns">
-                  <div class="card text-center">
+                  <div class="card text-center pickpay">
                     <div class="card-body">
                       <h5 class="card-title"></h5>
                       <p class="card-text"></p>
                       <p class="card-text">
                       </p>
-                      <h3>Em breve implementaremos esta e outras formas de pagamento!</h3>
-
-
-                      <p class="card-text">
-                        <small class="text-muted">
-                          autor: </small>
-                      </p>
+                      <h4>Em breve implementaremos esta e outras formas de pagamento!</h4>
                     </div>
 
                   </div>

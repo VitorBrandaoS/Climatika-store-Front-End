@@ -7,3 +7,21 @@
 .frete p{
     margin: 0px;
 }
+
+.boleto {    
+    border-radius: 30px;
+    width: 300px;
+    height: 100px;
+}
+
+.pix {    
+    border-radius: 30px;
+    width: 300px;
+    height: 100px;
+}
+
+.pickpay {    
+    border-radius: 30px;
+    width: 300px;
+    height: 200px;
+}

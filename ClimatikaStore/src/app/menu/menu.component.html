@@ -136,7 +136,7 @@
         <span class="align-items-center text-light mr-3" *ngIf="auth.logado()">Olá, {{auth.nomeUsuario()}}!</span>
         <form class="form-inline my-2 my-lg-0 justify-content-end">
             <button *ngIf="auth.logado()" class="btn btn-verde my-2 my-sm-0 mr-2"
-                [routerLink]="['/carrinho']" type="submit">
+                 [routerLink]="['/carrinho']" type="submit">
                 <img src="../../assets/img/icones/cesto-branco.png" width="25px" height="auto"
                     alt="carrinho de compras">
             </button>

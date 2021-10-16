@@ -14,12 +14,12 @@ export class EditProdutoComponent implements OnInit {
   listaProduto: Produto[]
   constructor(
     private produtoService: ProdutoService,
-    private authService: AuthService
+    public auth: AuthService
   ){ }
 
   ngOnInit(){
     window.scroll(0,0)
-    this.getAllProdutos()
+    this.auth.getAllProdutos()
   
     }
   

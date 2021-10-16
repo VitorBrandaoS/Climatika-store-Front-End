@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment.prod';
 import { StatusVenda } from '../model/StatusVenda';
 import { AuthService } from '../service/auth.service';
+import { createPopper } from '@popperjs/core';
 
 @Component({
   selector: 'app-menu',
@@ -16,14 +17,15 @@ export class MenuComponent implements OnInit {
 
   constructor(
     public auth : AuthService
-  ) { 
-    
-  }
+  ) {  }
 
   ngOnInit() {
     this.idCarrinho = environment.id
     
   }
+
+
+
   
  
    

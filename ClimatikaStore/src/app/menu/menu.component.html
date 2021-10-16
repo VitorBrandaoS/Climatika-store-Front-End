@@ -152,11 +152,8 @@
             </button>
             <div class="dropdown-menu bg-verde">
                 <!-- Dropdown menu links -->
-                <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
-                    Tooltip on left
-                  </button>
-                <a class="dropdown-item btn-verde" data-toggle="tooltip" data-placement="left" title="Tooltip on left"><s>Meus Pedidos</s> (Em breve)</a>
-                <a class="dropdown-item btn-verde" data-toggle="tooltip" data-placement="left" title="Tooltip on left"><s>Meus Favoritos</s> (Em breve)</a>
+                <a class="dropdown-item btn-verde" data-toggle="tooltip" data-placement="left" title="Em breve..."><s>Meus Pedidos</s></a>
+                <a class="dropdown-item btn-verde" data-toggle="tooltip" data-placement="left" title="Em breve..."><s>Meus Favoritos</s></a>
                 <a class="dropdown-item btn-verde" routerLink='/atualizar-cadastro'>Editar Cadastro</a>
                 <div *ngIf="auth.logadoAdmin()">
                     <hr class="hr-menu">

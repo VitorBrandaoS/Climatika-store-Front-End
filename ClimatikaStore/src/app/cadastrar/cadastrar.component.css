@@ -274,7 +274,6 @@ input:focus{
   }
 
   .wrapper .sel select{
-    font-family: adam;
     height: 100%;
     width: 27%;
     border: none;

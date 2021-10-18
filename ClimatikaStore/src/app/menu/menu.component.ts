@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment.prod';
 import { StatusVenda } from '../model/StatusVenda';
 import { AuthService } from '../service/auth.service';
-import { createPopper } from '@popperjs/core';
+
 import { CarrinhoService } from '../service/carrinho.service';
 import { Usuario } from '../model/Usuario';
 import { UsuarioService } from '../service/usuario.service';

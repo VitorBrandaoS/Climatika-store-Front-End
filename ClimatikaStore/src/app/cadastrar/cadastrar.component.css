@@ -1,6 +1,7 @@
 .fundo{
   background-image: url('../../assets/img/logincadastro/backgroundforest1.jpg');
   margin: 0;
+  min-height: 800px !important;
 }
 
 body, html{
@@ -94,7 +95,7 @@ form {
 	position: relative;
 	overflow: hidden;
 	width: 1000px;
-  height: 90vh;
+  height: 560px;
 	max-width: 100%;
 	min-height: 480px;
 }
@@ -273,7 +274,6 @@ input:focus{
   }
 
   .wrapper .sel select{
-    font-family: adam;
     height: 100%;
     width: 27%;
     border: none;

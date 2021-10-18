@@ -10,7 +10,7 @@
 
 .container-fluid{
     background-image: url('../../assets/img/logincadastro/backgroundforest1.jpg');
-    min-height: 70vh !important;
+    min-height: 800px !important;
 }
 
 
@@ -108,8 +108,8 @@ label{
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
-	width: 1000px;
-    height: 90vh;
+	width: 800px;
+    height: 550px;
 	max-width: 100%;
 	min-height: 480px;
 }

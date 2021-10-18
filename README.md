@@ -31,7 +31,7 @@
 <br>
 <br>
 
-| Nomes | DevTeam |
+| Nomes | DevTeam ❤|
 |:----:|:-------:|
 | Agatha Nara|<img src="https://media-exp1.licdn.com/dms/image/C4D03AQEieL2EMiXpFw/profile-displayphoto-shrink_200_200/0/1631643399594?e=1637798400&v=beta&t=fnyYc4UdaXpsGPyIfZFRzbWT9w08MvI4Hg6QUau60KQ" width="60%">|
 <a href="https://www.linkedin.com/in/gthlbrc/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> |<a href="https://github.com/alyen404" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 

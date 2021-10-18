@@ -1,4 +1,4 @@
-#♻ Climatika-store-Front-End 👩‍💻
+♻ Climatika-store-Front-End 👩‍💻
 
 #   ♻ Climatika-Projeto-Integrador ♻
 

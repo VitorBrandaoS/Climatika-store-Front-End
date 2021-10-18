@@ -14,7 +14,7 @@
                     <a routerLink='/ajude' class="text-g" rel="noopener noreferrer">Ajude o Planeta</a>
                 </li>
                 <li class="nav-link" href="#">
-                    <a routerLink='/nossos-parceiros' class="text-g" target="_blank" rel="noopener noreferrer">Nossos
+                    <a routerLink='/nossos-parceiros' class="text-g" rel="noopener noreferrer">Nossos
                         Parceiros</a>
                 </li>
                 <li class="nav-link" href="#">
@@ -142,6 +142,7 @@
             </button>
             <button *ngIf="auth.logado() == false" class="btn btn-login my-2 my-sm-0" type="submit"
                 routerLink='/entrar'>Login</button>
+            <!--<button class="btn btn-secondary" (click)="console()">Aqui</button>-->
         </form>
 
         <!-- Botão Usuário -->
@@ -163,7 +164,7 @@
                     <a class="dropdown-item btn-adm" routerLink='/editar-produto'>Editar Produto</a>
                 </div>
                 <hr class="hr-menu">
-                <a class="dropdown-item btn-verde" href="#">Sair</a>
+                <a class="dropdown-item btn-verde" (click)="sair()">Sair</a>
             </div>
         </div>
         

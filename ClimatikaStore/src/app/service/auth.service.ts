@@ -10,6 +10,7 @@ import { Produto } from '../model/Produto';
 import { StatusVenda } from '../model/StatusVenda';
 import { CarrinhoService } from './carrinho.service';
 import { Router } from '@angular/router';
+import { UsuarioService } from './usuario.service';
 
 
 @Injectable({
@@ -19,6 +20,7 @@ export class AuthService{
 
   listaProduto: Produto[]
   valor: string
+  usuario: Usuario = new Usuario()
   statusVenda: StatusVenda = new StatusVenda()
   valorTotal: number = 0
 
@@ -26,7 +28,8 @@ export class AuthService{
     private http: HttpClient,
     private produtoService: ProdutoService,
     private carrinhoService: CarrinhoService,
-    private router: Router
+    private router: Router,
+    private usuarioService: UsuarioService
   ) { }
 
 
@@ -106,14 +109,19 @@ export class AuthService{
     return ok
   }
 
-  findByIdVenda(){
-    
+  findByIdVenda(){    
       this.carrinhoService.getByIdVenda(environment.id).subscribe((resp: StatusVenda) => {
         this.statusVenda = resp
         return this.statusVenda
-      })
-   
+      })   
   }
+
+  findByIdUsuario(){    
+    this.usuarioService.getByIdUsuario(environment.id).subscribe((resp: Usuario) => {
+      this.usuario = resp
+    })
+ 
+}
 
   calculoTotal(){ 
     console.log("Inicio do calculo")

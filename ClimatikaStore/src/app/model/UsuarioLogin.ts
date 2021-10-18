@@ -4,7 +4,6 @@ export class UsuarioLogin{
     public token: string
 
     public id: number
-    public cpf: string
     public nomeCompleto: string
     public celular: string
     public endereco: string

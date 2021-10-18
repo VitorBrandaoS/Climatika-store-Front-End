@@ -7,6 +7,7 @@ import { Usuario } from '../model/Usuario';
 import { AuthService } from '../service/auth.service';
 import { CarrinhoService } from '../service/carrinho.service';
 import { ProdutoService } from '../service/produto.service';
+import { UsuarioService } from '../service/usuario.service';
 
 @Component({
   selector: 'app-carrinho',
@@ -28,6 +29,7 @@ export class CarrinhoComponent implements OnInit {
     private route: ActivatedRoute,
     private produtoService: ProdutoService,
     private carrinhoService: CarrinhoService,
+    private usuarioService: UsuarioService,
     public auth: AuthService
   ) {   }
 
@@ -37,7 +39,6 @@ export class CarrinhoComponent implements OnInit {
       this.router.navigate(["/inicio"])
     }
     this.auth.findByIdVenda()
-
   }
   
   

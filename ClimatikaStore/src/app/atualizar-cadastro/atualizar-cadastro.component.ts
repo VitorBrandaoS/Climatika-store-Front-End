@@ -34,7 +34,7 @@ export class AtualizarCadastroComponent implements OnInit {
       this.usuario.id = environment.id
       this.usuarioService.atualizarUsuario(this.usuario).subscribe((resp: Usuario) =>{
         this.usuario = resp
-        alert("Cadastro atualizado com sucesso!")
+        alert("Usuario atualizado com sucesso!")
         this.router.navigate(["/entrar"])
       })
     }

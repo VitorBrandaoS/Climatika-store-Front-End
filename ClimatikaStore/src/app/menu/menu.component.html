@@ -21,71 +21,98 @@
                     <a routerLink='/sobre' class="text-g fontnavbar" rel="noopener noreferrer">Sobre</a>
                 </li>
 
-                <li class="navbar-nav">
+                <li class="navbar-nav ml-1">
                     <div class="dropdown lojadrop">
-                        <a class="dropdown-toggle dropitem fontnavbar" id="dropdownMenuButton" data-toggle="dropdown"
+                        <a class="dropdown-toggle dropitem fontnavbar text-g" id="dropdownMenuButton" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">
                             Loja
                         </a>
                         <div class="dropdown-menu bg-verde" aria-labelledby="dropdownMenuButton">
-        
-                            <a [routerLink]="['/inicio']" routerLinkActive="router-link-active"  (click)="auth.getAllProdutos()"  class="btn dropitem  fontproduto" type="button" aria-haspopup="true" aria-expanded="false">Todos Produtos</a>
-                            <hr class="mt-1 mb-1"> 
-        
-                            <a (click)="auth.findByCategoriaMae('cozinha')"  routerLinkActive="router-link-active"  class="dropdown-item bg-verde btn-outline-info dropitem fontproduto">Cozinha</a>
-                            <hr class="mt-1 mb-1"> 
-                            <a (click)="auth.findByCategoriaFilha('embalagens')" value="Embalagens"  class="dropdown-item  dropitem fontproduto" >Embalagens</a>
-                            <a (click)="auth.findByCategoriaFilha('lava-louças')"  value="Lava-Louças" class="dropdown-item bg-verde dropitem fontproduto" >Lava-Louças</a>
-                            <a (click)="auth.findByCategoriaFilha('cozinha limpeza')"  value="Limpeza" class="dropdown-item bg-verde btn-outline-info dropitem fontproduto" >Limpeza</a>
-                            <a (click)="auth.findByCategoriaFilha('utensílios')"  value="Utensílios" class="dropdown-item bg-verde dropitem fontproduto" >Utensílios</a>
-                    
-                            <hr class="mt-1 mb-1">
-                            <a (click)="auth.findByCategoriaMae('banheiro')" class="dropdown-item bg-verde dropitem fontproduto">Banheiro</a>
-                            <hr class="mt-1 mb-1">
-                            <a (click)="auth.findByCategoriaFilha('acessórios')" class="dropdown-item bg-verde dropitem fontproduto">Acessórios</a>
-                            <a (click)="auth.findByCategoriaFilha('aromatizantes')" class="dropdown-item bg-verde dropitem fontproduto">Aromatizantes</a>
-                            <a (click)="auth.findByCategoriaFilha('banheiro limpeza')" class="dropdown-item bg-verde dropitem fontproduto">Limpeza</a>
-                            <a (click)="auth.findByCategoriaFilha('toalhas')" class="dropdown-item bg-verde dropitem fontproduto">Toalhas</a>
-        
-                            <hr class="mt-1 mb-1">
-                            <a (click)="auth.findByCategoriaMae('moda e beleza')" class="dropdown-item bg-verde dropitem fontproduto">Moda e Beleza</a>
-                            <hr class="mt-1 mb-1">
-                            <a (click)="auth.findByCategoriaFilha('acessórios de moda')" class="dropdown-item bg-verde dropitem fontproduto">Acessórios de Moda</a>
-                            <a (click)="auth.findByCategoriaFilha('cosméticos')" class="dropdown-item bg-verde dropitem fontproduto">Cosméticos</a>
-                            <a (click)="auth.findByCategoriaFilha('maquiagens')" class="dropdown-item bg-verde dropitem fontproduto">Maquiagens</a>
-                            <a (click)="auth.findByCategoriaFilha('roupas')" class="dropdown-item bg-verde dropitem fontproduto">Roupas</a>
-        
-                            <hr class="mt-1 mb-1">
-                            <a (click)="auth.findByCategoriaMae('higiene pessoal')" class="dropdown-item bg-verde dropitem fontproduto">Higiene Pessoal</a>
-                            <hr class="mt-1 mb-1">
-                            <a (click)="auth.findByCategoriaFilha('cabelo')" class="dropdown-item bg-verde dropitem fontproduto">Cabelo</a>
-                            <a (click)="auth.findByCategoriaFilha('higiene bucal')" class="dropdown-item bg-verde dropitem fontproduto">Higiene Bucal</a>
-                            <a (click)="auth.findByCategoriaFilha('higiene pele')" class="dropdown-item bg-verde dropitem fontproduto">Pele</a>
-                            <a (click)="auth.findByCategoriaFilha('sabonetes para o corpo')" class="dropdown-item bg-verde dropitem fontproduto">Sabonetes Para o Corpo</a>
-        
-                            <hr class="mt-1 mb-1">
-                            <a (click)="auth.findByCategoriaMae('pet')" class="dropdown-item bg-verde dropitem fontproduto">Pet</a>
-                            <hr class="mt-1 mb-1">
-                            <a (click)="auth.findByCategoriaFilha('roupas e acessórios para pets')" class="dropdown-item bg-verde dropitem fontproduto">Roupas e Acessórios para Pets</a>
-        
-                            <hr class="mt-1 mb-1">
-                            <a (click)="auth.findByCategoriaMae('jardim')" class="dropdown-item bg-verde dropitem fontproduto">Jardim</a>
-                            <hr class="mt-1 mb-1">
-                            <a (click)="auth.findByCategoriaFilha('kits de compostagem')" class="dropdown-item bg-verde dropitem fontproduto">Kits de Compostagem</a>
-                            <a (click)="auth.findByCategoriaFilha('jardim limpeza')" class="dropdown-item bg-verde dropitem fontproduto">Limpeza</a>
-                            <a (click)="auth.findByCategoriaFilha('vasos')" class="dropdown-item bg-verde dropitem fontproduto">Vasos</a>
-        
+
+                            <a [routerLink]="['/inicio']" routerLinkActive="router-link-active"
+                                (click)="auth.getAllProdutos()" class="dropdown-item dropitem  fontproduto" type="button"
+                                aria-haspopup="true" aria-expanded="false">Todos Produtos</a>
+                            <hr class="mt-0 mb-0 bg-subcatg">
+
+                            <a (click)="auth.findByCategoriaMae('cozinha')" routerLinkActive="router-link-active"
+                                class="dropdown-item bg-verde btn-outline-info dropitem fontproduto">Cozinha</a>
+                            <hr class="mt-0 mb-0 bg-subcatg">
+                            
+                            <a (click)="auth.findByCategoriaFilha('embalagens')" value="Embalagens"
+                                class="dropdown-item fontproduto  bg-subcatg">Embalagens</a>
+                            <a (click)="auth.findByCategoriaFilha('lava-louças')" value="Lava-Louças"
+                                class="dropdown-item fontproduto bg-subcatg">Lava-Louças</a>
+                            <a (click)="auth.findByCategoriaFilha('cozinha limpeza')" value="Limpeza"
+                                class="dropdown-item fontproduto bg-subcatg">Limpeza</a>
+                            <a (click)="auth.findByCategoriaFilha('utensílios')" value="Utensílios"
+                                class="dropdown-item fontproduto bg-subcatg">Utensílios</a>
+                            
+                            <hr class="mt-0 mb-0 bg-subcatg">
+                            <a (click)="auth.findByCategoriaMae('banheiro')"
+                                class="dropdown-item bg-verde dropitem fontproduto">Banheiro</a>
+                            <hr class="mt-0 mb-0 bg-subcatg">
+                            <a (click)="auth.findByCategoriaFilha('acessórios')"
+                                class="dropdown-item bg-subcatg dropitem fontproduto">Acessórios</a>
+                            <a (click)="auth.findByCategoriaFilha('aromatizantes')"
+                                class="dropdown-item bg-subcatg dropitem fontproduto">Aromatizantes</a>
+                            <a (click)="auth.findByCategoriaFilha('banheiro limpeza')"
+                                class="dropdown-item bg-subcatg dropitem fontproduto">Limpeza</a>
+                            <a (click)="auth.findByCategoriaFilha('toalhas')"
+                                class="dropdown-item bg-subcatg dropitem fontproduto">Toalhas</a>
+
+                            <hr class="mt-0 mb-0 bg-subcatg">
+                            <a (click)="auth.findByCategoriaMae('moda e beleza')"
+                                class="dropdown-item bg-verde dropitem fontproduto">Moda e Beleza</a>
+                            <hr class="mt-0 mb-0 bg-subcatg">
+                            <a (click)="auth.findByCategoriaFilha('acessórios de moda')"
+                                class="dropdown-item bg-subcatg dropitem fontproduto">Acessórios de Moda</a>
+                            <a (click)="auth.findByCategoriaFilha('cosméticos')"
+                                class="dropdown-item bg-subcatg dropitem fontproduto">Cosméticos</a>
+                            <a (click)="auth.findByCategoriaFilha('maquiagens')"
+                                class="dropdown-item bg-subcatg dropitem fontproduto">Maquiagens</a>
+                            <a (click)="auth.findByCategoriaFilha('roupas')"
+                                class="dropdown-item bg-subcatg dropitem fontproduto">Roupas</a>
+
+                            <hr class="mt-0 mb-0 bg-subcatg">
+                            <a (click)="auth.findByCategoriaMae('higiene pessoal')"
+                                class="dropdown-item bg-verde dropitem fontproduto">Higiene Pessoal</a>
+                            <hr class="mt-0 mb-0 bg-subcatg">
+                            <a (click)="auth.findByCategoriaFilha('cabelo')"
+                                class="dropdown-item bg-subcatg dropitem fontproduto">Cabelo</a>
+                            <a (click)="auth.findByCategoriaFilha('higiene bucal')"
+                                class="dropdown-item bg-subcatg dropitem fontproduto">Higiene Bucal</a>
+                            <a (click)="auth.findByCategoriaFilha('higiene pele')"
+                                class="dropdown-item bg-subcatg dropitem fontproduto">Pele</a>
+                            <a (click)="auth.findByCategoriaFilha('sabonetes para o corpo')"
+                                class="dropdown-item bg-subcatg dropitem fontproduto">Sabonetes Para o Corpo</a>
+
+                            <hr class="mt-0 mb-0 bg-subcatg">
+                            <a (click)="auth.findByCategoriaMae('pet')"
+                                class="dropdown-item bg-verde dropitem fontproduto">Pet</a>
+                            <hr class="mt-0 mb-0 bg-subcatg">
+                            <a (click)="auth.findByCategoriaFilha('roupas e acessórios para pets')"
+                                class="dropdown-item bg-subcatg dropitem fontproduto">Roupas e Acessórios para Pets</a>
+
+                            <hr class="mt-0 mb-0 bg-subcatg">
+                            <a (click)="auth.findByCategoriaMae('jardim')"
+                                class="dropdown-item bg-verde dropitem fontproduto">Jardim</a>
+                            <hr class="mt-0 mb-0 bg-subcatg">
+                            <a (click)="auth.findByCategoriaFilha('kits de compostagem')"
+                                class="dropdown-item bg-subcatg dropitem fontproduto">Kits de Compostagem</a>
+                            <a (click)="auth.findByCategoriaFilha('jardim limpeza')"
+                                class="dropdown-item bg-subcatg dropitem fontproduto">Limpeza</a>
+                            <a (click)="auth.findByCategoriaFilha('vasos')"
+                                class="dropdown-item bg-subcatg dropitem fontproduto">Vasos</a>
+
                         </div>
                     </div>
-        
-                   
-        
                 </li>
             </ul>
-            
+
         </div>
         <form class="form-inline my-2 my-lg-0">
-            <input type="text" class="form-control mr-sm-2 pesquisa"  placeholder="Pesquise pelo nome do produto"  [(ngModel)]="auth.valor" [ngModelOptions]="{standalone: true}" (keyup)="auth.findByNomeProduto()" >
+            <input type="text" class="form-control mr-sm-2 pesquisa" placeholder="Pesquise pelo nome do produto"
+                [(ngModel)]="auth.valor" [ngModelOptions]="{standalone: true}" (keyup)="auth.findByNomeProduto()">
 
             <a class="" type="submit">
                 <img src="../../assets/img/icones/pesquisar.png" class="icone-pesquisa" alt="" srcset="">
@@ -94,61 +121,60 @@
 
     </div>
     <div class="container-fluid">
-        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 
-           
+            <span class="align-items-center text-light mr-3" *ngIf="auth.logado()">Olá, {{auth.nomeUsuario()}}!</span>
+            <form class="form-inline my-2 my-lg-0 justify-content-end">
+                <button *ngIf="auth.logado()" class="btn btn-verde my-2 my-sm-0 mr-2" [routerLink]="['/carrinho']"
+                    type="submit">
+                    <img src="../../assets/img/icones/cesto-branco.png" width="25px" height="auto"
+                        alt="carrinho de compras">
+                </button>
+                <button *ngIf="auth.logado() == false" class="btn btn-login my-2 my-sm-0" type="submit"
+                    routerLink='/entrar'>Login</button>
+                <!--<button class="btn btn-secondary" (click)="console()">Aqui</button>-->
+            </form>
 
-        
-        <span class="align-items-center text-light mr-3" *ngIf="auth.logado()">Olá, {{auth.nomeUsuario()}}!</span>
-        <form class="form-inline my-2 my-lg-0 justify-content-end">
-            <button *ngIf="auth.logado()" class="btn btn-verde my-2 my-sm-0 mr-2"
-                 [routerLink]="['/carrinho']" type="submit">
-                <img src="../../assets/img/icones/cesto-branco.png" width="25px" height="auto"
-                    alt="carrinho de compras">
-            </button>
-            <button *ngIf="auth.logado() == false" class="btn btn-login my-2 my-sm-0" type="submit"
-                routerLink='/entrar'>Login</button>
-            <!--<button class="btn btn-secondary" (click)="console()">Aqui</button>-->
-        </form>
-
-        <!-- Botão Usuário -->
-        <div *ngIf="auth.logado()" class="btn-group dropleft">
-            <button type="button" class="btn btn-verde ml-2 rounded" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                <img src="../../assets/img/icones/user.png" alt="">
-            </button>
-            <div class="dropdown-menu bg-verde">
-                <!-- Dropdown menu links -->
-                <a class="dropdown-item btn-verde" data-toggle="tooltip" data-placement="left" title="Em breve..."><s>Meus Pedidos</s></a>
-                <a class="dropdown-item btn-verde" data-toggle="tooltip" data-placement="left" title="Em breve..."><s>Meus Favoritos</s></a>
-                <a class="dropdown-item btn-verde" routerLink='/atualizar-cadastro'>Editar Cadastro</a>
-                <div *ngIf="auth.logadoAdmin()">
+            <!-- Botão Usuário -->
+            <div *ngIf="auth.logado()" class="btn-group dropleft">
+                <button type="button" class="btn btn-verde ml-2 rounded" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false">
+                    <img src="../../assets/img/icones/user.png" alt="">
+                </button>
+                <div class="dropdown-menu bg-verde">
+                    <!-- Dropdown menu links -->
+                    <a class="dropdown-item btn-verde" data-toggle="tooltip" data-placement="left"
+                        title="Em breve..."><s>Meus Pedidos</s></a>
+                    <a class="dropdown-item btn-verde" data-toggle="tooltip" data-placement="left"
+                        title="Em breve..."><s>Meus Favoritos</s></a>
+                    <a class="dropdown-item btn-verde" routerLink='/atualizar-cadastro'>Editar Cadastro</a>
+                    <div *ngIf="auth.logadoAdmin()">
+                        <hr class="hr-menu">
+                        <p class="text-center mb-0 text-warning">Funções Admin</p>
+                        <hr class="hr-menu">
+                        <a class="dropdown-item btn-adm" routerLink='/cadastrar-produto'>Cadastrar Produto</a>
+                        <a class="dropdown-item btn-adm" routerLink='/editar-produto'>Editar Produto</a>
+                    </div>
                     <hr class="hr-menu">
-                    <p class="text-center mb-0 text-warning">Funções Admin</p>
-                    <hr class="hr-menu ">                    
-                    <a class="dropdown-item btn-adm" routerLink='/cadastrar-produto'>Cadastrar Produto</a>
-                    <a class="dropdown-item btn-adm" routerLink='/editar-produto'>Editar Produto</a>
+                    <a class="dropdown-item btn-verde" (click)="sair()">Sair</a>
                 </div>
-                <hr class="hr-menu">
-                <a class="dropdown-item btn-verde" (click)="sair()">Sair</a>
             </div>
-        </div>
-        
-        <!-- Botão Admin 
-        <div *ngIf="auth.logadoAdmin()" class="btn-group dropleft">
-            <button type="button" class="btn btn-danger ml-2 rounded" data-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
-                <img src="../../assets/img/icones/user.png" alt="">
-            </button>
-            <div class="dropdown-menu bg-verde">
 
-                <a class="dropdown-item btn-verde" routerLink='/cadastrar-produto'>Cadastrar Produto</a>
-                <a class="dropdown-item btn-verde" routerLink='/editar-produto'>Editar Produto</a>
-                <hr class="hr-menu">
-                <a class="dropdown-item btn-verde" href="#">Sair</a>
-            </div>
+            <!-- Botão Admin 
+                <div *ngIf="auth.logadoAdmin()" class="btn-group dropleft">
+                    <button type="button" class="btn btn-danger ml-2 rounded" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <img src="../../assets/img/icones/user.png" alt="">
+                    </button>
+                    <div class="dropdown-menu bg-verde">
+
+                        <a class="dropdown-item btn-verde" routerLink='/cadastrar-produto'>Cadastrar Produto</a>
+                        <a class="dropdown-item btn-verde" routerLink='/editar-produto'>Editar Produto</a>
+                        <hr class="hr-menu">
+                        <a class="dropdown-item btn-verde" href="#">Sair</a>
+                    </div>
+                </div>
+                -->
         </div>
-        -->
     </div>
-</div>
 </nav>

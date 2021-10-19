@@ -9,13 +9,18 @@
     font-size: 13px !important;
 }
 
-
+.fontproduto:hover{
+    background-color: rgb(197, 211, 203);
+    color: #445d4f !important;
+}
 
 a {
     color:rgb(197, 211, 203) !important;
 }
 
-
+.bg-subcatg{
+    background-color: #61806e;
+}
 
 a:hover {
     cursor: pointer;
@@ -133,3 +138,17 @@ input:enabled{
     border: 1px #42594A solid;
 }
 
+/*Scroll Bar*/
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #b8c8bb;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+  }

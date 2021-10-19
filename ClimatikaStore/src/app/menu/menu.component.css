@@ -1,5 +1,18 @@
+.fontnavbar{
+    font-family: comfortaa;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.fontproduto{
+    font-family: comfortaa;
+    font-size: 13px !important;
+}
+
+
+
 a {
-    color:aliceblue !important;
+    color:rgb(197, 211, 203) !important;
 }
 
 
@@ -8,9 +21,6 @@ a:hover {
     cursor: pointer;
 }
 
-.dropitem:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-}
 
 #logo{
     width: 140px;
@@ -35,6 +45,26 @@ a:hover {
 .bg-menu {
     background-color: #798e77;
 }
+
+/* MENU */
+
+.dropdown-menu{
+  height: 300px;
+  overflow: auto;
+}
+
+.lojadrop{
+    margin-top: 8px !important;
+    margin-left: 5px !important;
+}
+
+.lojadrop:hover{
+    color: #5D7963;
+}
+
+/* FIM DE MENU */
+
+/* INPUT */
 
 .pesquisa {
     width: 300px;
@@ -61,6 +91,8 @@ input:enabled{
     box-shadow: #5D7963 !important;
 }
 
+/* FIM DE INPUT */
+
 
 .hr-menu {
     border-top: 1px solid white;
@@ -70,6 +102,9 @@ input:enabled{
 .bg-verde {
     background: #42594A;
 }
+
+
+/* BOTOES */
 
 .btn-login {
     background-color: aliceblue;

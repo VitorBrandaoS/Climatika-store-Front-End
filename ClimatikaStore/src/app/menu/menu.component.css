@@ -1,16 +1,31 @@
-a {
-    color:aliceblue !important;
+.fontnavbar{
+    font-family: comfortaa;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
+.fontproduto{
+    font-family: comfortaa;
+    font-size: 13px !important;
+}
 
+.fontproduto:hover{
+    background-color: rgb(197, 211, 203);
+    color: #445d4f !important;
+}
+
+a {
+    color:rgb(197, 211, 203) !important;
+}
+
+.bg-subcatg{
+    background-color: #61806e;
+}
 
 a:hover {
     cursor: pointer;
 }
 
-.dropitem:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-}
 
 #logo{
     width: 140px;
@@ -35,6 +50,26 @@ a:hover {
 .bg-menu {
     background-color: #798e77;
 }
+
+/* MENU */
+
+.dropdown-menu{
+  height: 300px;
+  overflow: auto;
+}
+
+.lojadrop{
+    margin-top: 8px !important;
+    margin-left: 5px !important;
+}
+
+.lojadrop:hover{
+    color: #5D7963;
+}
+
+/* FIM DE MENU */
+
+/* INPUT */
 
 .pesquisa {
     width: 300px;
@@ -61,6 +96,8 @@ input:enabled{
     box-shadow: #5D7963 !important;
 }
 
+/* FIM DE INPUT */
+
 
 .hr-menu {
     border-top: 1px solid white;
@@ -70,6 +107,9 @@ input:enabled{
 .bg-verde {
     background: #42594A;
 }
+
+
+/* BOTOES */
 
 .btn-login {
     background-color: aliceblue;
@@ -98,3 +138,17 @@ input:enabled{
     border: 1px #42594A solid;
 }
 
+/*Scroll Bar*/
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #b8c8bb;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+  }

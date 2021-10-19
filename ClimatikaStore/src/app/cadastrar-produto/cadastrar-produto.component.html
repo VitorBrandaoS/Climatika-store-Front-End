@@ -1,93 +1,206 @@
 <div class="container-fluid bg-cinza">
-    <div class="row d-flex justify-content-center">
+    <div class="row d-flex justify-content-center fundo">
         <div class="col-md-6 mt-3 mb-4">
-            <h1 class="text-center">Cadastrar Produto</h1>
-            <div class="form-group">
-                <div class="form-group">
-                    <label for="Nome">Nome do Produto</label>
-                    <input [(ngModel)]='produto.nomeProduto' class="form-control"  autocomplete="off" type="text" name="nome" id="nome"
-                        placeholder="Nome do Produto">
-                </div>
 
+            <div class="wrapper">
+                <h1 class="text-center">Cadastrar Produto</h1>
                 <div class="form-group">
-                    <label for="Nome">Marca</label>
-                    <input [(ngModel)]='produto.marca' class="form-control" type="text" name="marca" id="marca" placeholder="Marca do Produto">
-                </div>    
-                
-                <div class="form-group">
-                    <label for="categoriaMae">Categoria do Produto</label>
-                    <select [(ngModel)]='produto.categoriaMae' for="categoriaMae" class="form-control">
-                        <option>Selecione a categoria</option>
-                        <option value="Cozinha">Cozinha</option>
-                        <option value="Banheiro">Banheiro</option>
-                        <option value="Jardim">Jardim</option>                      
-                        <option value="Moda e Beleza">Moda e Beleza</option>        
-                        <option value="Higiene Pessoal">Higiene Pessoal</option>
-                        <option value="Pet">Pet</option>
-                    </select>
-                </div>
+                    <div class="form-group">
+                        <label for="Nome">Nome do Produto</label>
+                        <input [(ngModel)]='produto.nomeProduto' class="form-control" autocomplete="off" type="text"
+                            name="nome" id="nome" placeholder="Nome do Produto">
+                    </div>
 
-                <div class="form-group">
-                    <label for="categoriaFilha">Sub-Categoria do Produto</label>
-                    <select [(ngModel)]='produto.categoriaFilha' for="categoriaFilha" class="form-control">
-                        <option>Selecione a Sub-Categoria</option>
-                        <option>----Cozinha----</option>
-                        <option value="Cozinha Limpeza">Limpeza</option>
-                        <option value="Lava-Louças">Lava-Louças</option>
-                        <option value="Utensílios">Utensílios</option>
-                        <option value="Embalagens">Embalagens</option>
-                        <option>----Banheiro----</option>
-                        <option value="Banheiro Limpeza">Limpeza</option>
-                        <option value="Aromatizantes">Aromatizantes</option>
-                        <option value="Acessórios">Acessórios</option>
-                        <option value="Toalhas">Toalhas</option>
-                        <option>----Moda e Beleza----</option>
-                        <option value="Acessórios de Moda">Acessórios de Moda</option>
-                        <option value="Maquiagens">Maquiagens</option>
-                        <option value="Roupas">Roupas</option>
-                        <option value="Cosméticos">Cosméticos</option>
-                        <option>----Pet----</option>
-                        <option value="Roupas e Acessórios para Pets">Roupas e Acessórios para Pets</option>
-                        <option>----Jardim---</option>
-                        <option value="Vasos">Vasos</option>
-                        <option value="Kits de Compostagem">Kits de Compostagem</option>
-                        <option value="Jardim Limpeza">Limpeza</option>
-                        <option>----Higiene Pessoal---</option>
-                        <option value="Higiene Pele">Pele</option>
-                        <option value="Sabonetes para o Corpo">Sabonetes para o Corpo</option>
-                        <option value="Cabelo">Cabelo</option>
-                        <option value="Higiene Bucal">Higiene Bucal</option>                    
-                        
-                    </select>
-                </div>
+                    <div class="form-group">
+                        <label for="Nome">Marca</label>
+                        <input [(ngModel)]='produto.marca' class="form-control" type="text" name="marca" id="marca"
+                            placeholder="Marca do Produto">
+                    </div>
 
-                <div class="form-group">
-                    <label for="preco">Preço do Produto</label>
-                    <input [(ngModel)]='produto.preco' class="form-control" type="number" name="preco" autocomplete="off"
-                        id="endereco" placeholder="Preço do produto">
-                </div>
+                    <div class="form-group">
+                        <label for="categoriaMae">Categoria do Produto</label>
+                        <select [(ngModel)]='produto.categoriaMae' for="categoriaMae" class="form-control">
+                            <option>Selecione a categoria</option>
+                            <option value="Cozinha">Cozinha</option>
+                            <option value="Banheiro">Banheiro</option>
+                            <option value="Jardim">Jardim</option>
+                            <option value="Moda e Beleza">Moda e Beleza</option>
+                            <option value="Higiene Pessoal">Higiene Pessoal</option>
+                            <option value="Pet">Pet</option>
+                        </select>
+                    </div>
 
-                <div class="form-group">
-                    <label for="descricao">Descrição do Produto</label>
-                    <textarea [(ngModel)]='produto.descricao' class="form-control" type="email" name="email" id="email" autocomplete="off" 
-                        placeholder="Descrição do produto"></textarea>
-                </div>              
+                    <div class="form-group">
+                        <label for="categoriaFilha">Sub-Categoria do Produto</label>
+                        <select [(ngModel)]='produto.categoriaFilha' for="categoriaFilha" class="form-control">
+                            <option>Selecione a Sub-Categoria</option>
+                            <option>----Cozinha----</option>
+                            <option value="Cozinha Limpeza">Limpeza</option>
+                            <option value="Lava-Louças">Lava-Louças</option>
+                            <option value="Utensílios">Utensílios</option>
+                            <option value="Embalagens">Embalagens</option>
+                            <option>----Banheiro----</option>
+                            <option value="Banheiro Limpeza">Limpeza</option>
+                            <option value="Aromatizantes">Aromatizantes</option>
+                            <option value="Acessórios">Acessórios</option>
+                            <option value="Toalhas">Toalhas</option>
+                            <option>----Moda e Beleza----</option>
+                            <option value="Acessórios de Moda">Acessórios de Moda</option>
+                            <option value="Maquiagens">Maquiagens</option>
+                            <option value="Roupas">Roupas</option>
+                            <option value="Cosméticos">Cosméticos</option>
+                            <option>----Pet----</option>
+                            <option value="Roupas e Acessórios para Pets">Roupas e Acessórios para Pets</option>
+                            <option>----Jardim---</option>
+                            <option value="Vasos">Vasos</option>
+                            <option value="Kits de Compostagem">Kits de Compostagem</option>
+                            <option value="Jardim Limpeza">Limpeza</option>
+                            <option>----Higiene Pessoal---</option>
+                            <option value="Higiene Pele">Pele</option>
+                            <option value="Sabonetes para o Corpo">Sabonetes para o Corpo</option>
+                            <option value="Cabelo">Cabelo</option>
+                            <option value="Higiene Bucal">Higiene Bucal</option>
 
-                <div class="form-group">
-                    <label for="foto">Foto do produto</label>
-                    <input [(ngModel)]='produto.foto' class="form-control" type="text" name="foto" id="foto" autocomplete="off"
-                        placeholder="Foto do produto">
-                </div>
+                        </select>
+                    </div>
 
-                <div class="d-flex justify-content-center fontpix">
-                    <button type="submit" class="btn btn-danger mr-4 botaocanc" routerLink='/inicio'>Cancelar</button>
-                    <button type="submit" class="btn btn-success botaocad" (click)='cadastrarProduto()'>Cadastrar</button>
-                    
+                    <div class="form-group">
+                        <label for="preco">Preço do Produto</label>
+                        <input [(ngModel)]='produto.preco' class="form-control" type="number" name="preco"
+                            autocomplete="off" id="endereco" placeholder="Preço do produto">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descricao">Descrição do Produto</label>
+                        <textarea [(ngModel)]='produto.descricao' class="form-control" type="email" name="email"
+                            id="email" autocomplete="off" placeholder="Descrição do produto"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="foto">Foto do produto</label>
+                        <input [(ngModel)]='produto.foto' class="form-control" type="text" name="foto" id="foto"
+                            autocomplete="off" placeholder="Foto do produto">
+                    </div>
+
+                    <div class="d-flex justify-content-center fontpix">
+                        <button type="submit" class="btn btn-danger mr-4 botaocanc"
+                            routerLink='/inicio'>Cancelar</button>
+                        <button type="submit" class="btn btn-success botaocad"
+                            (click)='cadastrarProduto()'>Cadastrar</button>
+
+                    </div>
+
                 </div>
-                
             </div>
-        </div>        
-    </div>    
+        </div>
+    </div>
 </div>
 
-                
+<main class="m-0 p-0" id="main">
+
+    <div class="d-flex justify-content-center">
+
+
+
+        <div class="container d-flex justify-content-center mt-5 mb-5 fundo">
+
+            <div class="">
+
+                <div class="wrapper">
+                    <h3 class="text-center mb-4">Cadastrar Produto</h3>
+                    <div class="form-group">
+                        <input [(ngModel)]='produto.nomeProduto' class="form-control" autocomplete="off" type="text"
+                            name="nomeProduto" id="nomeProduto" required>
+                        <div class="underline"></div>
+                        <label>Nome do Produto</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input [(ngModel)]='produto.marca' class="form-control" type="marca" name="marca" id="marca"
+                            autocomplete="off" required>
+                        <div class="underline"></div>
+                        <label>Marca</label>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="categoriaMae">Categoria do Produto</label>
+                        <select [(ngModel)]='produto.categoriaMae' for="categoriaMae" class="form-control">
+                            <option>Selecione a categoria</option>
+                            <option value="Cozinha">Cozinha</option>
+                            <option value="Banheiro">Banheiro</option>
+                            <option value="Jardim">Jardim</option>
+                            <option value="Moda e Beleza">Moda e Beleza</option>
+                            <option value="Higiene Pessoal">Higiene Pessoal</option>
+                            <option value="Pet">Pet</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="categoriaFilha">Sub-Categoria do Produto</label>
+                        <select [(ngModel)]='produto.categoriaFilha' for="categoriaFilha" class="form-control">
+                            <option>Selecione a Sub-Categoria</option>
+                            <option>----Cozinha----</option>
+                            <option value="Cozinha Limpeza">Limpeza</option>
+                            <option value="Lava-Louças">Lava-Louças</option>
+                            <option value="Utensílios">Utensílios</option>
+                            <option value="Embalagens">Embalagens</option>
+                            <option>----Banheiro----</option>
+                            <option value="Banheiro Limpeza">Limpeza</option>
+                            <option value="Aromatizantes">Aromatizantes</option>
+                            <option value="Acessórios">Acessórios</option>
+                            <option value="Toalhas">Toalhas</option>
+                            <option>----Moda e Beleza----</option>
+                            <option value="Acessórios de Moda">Acessórios de Moda</option>
+                            <option value="Maquiagens">Maquiagens</option>
+                            <option value="Roupas">Roupas</option>
+                            <option value="Cosméticos">Cosméticos</option>
+                            <option>----Pet----</option>
+                            <option value="Roupas e Acessórios para Pets">Roupas e Acessórios para Pets</option>
+                            <option>----Jardim---</option>
+                            <option value="Vasos">Vasos</option>
+                            <option value="Kits de Compostagem">Kits de Compostagem</option>
+                            <option value="Jardim Limpeza">Limpeza</option>
+                            <option>----Higiene Pessoal---</option>
+                            <option value="Higiene Pele">Pele</option>
+                            <option value="Sabonetes para o Corpo">Sabonetes para o Corpo</option>
+                            <option value="Cabelo">Cabelo</option>
+                            <option value="Higiene Bucal">Higiene Bucal</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preco">Preço do Produto</label>
+                        <input [(ngModel)]='produto.preco' class="form-control" type="number" name="preco"
+                            autocomplete="off" id="endereco" placeholder="Preço do produto">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="descricao">Descrição do Produto</label>
+                        <textarea [(ngModel)]='produto.descricao' class="form-control" type="email" name="email"
+                            id="email" autocomplete="off" placeholder="Descrição do produto"></textarea>
+                    </div>
+
+                    
+                    <div class="form-group">
+                    <label for="foto">Foto do produto</label>
+                    <input [(ngModel)]='produto.foto' class="form-control" type="text" name="foto" id="foto"
+                    autocomplete="off" placeholder="Foto do produto">
+                    </div>
+                   
+                    <div class="d-flex justify-content-center fontpix mt-4 mr-3">
+                        <button type="submit" class="btn btn-danger mr-4 botaocanc"
+                            routerLink='/inicio'>Cancelar</button>
+                        <button type="submit" class="btn btn-success botaocad"
+                            (click)='cadastrarProduto()'>Cadastrar</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+</main>

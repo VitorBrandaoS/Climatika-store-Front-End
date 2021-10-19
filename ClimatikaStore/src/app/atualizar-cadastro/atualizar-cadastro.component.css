@@ -187,11 +187,11 @@
   }
   
   .wrapper{
-    width: 350px;
+    width: 650px;
     height: 630px;
     background: #fff;
-    padding: 30px;
-    flex-wrap: wrap;
+    padding: 20px;
+    
   }
   
   .wrapper .form-group{

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Produto } from 'src/app/model/Produto';
+import { AuthService } from 'src/app/service/auth.service';
 import { ProdutoService } from 'src/app/service/produto.service';
 
 @Component({
@@ -15,10 +16,15 @@ export class AtualizandoProdutoComponent implements OnInit {
   constructor(
     private router: Router,
     private route: ActivatedRoute,
-    private produtoService: ProdutoService
+    private produtoService: ProdutoService,
+    private auth: AuthService
   ) { }
 
   ngOnInit() {
+    if(this.auth.logadoAdmin() == false){
+      alert('Você não tem permissão para acessar esta página!')
+      this.router.navigate(['/inicio'])
+    }
     this.codigoProduto = this.route.snapshot.params["id"]
     this.findByIdProduto(this.codigoProduto)
   }

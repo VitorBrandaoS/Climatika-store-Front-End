@@ -1,3 +1,51 @@
+/*FONTES*/
+
+h4{
+    font-family: comfortaa;
+    font-size: 20px !important;
+    color: rgb(98, 119, 98);
+}
+
+h5{
+    font-family: comfortaa;
+    font-size: 15px !important;
+    color: rgb(169, 169, 169);
+}
+
+.descricao{
+    text-align: justify;
+
+    margin-left: 55px;
+    font-family: comfortaa;
+    font-size: 15px !important;
+    max-width: 300px;
+}
+
+/*FIM DE FONTES*/
+
+/*BOTAO*/
+
+button {
+    margin-left: 50px;
+    font-family: adam;
+    margin-top: 20px;
+    border: none;
+    background: rgb(98, 131, 100);
+    cursor: pointer;
+    border-radius: 3px;
+    width: 200px;
+    color: rgb(181, 221, 188);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background: rgb(98, 131, 100);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+
+/*FIM DE BOTAO*/
+
 .foto-produto {
     display: block;
     max-width: 500px;
@@ -40,6 +88,10 @@
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.589);
     margin: 20px 0 20px 0;
+}
+
+.card-body{
+    border-radius: 20px;
 }
 
 @media only screen and (min-width: 150px) and (max-width: 767px){

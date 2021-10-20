@@ -17,19 +17,19 @@ export class FinalizarCompraComponent implements OnInit {
 
   constructor(
     private usuarioService: UsuarioService,
-    private auth: AuthService,
+    public auth: AuthService,
     private carrinhoService: CarrinhoService
   ) { }
 
   ngOnInit() {
     this.findUserById()
+    this.auth.findByIdVenda()
   }
 
   findUserById(){
     this.usuarioService.getByIdUsuario(environment.id).subscribe((resp: Usuario) =>{
       this.usuario = resp
     })
-
   }
 
   limpar(){

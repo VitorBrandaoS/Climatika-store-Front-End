@@ -123,9 +123,9 @@
     <div class="container-fluid">
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
 
-            <span class="align-items-center text-light mr-3" *ngIf="auth.logado()">Olá, {{auth.nomeUsuario()}}!</span>
+            <span class="align-items-center text-light mr-3 ola" *ngIf="auth.logado()">Olá, {{auth.nomeUsuario()}}!</span>
             <form class="form-inline my-2 my-lg-0 justify-content-end">
-                <button *ngIf="auth.logado()" class="btn btn-verde my-2 my-sm-0 mr-2" [routerLink]="['/carrinho']"
+                <button *ngIf="auth.logado()" class="btn iconemenu my-2 my-sm-0 mr-2" [routerLink]="['/carrinho']"
                     type="submit">
                     <img src="../../assets/img/icones/cesto-branco.png" width="25px" height="auto"
                         alt="carrinho de compras">
@@ -137,7 +137,7 @@
 
             <!-- Botão Usuário -->
             <div *ngIf="auth.logado()" class="btn-group dropleft">
-                <button type="button" class="btn btn-verde ml-2 rounded" data-toggle="dropdown" aria-haspopup="true"
+                <button type="button" class="btn iconemenu ml-2 rounded" data-toggle="dropdown" aria-haspopup="true"
                     aria-expanded="false">
                     <img src="../../assets/img/icones/user.png" alt="">
                 </button>

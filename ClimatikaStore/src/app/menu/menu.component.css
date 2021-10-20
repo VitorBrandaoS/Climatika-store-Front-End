@@ -54,7 +54,7 @@ a:hover {
 /* MENU */
 
 .dropdown-menu{
-  height: 300px;
+  max-height: 300px;
   overflow: auto;
 }
 
@@ -110,6 +110,11 @@ input:enabled{
     background: #42594A;
 }
 
+.ola{
+    font-family: comfortaa;
+    font-size: 13px;
+}
+
 
 /* BOTOES */
 
@@ -125,20 +130,27 @@ input:enabled{
     color: rgb(216, 224, 219);
 }
 
+.iconemenu{
+    background-color:#798e77;
+}
+
+.iconemenu:hover{
+    background-color:#42594a;
+}
+
 .btn-verde {
-    background: #42594A;
+    background-color:#42594a;
 }
 
 .btn-adm {
-    background: #42594A;
+    background-color:#42594a;
 }
 .btn-adm:hover{
-    background-color: rgba(255, 201, 51, 0.719);
+    background-color: rgba(141, 222, 109, 0.719);
 }
 
 .btn-verde:hover {
-    background-color: #b0c68d;
-    border: 1px #42594A solid;
+    background-color: #576956;
 }
 
 /*Scroll Bar*/

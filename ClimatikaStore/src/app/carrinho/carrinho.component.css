@@ -1,15 +1,15 @@
-.layoutCarrinho{
+.layoutCarrinho {
     width: 80%;
     height: 500px;
     border: 2px;
     border-style: groove;
     border-radius: 30px;
-    border-color: #5b866e9d;
+    border-color: #d9e4d639;
 }
 
-.fundoCarrinho{
+.fundoCarrinho {
     background-image: url("../../assets/img/logincadastro/patternlogin.png");
-    border-radius: 30px;
+    border-radius: 25px;
 }
 
 .lista-prod {
@@ -26,14 +26,13 @@ a {
     text-decoration: none;
 }
 
-h2{
+h2 {
     font-family: comfortaa;
     font-size: 25px;
     margin-top: 80px;
-
 }
 
-.fonte{
+.fonte {
     font-family: comfortaa;
 }
 
@@ -41,30 +40,49 @@ h2{
     font-size: 10pt;
 }
 
-
-.tot{
+.tot {
     align-items: center;
     font-size: 30pt;
-    
 }
 
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #4c6b5a;
-  }
-  
-  ::-webkit-scrollbar-track {
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #8da088;
+}
+
+ ::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.2);
-  }
+}
 
 
-  /*BOTOES*/
+/*CARD*/
 
-  button {
+.card {
+    max-height: 152px;
+    border-radius: 30px;
+}
+
+.card-img {
+    object-fit: cover;
+    max-height: 150px;
+    max-width: 150px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px !important;
+}
+
+.card-title {
+    font-family: comfortaa;
+    font-size: 15px;
+}
+
+
+/*BOTOES*/
+
+button {
     font-family: adam;
     margin-top: 20px;
     border: none;
@@ -74,12 +92,13 @@ h2{
     width: 200px;
     color: rgb(181, 221, 188);
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
-  }
-  
-  button:hover {
+}
+
+button:hover {
     background: rgb(98, 131, 100);
     transform: translateY(-3px);
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
-  }
+}
 
-  /*FIM DE BOTOES*/
+
+/*FIM DE BOTOES*/

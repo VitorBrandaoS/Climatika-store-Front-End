@@ -1,12 +1,3 @@
-.frete {
-    
-    border-radius: 15px;
-    text-align: center;
-}
-
-.frete p{
-    margin: 0px;
-}
 
 .boleto {    
     border-radius: 30px;
@@ -25,3 +16,124 @@
     width: 300px;
     height: 200px;
 }
+
+.flex-container div{
+    box-shadow: 0px 0px 5px rgb(213, 218, 214);
+    border-radius: 0%;
+    width: 150vh;
+    text-align: left;
+    padding: 25px;
+}
+
+/*CONTAINER ENTREGA*/
+
+h4{
+    font-family: comfortaa;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 80px;
+}
+
+p{
+    font-family: comfortaa;
+    font-size: 13px;
+    margin-left: 80px !important;
+}
+
+.flex-container .frete {
+    
+}
+
+.endereco img{
+    margin-top: 10px;
+    margin-left: 60px;
+    position: absolute;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    margin-top: 20px;
+  }
+  
+  .flex-container .endereco {
+      background-image: url('../../assets/img/logincadastro/sadasd.png');
+      background-repeat: no-repeat;
+      box-shadow: -2px -2px 7px rgb(213, 218, 214);
+      border-radius: 0%;
+      border-top-left-radius: 15px ;
+    max-width: 150vh;
+    text-align: left;
+    padding: 25px;
+  }
+
+  .flex-container .endereco a{
+      margin-left: 80px;
+      color: rgb(150, 168, 132);
+      text-decoration: none;
+      
+  }
+
+  /* FIM DE ENTREGA */
+
+  /* CONTAINER PRODUTOS */
+
+.flex-container .frete{
+    height: 350px;
+}
+
+  .fotofrete{
+      position: relative;
+      bottom: 230px;
+      left: 150px;
+  }
+
+  .pedidos{
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column !important;
+  }
+
+  /* FIM DE PRODUTOS */
+
+
+  /*PAGAMENTO */
+
+  .container{
+      background-image: url('https://i.imgur.com/j8yT5mT.gif');
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: 100px;
+    padding: 25px;
+    box-shadow: 2px 2px 7px rgb(213, 218, 214);
+    width: 150vh;
+    border-bottom-right-radius: 20px;
+  }
+
+  .form-check-input{
+      margin-left: 81px;
+  }
+
+  /*BOTAO*/
+
+  button{
+        font-family: adam;
+          border: none;
+          background: rgb(98, 131, 100);
+          cursor: pointer;
+          border-radius: 3px;
+          width: 200px;
+          color: rgb(181, 221, 188);
+          margin-left: 25px;
+          box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+          
+  }
+
+  button:hover { 
+    transform: translateY(-3px);
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
+    background: rgb(98, 131, 100);
+    color: rgb(181, 221, 188);
+  }

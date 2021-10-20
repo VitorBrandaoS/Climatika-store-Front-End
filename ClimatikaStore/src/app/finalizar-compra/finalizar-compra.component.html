@@ -1,133 +1,60 @@
-<div class="container-fluid bg-geral">
-  <div class="row  justify-content-center">
-    <div class="d-flex m-3 p-3">
+<div class="flex-container">
+    <div class="endereco mt-2">
+    
+        <img src="../../assets/img/logincadastro/local.png" height="15px" width="auto" alt=""><h4>Endereço de entrega</h4>
 
-      <div class="col-md-12 d-flex flex-column">
-
-        <div class="m-auto col-md-7 col-lg-6 col-sm-12 col-12">
-          <h3 class="text-center mb-2">Frete e Dados da Compra</h3>
-
-          <div class="frete mt-2">
-            <p><b>Compras Acima de R$100,00 - Frete Grátis para Todo o Brasil!</b></p>
-            <p>Regiões Sul e Sudeste - Frete Fixo R$22,00</p>
-            <p>Regiões Nordeste, Norte - Frete Fixo - R$28,00</p>
-            <p>Região Centro-Oeste - Frete Fixo - R$30,00</p>
-          </div>
-
-          <div class="frete mt-2">
-            <h4 class="mt-4">Dados da Compra:</h4>
-            <p>Nome: {{usuario.nomeCompleto}}</p>
-            <p>Endereço: {{usuario.endereco}} </p>
-            <p>{{usuario.cidade}}, {{usuario.estado}}</p>
-            <button class="btn btn-success m-2" routerLink="/atualizar-cadastro">Editar Cadastro</button>
-          </div>
-
-        </div>
-
-        <div class="m-auto col-lg-7 col-md-7 col-sm-12 col-12">
-          <h3 class="text-center mt-3">Pagamento</h3>
-
-          <div class="container mt-4 mb-4" id="pagamentos">
-            <nav>
-              <div class="nav nav-tabs d-flex justify-content-center" id="nav-tab" role="tablist">
-
-                <a class="nav-link active text-secondary font-weight-bold" id="nav-todasPostagens-tab" data-toggle="tab"
-                  href="#todasPostagens" role="tab" aria-controls="nav-todasPostagens" aria-selected="true">Boleto</a>
-
-                <a class="nav-link text-secondary font-weight-bold" id="nav-minhasPostagens-tab" data-toggle="tab"
-                  href="#minhasPostagens" role="tab" aria-controls="nav-minhasPostagens" aria-selected="false">Pix</a>
-
-                <a class="nav-link text-secondary font-weight-bold" id="nav-postagemTema" data-toggle="tab"
-                  href="#postagemTema" role="tab" aria-controls="nav-postagemTema" aria-selected="false">PicPay (em
-                  breve!)</a>
-              </div>
-            </nav>
-            <div class="tab-content mt-5 " id="nav-tabContent">
-              <div class="tab-pane fade show active" id="todasPostagens" role="tabpanel" aria-labelledby="nav-home-tab">
-
-                <div class="card-columns">
-                  <div class="card text-center boleto">
-                    <div class="card-body">
-                      <h5 class="card-title"></h5>
-                      <button type="button" class="btn btn-success" data-toggle="modal" data-target="#staticBackdrop">
-                        Realizar pagamento
-                      </button>
-                      <p class="card-text"></p>
-                      <p class="card-text">
-                        <small class="text-muted">
-
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-
-                </div>
-
-
-              </div>
-              <div class="tab-pane fade" id="minhasPostagens" role="tabpanel" aria-labelledby="minhasPostagens-tab">
-
-                <div class="card-columns">
-                  <div class="card text-center pix">
-                    <div class="card-body">
-                      <h5 class="card-title"></h5>
-                      <p class="card-text">
-                        <button  type="button" class="btn btn-success" data-toggle="modal" data-target="#staticBackdrop">
-                          Realizar pagamento
-                        </button>
-                      </p>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-
-
-              <div class="tab-pane fade" id="postagemTema" role="tabpanel" aria-labelledby="nav-postagemTema-tab">
-
-                <div class="card-columns">
-                  <div class="card text-center pickpay">
-                    <div class="card-body">
-                      <h5 class="card-title"></h5>
-                      <p class="card-text"></p>
-                      <p class="card-text">
-                      </p>
-                      <h4>Em breve implementaremos esta e outras formas de pagamento!</h4>
-                    </div>
-
-                  </div>
-                </div>
-
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-
-        <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
-          aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Compra realizada com sucesso!</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                Obrigado por colaborar com nosso projeto para ajudar nosso planeta.
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <p class="ml-4"> <b>{{usuario.nomeCompleto}}</b> : {{usuario.endereco}} - {{usuario.cidade}} / {{usuario.estado}}
+      <a routerLink="/atualizar-cadastro"><b>editar</b></a></p>
     </div>
+</div>
+
+<div class="flex-container">
+  <div class="produtos">
+      <h4>Produtos pedidos</h4>
   </div>
 
+  <div class="">
+    <img src="https://i.imgur.com/34xpEBo.jpg" height="50px" class="ml-5 mr-3" width="auto" alt="">
+    dona do front R$1.000.000,00
+  </div>
 </div>
+
+<div class="flex-container">
+  <div class="frete">
+      <h4 class="mb-4">Frete</h4>
+
+          <p class="mb-3"><b>Compras Acima de R$100,00 - Frete Grátis para Todo o Brasil!</b></p>
+      
+              <p class="text-right envio mr-5 mt-5">Regiões Sul e Sudeste - Frete Fixo R$12,00</p>
+              <p class="text-right mr-5">Regiões Nordeste, Norte - Frete Fixo - R$18,00</p>
+              <p class="text-right mb-5 mr-5">Região Centro-Oeste - Frete Fixo - R$20,00</p>
+            
+              <img src="https://i.imgur.com/YmY6zcy.png" class="fotofrete mb-5" height="280px" width="auto" alt="">
+
+  </div>
+</div>
+
+<div class="container mt-3 mb-5">
+  <div class="produtos">
+      <h4>Metodo de pagamento</h4>
+
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="opcao1">
+        <label class="form-check-label" for="inlineRadio1">Boleto</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="opcao2">
+        <label class="form-check-label" for="inlineRadio2">Pix</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="opcao3" disabled>
+        <label class="form-check-label mr-5" for="inlineRadio3">PayPal (em breve)</label>
+      </div>
+
+      <button  type="button" class="btn btn-success ml-3 mb-1" data-toggle="modal" data-target="#staticBackdrop">
+        Realizar pagamento
+      </button> 
+
+  </div>
+</div>
+

@@ -72,6 +72,8 @@ a:hover {
 /* INPUT */
 
 .pesquisa {
+    font-family: comfortaa;
+    font-size: 12px;
     width: 300px;
     border-radius: 10px;
 }
@@ -112,14 +114,15 @@ input:enabled{
 /* BOTOES */
 
 .btn-login {
-    background-color: aliceblue;
-    color:#42594A;
+    font-family: adam;
+    font-size: 13px;
+    background-color:#798e77;
+    color:#c9cfcb;
 }
 
 .btn-login:hover {
-    background-color: #b0c68d;
-    color: aliceblue;
-    border: 1px #42594A solid;
+    background-color: #576956;
+    color: rgb(216, 224, 219);
 }
 
 .btn-verde {

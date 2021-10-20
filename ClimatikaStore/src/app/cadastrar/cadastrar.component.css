@@ -209,6 +209,7 @@ input:focus{
   position: relative;
 }
 .wrapper .form-group input{
+  font-family: adam;
   height: 100%;
   width: 90%;
   border: none;

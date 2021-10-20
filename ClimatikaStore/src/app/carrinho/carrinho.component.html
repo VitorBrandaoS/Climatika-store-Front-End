@@ -27,14 +27,14 @@
 
         <div class="col-md-5 ml-1 pt-3 pl-3 fundoCarrinho">
             
-            <div class="d-block mt-4">
-                <h2>Carrinho de Compras</h2>
+            <div class="d-block mt-4 mb-4">
+                <h2 class="ml-4 text-secondary">Carrinho de Compras</h2>
                 <hr class="mb-4">
                 <!--<a (click)="calculoTotal()"><button class="btn btn-secondary" ></button></a>{{auth.calculoTotal()}}-->
                 <!--<p>Subtotal:{{auth.calculoTotal()}}</p>-->
                 <!--<input type="text" value="R${{auth.valorTotal.toLocaleString('pt-br', {minimumFractionDigits: 2})}}" readonly>-->
-                <h5 class="m-0 ml-1 font-italic">Valor Total:</h5>
-                <p class="tot ml-4">R${{auth.valorTotal.toLocaleString('pt-br', {minimumFractionDigits: 2})}}</p>
+                <h5 class="m-0 ml-4 font-italic fonte text-black-50">Valor Total:</h5>
+                <p class="tot ml-4 fonte text-black-50">R${{auth.valorTotal.toLocaleString('pt-br', {minimumFractionDigits: 2})}}</p>
                 <div class="mt-5 d-flex justify-content-center">
                     <button class="btn btn-success" routerLink="/finalizar-compra">Finalizar Compra</button>
                 </div>

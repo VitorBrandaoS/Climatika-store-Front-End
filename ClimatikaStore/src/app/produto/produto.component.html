@@ -1,7 +1,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-12 m-0 p-0">
-            <div class="row m-0 bg-pattern">
+            <div class="row m-0">
                 <!--<div class="col-md-11 m-auto d-flex bg-success p-1">-->
 
                 <div class="row justify-content-between mr-auto ml-auto mt-3 mb-3 w-max border-produto">
@@ -10,23 +10,29 @@
                     </div>
 
                     <div class="col-md-5 p-0 mr-3">
-                        <div class="card-body bg-descricao">
+                        <div class="card-body bg-pattern mt-3 mb-3">
                             <p class="text-muted">{{produto.categoriaMae}} → {{produto.categoriaFilha}}</p>
-                            <h4 class="nome-produto pb-3">{{produto.nomeProduto}}</h4>
-                            <h5 class="marca-produto pb-3">Marca: {{produto.marca}}</h5>
-                            <h5 class="preco-produto pb-2">Preço: R${{produto.preco}}</h5>
-                            <hr>
-                            <div class="buttons">
-                                <!--[routerLink]="['/carrinho', statusVenda.id]"-->
-                                <a (click)="addProduto()"><button class="btn btn-success">Adicionar ao
-                                        Carrinho</button></a>
-                            </div>
+                            <h4 class="nome-produto pb-1">{{produto.nomeProduto}}</h4>
+                            <h5 class="marca-produto pb-3">{{produto.marca}}</h5>
+                            <h4 class="preco-produto pb-2">R${{produto.preco}}</h4>
+                            <hr class="mb-4">
+                           
 
                             <div class="descricao mt-3">
                                 <p>
                                     {{produto.descricao}}
                                 </p>
+
+                                <hr class="mb-4">
+
+                                <div class="buttons">
+                                    <!--[routerLink]="['/carrinho', statusVenda.id]"-->
+                                    <a (click)="addProduto()"><button class="btn btn-success">adicionar ao
+                                            carrinho</button></a>
+                                </div>
                             </div>
+
+                            
                         </div>
                     </div>
 

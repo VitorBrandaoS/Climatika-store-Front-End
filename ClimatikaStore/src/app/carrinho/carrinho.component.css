@@ -20,8 +20,21 @@
 }
 
 a {
+    font-family: comfortaa;
+    font-size: 13px;
     cursor: pointer;
     text-decoration: none;
+}
+
+h2{
+    font-family: comfortaa;
+    font-size: 25px;
+    margin-top: 80px;
+
+}
+
+.fonte{
+    font-family: comfortaa;
 }
 
 .x {
@@ -47,3 +60,26 @@ a {
   ::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.2);
   }
+
+
+  /*BOTOES*/
+
+  button {
+    font-family: adam;
+    margin-top: 20px;
+    border: none;
+    background: rgb(98, 131, 100);
+    cursor: pointer;
+    border-radius: 3px;
+    width: 200px;
+    color: rgb(181, 221, 188);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  button:hover {
+    background: rgb(98, 131, 100);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /*FIM DE BOTOES*/

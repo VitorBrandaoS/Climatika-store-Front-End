@@ -47,7 +47,7 @@ export class CarrinhoComponent implements OnInit {
       this.produto = resp 
     })
   }
-
+/*
   findByIdVenda(id: number){
     if (id == 0) {
       alert("Opá! Você precisa logar para acessar seu carrinho de compras...")
@@ -59,7 +59,7 @@ export class CarrinhoComponent implements OnInit {
       })
     }
   }
-  /*
+  
   calculoTotal(){     
     let total = 0
     this.statusVenda.listaProduto.forEach(element => {

@@ -36,6 +36,9 @@ export class CarrinhoService {
     return this.http.get<StatusVenda>(`https://climatika-store-ecommerce.herokuapp.com/climatika/status/${id}`, this.token)
   }
 
+  limparLista(id: number): Observable<StatusVenda> {
+    return this.http.post<StatusVenda>(`https://climatika-store-ecommerce.herokuapp.com/climatika/status/limpa-carrinho/${id}`, this.token)
+  }
 
  
 

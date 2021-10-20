@@ -17,43 +17,27 @@ export class FinalizarCompraComponent implements OnInit {
 
   constructor(
     private usuarioService: UsuarioService,
-    private auth: AuthService,
+    public auth: AuthService,
     private carrinhoService: CarrinhoService
   ) { }
 
   ngOnInit() {
     this.findUserById()
+    this.auth.findByIdVenda()
   }
 
   findUserById(){
     this.usuarioService.getByIdUsuario(environment.id).subscribe((resp: Usuario) =>{
       this.usuario = resp
     })
-
   }
 
-  /*
-  findByCategoriaFilha(nome: string){  
-    this.produtoService.getByCategoriaFilha(nome).subscribe((resp: Produto[]) =>{
-      this.listaProduto = resp climatika-store-ecommerce
-    })
-}
-*/
-
-  removerProduto(idProduto: number){
-    this.carrinhoService.removerItem(idProduto, environment.id).subscribe((resp: StatusVenda) => {
+  limpar(){
+    this.carrinhoService.limparLista(environment.id).subscribe((resp: StatusVenda) => {
       this.auth.statusVenda = resp
     })
   }
-/*
-  limparLista(){
-    let lista
-    this.auth.findByIdVenda(this.auth.usuario.userStatusVenda.id)
-    this.auth.statusVenda.listaProduto.forEach(element => {
-      console.log("Elemento de código " + element.codigo + ", removido!")
-      this.removerProduto(element.codigo)
-    })
-    console.log(lista)
-  }
-*/
+
+  
+
 }

@@ -1,139 +1,155 @@
-
-.boleto {    
+.boleto {
     border-radius: 30px;
     width: 300px;
     height: 100px;
 }
 
-.pix {    
+.pix {
     border-radius: 30px;
     width: 300px;
     height: 100px;
 }
 
-.pickpay {    
+.pickpay {
     border-radius: 30px;
     width: 300px;
     height: 200px;
 }
 
-.flex-container div{
+.flex-container {
     box-shadow: 0px 0px 5px rgb(213, 218, 214);
     border-radius: 0%;
-    width: 150vh;
+    width: 110vh;
     text-align: left;
     padding: 25px;
 }
 
 /*CONTAINER ENTREGA*/
 
-h4{
+h4 {
     font-family: comfortaa;
     font-size: 17px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 80px;
 }
 
-p{
+p {
     font-family: comfortaa;
     font-size: 13px;
-    margin-left: 80px !important;
 }
 
-.flex-container .frete {
-    
+.flex-container .frete {}
+
+.endereco img {
+    margin-left: 10px;
 }
 
-.endereco img{
-    margin-top: 10px;
-    margin-left: 60px;
-    position: absolute;
-}
-
-.flex-container {
+.flex-container .endereco {
     display: flex;
     justify-content: center;
     background-color: transparent;
-    margin-top: 20px;
-  }
-  
-  .flex-container .endereco {
-      background-image: url('../../assets/img/logincadastro/sadasd.png');
-      background-repeat: no-repeat;
-      box-shadow: -2px -2px 7px rgb(213, 218, 214);
-      border-radius: 0%;
-      border-top-left-radius: 15px ;
-    max-width: 150vh;
-    text-align: left;
-    padding: 25px;
-  }
-
-  .flex-container .endereco a{
-      margin-left: 80px;
-      color: rgb(150, 168, 132);
-      text-decoration: none;
-      
-  }
-
-  /* FIM DE ENTREGA */
-
-  /* CONTAINER PRODUTOS */
-
-.flex-container .frete{
-    height: 350px;
+    
 }
 
-  .fotofrete{
-      position: relative;
-      bottom: 230px;
-      left: 150px;
-  }
+.endereco {
+    background-image: url('../../assets/img/logincadastro/sadasd.png');
+    background-repeat: no-repeat;
+    box-shadow: -2px -2px 7px rgb(213, 218, 214);
+    border-radius: 0%;
+    border-top-left-radius: 15px;
+    width: 110vh;
+    text-align: left;
+    padding: 25px;
+}
 
-  .pedidos{
+.flex-container .endereco a {
+    margin-left: 80px;
+    color: rgb(150, 168, 132);
+    text-decoration: none;
+}
+
+/* FIM DE ENTREGA */
+
+/* CONTAINER PRODUTOS */
+
+.flex-container .frete {
+    min-height: 200px;
+}
+
+.fotofrete {
+    object-fit: contain;
+}
+
+.fotoProd{
+    height: 60px;
+}
+
+.pedidos {
     display: flex;
     justify-content: center !important;
     flex-direction: column !important;
-  }
+}
 
-  /* FIM DE PRODUTOS */
+.produto-div {
+    box-shadow: 0px 0px 5px rgb(213, 218, 214);
+    border-radius: 0%;
+    width: auto;
+    text-align: left;
+    padding: 25px;
+}
 
+.scrollProd {
+    overflow: auto;
+    max-height: 300px !important;
+}
 
-  /*PAGAMENTO */
+/* FIM DE PRODUTOS */
 
-  .container{
-      background-image: url('https://i.imgur.com/j8yT5mT.gif');
-      background-position: right;
-      background-repeat: no-repeat;
-      background-size: 100px;
+/*PAGAMENTO */
+
+.container2 {
+    background-image: url('https://i.imgur.com/j8yT5mT.gif');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 100px;
     padding: 25px;
     box-shadow: 2px 2px 7px rgb(213, 218, 214);
-    width: 150vh;
+    width: 110vh;
     border-bottom-right-radius: 20px;
-  }
+}
 
-  .form-check-input{
-      margin-left: 81px;
-  }
+.form-check-input {
+    margin-left: 81px;
+}
 
-  /*BOTAO*/
+/*BOTAO*/
 
-  button{
-        font-family: adam;
-          border: none;
-          background: rgb(98, 131, 100);
-          cursor: pointer;
-          border-radius: 3px;
-          width: 200px;
-          color: rgb(181, 221, 188);
-          margin-left: 25px;
-          box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
-          
-  }
+button {
+    font-family: adam;
+    border: none;
+    background: rgb(98, 131, 100);
+    cursor: pointer;
+    border-radius: 3px;
+    width: 200px;
+    color: rgb(181, 221, 188);
+    margin-left: 25px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
 
-  button:hover { 
+button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
     background: rgb(98, 131, 100);
     color: rgb(181, 221, 188);
-  }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4c6b5a;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}

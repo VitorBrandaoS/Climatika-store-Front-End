@@ -42,4 +42,23 @@ export class AtualizandoProdutoComponent implements OnInit {
       this.produto = resp 
     })
   }
+
+  identificador(){
+    let categ = ""
+    if (this.produto.categoriaMae == "Cozinha") {
+      categ = "Cozinha"
+    }else if(this.produto.categoriaMae == "Banheiro"){
+      categ = "Banheiro"
+    }else if(this.produto.categoriaMae == "Jardim"){
+      categ = "Jardim"
+    }else if(this.produto.categoriaMae == "Moda e Beleza"){
+      categ = "Moda e Beleza"
+    }else if(this.produto.categoriaMae == "Higiene Pessoal"){
+      categ = "Higiene Pessoal"
+    }else if(this.produto.categoriaMae == "Pet"){
+      categ = "Pet"
+    }
+    return categ
+  }
+
 }

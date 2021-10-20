@@ -19,6 +19,14 @@
     margin-bottom: 30px;
 }
 
+.x {
+    color: rgb(0, 0, 0);
+}
+
+.x:hover {
+    color: rgb(128, 19, 19);
+}
+
 a {
     font-family: comfortaa;
     font-size: 13px;
@@ -75,8 +83,18 @@ h2 {
 }
 
 .card-title {
+    margin-top: 0% !important;
     font-family: comfortaa;
     font-size: 15px;
+}
+
+.card-text {
+    font-family: comfortaa;
+    font-size: 11px;
+}
+
+.valor {
+    font-size: 15px !important;
 }
 
 

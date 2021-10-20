@@ -13,6 +13,26 @@
                         <div class="d-flex flex-row justify-content-end">
                             <a class="x mr-3 mt-1" (click)="auth.removerProduto(item.codigo)">✖</a>
                         </div>
+
+                        <h5 class="card-title">{{item.nomeProduto}}</h5>
+                        <p class="card-text">{{item.descricao}}</p>
+                        <p class="card-text mb-5 valor"><small class="text-muted">R${{item.preco}}</small></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--
+            <div class="card mb-3" style="max-width: 540px;" *ngFor="let item of auth.statusVenda.listaProduto">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="{{item.foto}}" class="card-img" alt="...">
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="d-flex flex-row justify-content-end">
+                            <a class="x mr-3 mt-1" (click)="auth.removerProduto(item.codigo)">✖</a>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">{{item.nomeProduto}}</h5>
                             <p class="card-text">{{item.descricao}}</p>
@@ -20,7 +40,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
         </div>
 

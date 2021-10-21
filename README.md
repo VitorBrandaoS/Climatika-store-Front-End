@@ -74,14 +74,26 @@
     <td align="center">
     <img  src="https://avatars.githubusercontent.com/u/82923237?v=4" style="width: 100px; border-radius: 5%">
     <h4><b>Jaqueline Ferreira</b></h4>
+  <a href="https://www.linkedin.com/in/isaiasz/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+      <br
+          <a href="https://github.com/isaiaszanoni" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
    <td align="center">
     <img  src="https://i.imgur.com/jkapNNHh.jpg" style="width: 100px; border-radius: 5%">
-    <h4><b>Generation</b></h4>
+    <h4><b>Mayara bueno</b></h4>
+  <a href="https://www.linkedin.com/in/isaiasz/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+      <br
+          <a href="https://github.com/isaiaszanoni" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
     <td align="center">
     <img  src="https://i.imgur.com/OFzlA2N.png" style="width: 100px; border-radius: 5%">
-    <h4><b>Climatika</b></h4>
+    <h4><b>Rodrigo Silva</b></h4>
+  <a href="https://www.linkedin.com/in/isaiasz/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+      <br
+          <a href="https://github.com/isaiaszanoni" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
     <td align="center">
     <img  src="https://i.imgur.com/4c5NzcX.png" style="width: 100px; border-radius: 5%">
-    <h4><b>Eco.Book</b></h4>
+    <h4><b>Vitor</b></h4>
+  <a href="https://www.linkedin.com/in/isaiasz/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+      <br
+          <a href="https://github.com/isaiaszanoni" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
   </tr>
 </table>

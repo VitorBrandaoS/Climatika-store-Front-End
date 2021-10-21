@@ -58,14 +58,13 @@ h2 {
     height: 10px;
 }
 
- ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #8da088;
 }
 
- ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.2);
 }
-
 
 /*CARD*/
 
@@ -97,6 +96,14 @@ h2 {
     font-size: 15px !important;
 }
 
+.text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
 
 /*BOTOES*/
 
@@ -117,6 +124,5 @@ button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
 }
-
 
 /*FIM DE BOTOES*/

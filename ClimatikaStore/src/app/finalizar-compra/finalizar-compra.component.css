@@ -118,7 +118,14 @@ label {
     border-radius: 0%;
     width: auto;
     text-align: left;
-    padding: 25px;
+    padding: 5px;
+    margin: 25px;    
+}
+
+.bbp {
+    border-radius: 10px;
+    border-bottom: 1px double;
+    border-color:  #bfd1b6;
 }
 
 .scrollProd {

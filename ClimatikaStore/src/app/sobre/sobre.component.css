@@ -32,5 +32,56 @@
     width: 20px;
     height: 20px;
     
+}
+*{
+    margin:0;
+    padding:0 ;
+}
+body{
+  front-family: 'raleway', sans-serif;
+  font-weight: 400;
+  color:#777;
+ 
+}
+h1{
+ font-size:36px;
+ color:#555;
+ font-weight: bold;
 
+}
+h3{
+ font-size:24px ;
+ color:#333;
+ font-weight: bold;
+}
+#team img{
+    margin-top: -50px; 
+}
+#team i{
+    font-size: 26px;
+    color: #555;
+}
+#team p{
+    font-weight: 500;
+}
+#team.card{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 55px;
+    
+    border-radius:0 ;
+    box-shadow:5px  5px 15px#829c7f;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0. 3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+#team.card:hover{
+    background:#adc39c;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    box-shadow:  5px 5px 10 #9e9e9e;
+}
+#team .card:hover h3, #team .card:hover i{
+    color:#b4c2ac
 }

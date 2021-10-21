@@ -24,16 +24,39 @@
     padding: 25px;
 }
 
+
 /*CONTAINER ENTREGA*/
 
 h4 {
+    color: rgb(116, 129, 116);
     font-family: comfortaa;
     font-size: 17px;
 }
 
+.titulo {
+    font-family: comfortaa;
+    color: rgb(177, 194, 170);
+}
+
+.hrinit {
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
 p {
+    color: rgb(139, 153, 139);
     font-family: comfortaa;
     font-size: 13px;
+}
+
+label {
+    color: rgb(139, 153, 139);
+    font-family: comfortaa;
+    font-size: 13px;
+}
+
+.paypal {
+    color: rgb(196, 196, 196) !important;
 }
 
 .flex-container .frete {}
@@ -46,7 +69,6 @@ p {
     display: flex;
     justify-content: center;
     background-color: transparent;
-    
 }
 
 .endereco {
@@ -54,7 +76,7 @@ p {
     background-repeat: no-repeat;
     box-shadow: -2px -2px 7px rgb(213, 218, 214);
     border-radius: 0%;
-    border-top-left-radius: 15px;
+    border-top-left-radius: 30px;
     width: 110vh;
     text-align: left;
     padding: 25px;
@@ -66,7 +88,9 @@ p {
     text-decoration: none;
 }
 
+
 /* FIM DE ENTREGA */
+
 
 /* CONTAINER PRODUTOS */
 
@@ -78,8 +102,10 @@ p {
     object-fit: contain;
 }
 
-.fotoProd{
-    height: 60px;
+.fotoProd {
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .pedidos {
@@ -89,7 +115,6 @@ p {
 }
 
 .produto-div {
-    box-shadow: 0px 0px 5px rgb(213, 218, 214);
     border-radius: 0%;
     width: auto;
     text-align: left;
@@ -101,7 +126,20 @@ p {
     max-height: 300px !important;
 }
 
+.preco {
+    color: rgb(116, 129, 116);
+    font-family: comfortaa;
+    font-size: 16px;
+}
+
+.nomeprod {
+    color: rgb(149, 164, 149);
+    font-size: 16px;
+}
+
+
 /* FIM DE PRODUTOS */
+
 
 /*PAGAMENTO */
 
@@ -119,6 +157,12 @@ p {
 .form-check-input {
     margin-left: 81px;
 }
+
+.metodo {
+    border-bottom-right-radius: 30px;
+    box-shadow: 2px 2px 5px rgb(187, 196, 189);
+}
+
 
 /*BOTAO*/
 

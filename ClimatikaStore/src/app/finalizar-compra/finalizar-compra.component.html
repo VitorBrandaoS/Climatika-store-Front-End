@@ -1,80 +1,84 @@
+<h5 class="text-center m-2 mt-4 titulo">FINALIZAR COMPRA</h5>
+<hr class="mb-3 mt-3 hrinit">
+
 <div class="d-flex flex-wrap justify-content-center">
-  
+
     <div class="endereco mt-5 mb-3">
-      <div class="d-flex flex-row">
-        <h4>Endereço de entrega</h4>
-        <img src="../../assets/img/logincadastro/local.png" height="15px" width="auto" alt="">
+        <div class="d-flex flex-row">
+            <h4 class="ml-2 mt-3">Endereço de entrega</h4>
+            <img src="../../assets/img/logincadastro/local.png" class="mt-3" height="15px" width="auto" alt="">
 
-        <p class="ml-4"> <b>{{usuario.nomeCompleto}}</b> : {{usuario.endereco}} - {{usuario.cidade}} / {{usuario.estado}}
-          <a routerLink="/atualizar-cadastro"><b class="ml-3">editar</b></a>
-        </p>
-      </div>
-     
-    </div>
-  
-
-  <div class="flex-container">
-
-    <div class="d-flex flex-column ">
-
-      <div class="produto-div">
-        <h4>Produtos pedidos</h4>
-      </div>
-      <div class="produto-div scrollProd">
-        <div *ngFor="let item of auth.statusVenda.listaProduto" class="produto-div d-flex flex-row align-items-center">
-          <img src="{{item.foto}}" class="fotoProd ml-3 mr-3" alt="">
-
-          <p>{{item.nomeProduto}}</p>
-
-          <h3 class="align-self-sm-end">R${{item.preco}}</h3>
-
+            <p class="ml-4 mt-3 infoend"> <b>{{usuario.nomeCompleto}}</b> : {{usuario.endereco}} - {{usuario.cidade}} / {{usuario.estado}}
+                <a routerLink="/atualizar-cadastro"><b class="ml-3">editar</b></a>
+            </p>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="flex-container">
-    <div class="frete d-flex flex-rowrap">
-      <div class="col-md-6">
-        <h4 class="mb-4">Frete</h4>        
-        <div class="d-flex flex-column justify-content-center">
-          <p class=""><b>Compras Acima de R$100,00 - Frete Grátis para Todo o Brasil!</b></p>
-          <img src="https://i.imgur.com/YmY6zcy.png" class="fotofrete" height="280px" width="auto" alt="">
+    </div>
+
+
+    <div class="flex-container">
+
+        <div class="d-flex flex-column ">
+
+            <div class="produto-div">
+                <h4>Produtos pedidos</h4>
+            </div>
+            <div class="produto-div scrollProd">
+                <div *ngFor="let item of auth.statusVenda.listaProduto" class="produto-div d-flex flex-row align-items-center">
+                    <img src="{{item.foto}}" class="fotoProd ml-3 mr-3" alt="">
+
+                    <p class="mt-2 nomeprod">{{item.nomeProduto}} :</p>
+
+                    <p class="align-self-sm-end ml-3 preco">R${{item.preco}}</p>
+
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="col-md-6 d-flex flex-column align-items-center align-self-sm-center">
-        <p class="text-right envio mr-5 mt-5">Regiões Sul e Sudeste - Frete Fixo R$12,00</p>
-        <p class="text-right mr-5">Regiões Nordeste, Norte - Frete Fixo - R$18,00</p>
-        <p class="text-right mb-5 mr-5">Região Centro-Oeste - Frete Fixo - R$20,00</p>
-      </div>
     </div>
-  </div>
 
-  <div class="flex-container mt-3 mb-5">
-    <div class="produtos d-flex flex-rowrap align-items-center justify-content-center">
-      <h4>Metodo de pagamento</h4>
 
-      <div class="ml-auto form-check form-check-inline">
-        <input class="ml-5 mr-2" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="opcao1">
-        <label class="form-check-label" for="inlineRadio1">Boleto</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="ml-3 mr-2" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="opcao2">
-        <label class="form-check-label" for="inlineRadio2">Pix</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="ml-3 mr-2" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="opcao3"
-          disabled>
-        <label class="form-check-label" for="inlineRadio3">PayPal (em breve)</label>
-      </div>
 
-      <button type="button" class="btn btn-success ml-3 mr-3 mb-1" data-toggle="modal" data-target="#staticBackdrop" (click)="limpar()">
-        Realizar pagamento
+    <div class="flex-container mt-3">
+        <div class="frete d-flex flex-rowrap">
+            <div class="col-md-6">
+                <h4 class="mb-4">Frete</h4>
+                <div class="d-flex flex-column justify-content-center">
+                    <p class=""><b>Compras Acima de R$100,00 - Frete Grátis para Todo o Brasil!</b></p>
+                    <img src="https://i.imgur.com/YmY6zcy.png" class="fotofrete" height="280px" width="auto" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 d-flex flex-column align-items-center align-self-sm-center">
+                <p class="text-right envio mr-5 mt-5">Regiões Sul e Sudeste - Frete Fixo R$12,00</p>
+                <p class="text-right mr-5">Regiões Nordeste, Norte - Frete Fixo - R$18,00</p>
+                <p class="text-right mb-5 mr-5">Região Centro-Oeste - Frete Fixo - R$20,00</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex-container mt-3 mb-5 metodo">
+        <div class="produtos d-flex flex-rowrap align-items-center justify-content-center">
+            <h4>Metodo de pagamento</h4>
+
+            <div class="ml-auto form-check form-check-inline">
+                <input class="ml-5 mr-2" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="opcao1">
+                <label class="form-check-label" for="inlineRadio1">Boleto</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="ml-3 mr-2" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="opcao2">
+                <label class="form-check-label" for="inlineRadio2">Pix</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="ml-3 mr-2" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="opcao3" disabled>
+                <label class="form-check-label paypal" for="inlineRadio3">PayPal</label>
+            </div>
+
+            <button type="button" class="btn btn-success ml-5 mb-1" data-toggle="modal" data-target="#staticBackdrop" (click)="limpar()">
+        Finalizar
       </button>
-  
-      <img class="ml-auto" src="https://i.imgur.com/j8yT5mT.gif" alt="" height="100">
 
+            <img class="ml-auto" src="https://i.imgur.com/j8yT5mT.gif" alt="" height="100">
+
+        </div>
     </div>
-  </div>
 
 </div>

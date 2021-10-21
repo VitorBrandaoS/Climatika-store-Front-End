@@ -10,7 +10,7 @@
  
 </p>
 
-<h2>  Nossos parceiros 🌱</h2>
+<h2> ♻ Nossos parceiros 🌱</h2>
   
   <table align="center">
   <tr>

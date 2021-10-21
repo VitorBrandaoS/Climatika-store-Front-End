@@ -66,11 +66,14 @@
       <br
           <a href="https://github.com/alyen404" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
     <td align="center">
-    <img  src="https://i.imgur.com/hFWHZnf.png" style="width: 100px; border-radius: 5%">
-    <h4><b>Baependi</b></h4>
+    <img  src="https://avatars.githubusercontent.com/u/49243663?v=4" style="width: 100px; border-radius: 5%">
+    <h4><b>Isaias Rodrigues</b></h4>
+      <a href="https://www.linkedin.com/in/isaiasz/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+      <br
+          <a href="https://github.com/isaiaszanoni" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
     <td align="center">
-    <img  src="https://i.imgur.com/thqqpui.png" style="width: 100px; border-radius: 5%">
-    <h4><b>Gaia Ecommerce</b></h4>
+    <img  src="https://avatars.githubusercontent.com/u/82923237?v=4" style="width: 100px; border-radius: 5%">
+    <h4><b>Jaqueline Ferreira</b></h4>
    <td align="center">
     <img  src="https://i.imgur.com/jkapNNHh.jpg" style="width: 100px; border-radius: 5%">
     <h4><b>Generation</b></h4>

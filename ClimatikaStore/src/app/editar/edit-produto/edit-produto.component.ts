@@ -20,10 +20,10 @@ export class EditProdutoComponent implements OnInit {
   ){ }
 
   ngOnInit(){
-    if(this.auth.logadoAdmin() == false){
+   /* if(this.auth.logadoAdmin() == false){
       alert('Você não tem permissão para acessar esta página!')
       this.router.navigate(['/inicio'])
-    }
+    }*/
     window.scroll(0,0)
     this.auth.getAllProdutos()
   

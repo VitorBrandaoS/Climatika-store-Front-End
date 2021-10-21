@@ -1,5 +1,5 @@
 <div class="container d-flex justify-content-center">
-    
+
     <div class="row m-3 p-3 layoutCarrinho border border-secondary">
         <div class="col-md-12">
 
@@ -9,20 +9,20 @@
                         <img src="{{item.foto}}" class="card-img img-config" alt="...">
                     </div>
 
-                    <div class="col-md-6">
+                    <div class="col-md-6 corpo">
                         <div class="card-body">
                             <h5 class="card-title">{{item.nomeProduto}}</h5>
                             <p class="card-text descri">{{item.descricao}}</p>
-                            <p class="card-text">Marca: {{item.marca}}</p>
-                            <p class="card-text"><small class="text-muted">Categoria mãe: {{item.categoriaMae}}</small></p>
-                            <p class="card-text"><small class="text-muted">Categoria filha: {{item.categoriaFilha}}</small></p>
-                            <p class="card-text"><small class="text-muted">Preço: R${{item.preco}}</small></p>
+                            <p class="card-text marca">{{item.marca}}</p>
+                            <p class="card-text"><small class="text-muted categoria">{{item.categoriaMae}} - {{item.categoriaFilha}}</small></p>
+                            <p class="card-text"><small class="text-muted categoria"></small></p>
+                            <p class="card-text"><small class="text-muted preco">R${{item.preco}}</small></p>
                         </div>
                     </div>
                     <div class="col-md-2 ">
-                        <div class="d-flex flex-column align-self-center" style="margin-top: 100px;">
-                            <a [routerLink]="['/atualizando-produto', item.codigo]" routerLinkActive="router-link-active"><button class="btn btn-primary ml-1">Editar</button></a>
-                            <a [routerLink]="['/deletando-produto', item.codigo]" routerLinkActive="router-link-active"><button class="btn btn-danger mt-3">Deletar</button></a>
+                        <div class="d-flex flex-column align-self-center" style="margin-top: 50px;">
+                            <a [routerLink]="['/atualizando-produto', item.codigo]" routerLinkActive="router-link-active"><button class="btn editar"><i class="fas fa-pen"></i></button></a>
+                            <a [routerLink]="['/deletando-produto', item.codigo]" routerLinkActive="router-link-active"><button class="btn mt-3 apagar"><i class="fas fa-trash"></i></button></a>
                         </div>
                     </div>
                 </div>

@@ -32,6 +32,9 @@ body, html {
 }
 
 h3 {
+  font-family: comfortaa;
+  color: #6e8577;
+  font-size: 20px;
   font-weight: bold;
   margin: 0;
   margin-top: 12px;
@@ -70,7 +73,7 @@ form {
 .container {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  
   overflow: hidden;
   width: 1000px;
   height: 450px;
@@ -151,6 +154,7 @@ form {
 /*INPUTS*/
 
 input {
+  font-family: adam;
   border-radius: 0%;
   background-color: transparent;
 }
@@ -196,6 +200,7 @@ input:focus {
 }
 
 .wrapper .form-group label {
+  font-family: adam;
   position: absolute;
   bottom: 1px;
   left: 0;
@@ -292,6 +297,7 @@ select:focus {
 /*BOTOES*/
 
 .botaocad {
+  font-family: adam;
   border: none;
   background: rgb(98, 131, 100);
   cursor: pointer;
@@ -304,6 +310,7 @@ select:focus {
 }
 
 .botaoup {
+  font-family: adam;
   border: none;
   background: rgb(98, 131, 100) !important;
   cursor: pointer;
@@ -325,6 +332,7 @@ button:hover {
 }
 
 .botaocanc {
+  font-family: adam;
   border: none;
   background: rgb(223, 43, 43);
   cursor: pointer;
@@ -339,5 +347,7 @@ button:hover {
 /*FIM DE BOTOES*/
 
 .fundo {
-  background-image: url("../../assets/img/logincadastro/patternlogin.png");
+  border: 2px solid;
+  border-color: #b4bbb29d;
+  border-radius: 30px;
 }

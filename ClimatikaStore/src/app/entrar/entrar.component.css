@@ -9,13 +9,15 @@
 }
 
 .container-fluid{
+  background-position: center;
     background-image: url('../../assets/img/logincadastro/backgroundforest1.jpg');
-    min-height: 800px !important;
+    min-height: 969px !important;
 }
 
 
 
 /*CONTAINER*/
+
 
 /***** esquerda ******/
 .bgcad{
@@ -103,6 +105,7 @@ label{
 /***** direita login ******/
 
 .container {
+  margin-top: 10% !important;
 	background-color: #fff;
 	border-radius: 5px 100px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);

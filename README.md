@@ -26,8 +26,8 @@
     <img  src="https://i.imgur.com/jkapNNHh.jpg" style="width: 100px; border-radius: 5%">
     <h4><b>Generation</b></h4>
     <td align="center">
-    <img  src="https://i.imgur.com/OFzlA2N.png" style="width: 100px; border-radius: 5%">
-    <h4><b>Climatika</b></h4>
+    <img  src="https://cdn.discordapp.com/attachments/867051597850869770/898738255468560474/logo_gaia.png" style="width: 100px; border-radius: 5%">
+    <h4><b>Gaia</b></h4>
     <td align="center">
     <img  src="https://i.imgur.com/4c5NzcX.png" style="width: 100px; border-radius: 5%">
     <h4><b>Eco.Book</b></h4>

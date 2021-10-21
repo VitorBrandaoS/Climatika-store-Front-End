@@ -1,24 +1,71 @@
-.img-config{
-    width: 180px; 
+.img-config {
+    width: 180px;
     height: 190px;
-    object-fit: contain;
+    object-fit: cover;
+}
+
+.card-title {
+    font-family: comfortaa;
+    font-size: 15px;
 }
 
 .descri {
-    max-height: 100px;
+    font-family: comfortaa;
+    font-size: 10px;
+    max-height: 29px;
     overflow: auto;
     text-overflow: ellipsis;
+    margin-bottom: 5px;
+}
+
+.marca,
+.categoria {
+    font-family: comfortaa;
+    font-size: 10px;
+    margin: 0%;
+}
+
+.preco {
+    font-family: comfortaa;
+    font-size: 12px;
 }
 
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: rgb(90, 90, 90);
-  }
-  
-  ::-webkit-scrollbar-track {
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: rgb(139, 150, 138);
+}
+
+ ::-webkit-scrollbar-track {
     background: rgba(0, 0, 0, 0.2);
-  }
+}
+
+.card-body {
+    height: 130px !important;
+}
+
+
+/*BOTAO*/
+
+.editar {
+    background-color: rgb(120, 145, 120);
+    transition: transform 1s;
+}
+
+.editar:hover {
+    background-color: rgb(120, 145, 120);
+    transform: scale(0.5);
+}
+
+.apagar {
+    background-color: rgb(241, 113, 113);
+    transition: transform 1s;
+}
+
+.apagar:hover {
+    background-color: rgb(241, 113, 113);
+    transform: scale(0.5);
+}

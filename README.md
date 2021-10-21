@@ -63,8 +63,8 @@
     <img  src="https://media-exp1.licdn.com/dms/image/C4D03AQEieL2EMiXpFw/profile-displayphoto-shrink_200_200/0/1631643399594?e=1637798400&v=beta&t=fnyYc4UdaXpsGPyIfZFRzbWT9w08MvI4Hg6QUau60KQ" style="width: 100px; border-radius: 5%">
     <h4><b>Agatha</b></h4>
       <a href="https://www.linkedin.com/in/gthlbrc/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
-      <br
-          <a href="https://github.com/alyen404" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
+      
+      <a href="https://github.com/Jaqueline-Ferreira" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a>
     <td align="center">
     <img  src="https://avatars.githubusercontent.com/u/49243663?v=4" style="width: 100px; border-radius: 5%">
     <h4><b>Isaias Rodrigues</b></h4>

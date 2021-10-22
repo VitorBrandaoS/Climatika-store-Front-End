@@ -34,3 +34,17 @@ ul.social-network li{
 a{
   text-decoration: none;
 }
+
+.sobre-footer {
+  color: #798e77;
+  text-align: center;
+  line-height: normal;
+}
+
+.sobre-footer a {
+  color: #479f58;
+}
+
+.titulo {
+  color: rgb(138, 165, 134);
+}

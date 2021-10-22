@@ -131,13 +131,14 @@ export class AuthService{
       this.valorTotal = 0
     }else{
       this.statusVenda.listaProduto.forEach((element) => {
-        let valor = element.preco
-        let quant = element.quant
-        total = total + (valor * quant)
+        //let valor = element.preco
+        //let quant = element.quant
+        //total = total + (valor * quant)
+        total = total + element.preco
         this.valorTotal = total
         return this.valorTotal
       });
-    }    
+    }
     console.log("Término do calculo")
   }
   

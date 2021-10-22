@@ -39,6 +39,7 @@ export class CarrinhoComponent implements OnInit {
       this.router.navigate(["/inicio"])
     }
     this.auth.findByIdVenda()
+    //this.auth.calculoTotal()
   }
   
   

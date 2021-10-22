@@ -1,3 +1,4 @@
+
 <h5 class="text-center m-2 mt-4 titulo">FINALIZAR COMPRA</h5>
 <hr class="mb-3 mt-3 hrinit">
 
@@ -25,7 +26,8 @@
         <h4>Produtos pedidos</h4>
       </div>
       <div class="produto-div scrollProd">
-        <div *ngFor="let item of auth.statusVenda.listaProduto" class="produto-div d-flex flex-row align-items-center bbp">
+        <div *ngFor="let item of auth.statusVenda.listaProduto"
+          class="produto-div d-flex flex-row align-items-center bbp">
           <img src="{{item.foto}}" class="fotoProd ml-3 mr-3" alt="">
 
           <p class="mt-2 nomeprod">{{item.nomeProduto}} :</p>
@@ -73,13 +75,32 @@
         <label class="form-check-label paypal" for="inlineRadio3">PayPal</label>
       </div>
 
-      <button type="button" class="btn btn-success ml-5 mb-1" data-toggle="modal" data-target="#staticBackdrop"
-        (click)="limpar()">
+      <button data-target="#modalFinalizar" type="button" class="btn btn-success ml-5 mb-1" data-toggle="modal" (click)="limpar()">
         Finalizar
       </button>
 
       <img class="ml-auto" src="https://i.imgur.com/j8yT5mT.gif" alt="" height="100">
 
+    </div>
+  </div>
+
+  <div class="modal" tabindex="-1" id="modalFinalizar">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Compra Realizada com Sucesso!</h5>
+        </div>
+        <div class="modal-body">
+          <p>
+            Em breve você receberá o código de rastreamento do seu pedido! 
+          </p><p>
+            Muito obrigado por consumir de maneira consciênte, volte sempre!
+          </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-sm" routerLink="/inicio" data-dismiss="modal">Voltar ao Inicio</button>
+        </div>
+      </div>
     </div>
   </div>
 

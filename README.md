@@ -38,12 +38,18 @@
     <td align="center">
     <img  src="https://cdn.discordapp.com/attachments/867051597850869770/898738255468560474/logo_gaia.png" style="width: 100px; border-radius: 5%">
     <h4><b>Gaia</b></h4>
+       <p class="descricao">Acreditamos que outro viver é possível. Num viver sustentável. Num mundo onde o dar e receber sejam recíprocos.
+
+
+</p>
     <td align="center">
     <img  src="https://i.imgur.com/4c5NzcX.png" style="width: 100px; border-radius: 5%">
     <h4><b>Eco.Book</b></h4>
+      <p class="descricao">A eco.Book acredita que um dos caminhos para o desenvolvimento sustentável é a educação.</p>
        <td align="center">
          <img  src="https://cdn.discordapp.com/attachments/867051597850869770/897835109238050868/logo.png" style="width: 100px; border-radius: 5%">
     <h4><b>Baependi</b></h4>
+         
   </tr>
 </table>
 

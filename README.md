@@ -49,6 +49,11 @@
        <td align="center">
          <img  src="https://cdn.discordapp.com/attachments/867051597850869770/897835109238050868/logo.png" style="width: 100px; border-radius: 5%">
     <h4><b>Baependi</b></h4>
+                      
+<p class="descricao">Um projeto de e-commerce com a ideia de trazer a dinâmica da ecologia para o cliente.
+
+
+</p>
          
   </tr>
 </table>

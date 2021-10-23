@@ -16,44 +16,24 @@
     <td align="center">
     <img  src="https://i.imgur.com/zLKkg0Y.png" style="width: 100px; border-radius: 5%">
     <h4><b>Action for Life</b></h4>
-      <p class="descricao">
-                            Nossos produtos são naturais ou de materiais recicláveis.
-                        </p>
     <td align="center">
     <img  src="https://cdn.discordapp.com/attachments/867051597850869770/897847599216853063/Logotipo_ecous_1.png" style="width: 100px; border-radius: 5%">
     <h4><b>Ecous</b></h4>
-        <p class="descricao">Acreditamos que outro viver é possível.Num mundo onde o dar e receber sejam recíprocos</p>
     <td align="center">
     <img  src="https://i.imgur.com/thqqpui.png" style="width: 100px; border-radius: 5%">
     <h4><b>Gaia Ecommerce</b></h4>
-       <p class="descricao">
-                            Um projeto de e-commerce com a ideia de trazer a dinâmica da ecologia para o cliente.
-                        </p>
    <td align="center">
     <img  src="https://i.imgur.com/jkapNNHh.jpg" style="width: 100px; border-radius: 5%">
     <h4><b>Generation</b></h4>
-     <p class="descricao">Nossa missão é apoiar jovens a construírem carreiras sustentáveis e prósperas .
-
-</p>
     <td align="center">
     <img  src="https://cdn.discordapp.com/attachments/867051597850869770/898738255468560474/logo_gaia.png" style="width: 100px; border-radius: 5%">
     <h4><b>Gaia</b></h4>
-       <p class="descricao">Acreditamos que outro viver é possível. Num viver sustentável. Num mundo onde o dar e receber sejam recíprocos.
-
-
-</p>
     <td align="center">
     <img  src="https://i.imgur.com/4c5NzcX.png" style="width: 100px; border-radius: 5%">
     <h4><b>Eco.Book</b></h4>
-      <p class="descricao">A eco.Book acredita que um dos caminhos para o desenvolvimento sustentável é a educação.</p>
        <td align="center">
          <img  src="https://cdn.discordapp.com/attachments/867051597850869770/897835109238050868/logo.png" style="width: 100px; border-radius: 5%">
     <h4><b>Baependi</b></h4>
-                      
-<p class="descricao">Um projeto de e-commerce com a ideia de trazer a dinâmica da ecologia para o cliente.
-
-
-</p>
          
   </tr>
 </table>

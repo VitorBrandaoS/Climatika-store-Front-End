@@ -26,9 +26,15 @@
     <td align="center">
     <img  src="https://i.imgur.com/thqqpui.png" style="width: 100px; border-radius: 5%">
     <h4><b>Gaia Ecommerce</b></h4>
+       <p class="descricao">
+                            Um projeto de e-commerce com a ideia de trazer a dinâmica da ecologia para o cliente.
+                        </p>
    <td align="center">
     <img  src="https://i.imgur.com/jkapNNHh.jpg" style="width: 100px; border-radius: 5%">
     <h4><b>Generation</b></h4>
+     <p class="descricao">Nossa missão é apoiar jovens a construírem carreiras sustentáveis e prósperas .
+
+</p>
     <td align="center">
     <img  src="https://cdn.discordapp.com/attachments/867051597850869770/898738255468560474/logo_gaia.png" style="width: 100px; border-radius: 5%">
     <h4><b>Gaia</b></h4>

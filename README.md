@@ -34,6 +34,7 @@
        <td align="center">
          <img  src="https://cdn.discordapp.com/attachments/867051597850869770/897835109238050868/logo.png" style="width: 100px; border-radius: 5%">
     <h4><b>Baependi</b></h4>
+         
   </tr>
 </table>
 

@@ -1,0 +1,112 @@
+.titulo {
+    font-family: comfortaa;
+    color: rgb(177, 194, 170);
+}
+
+.subtitulo {
+    font-family: comfortaa;
+    font-size: 12px !important;
+    color: rgb(158, 170, 153);
+}
+
+
+/*PARCEIROS*/
+
+.devteam {
+    width: 180px;
+    height: 180px;
+    background-position: center;
+    background-size: 180px;
+    transition: transform 1s;
+}
+
+.devteam:hover {
+    transform: scale(1.5);
+}
+
+.devteam-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    width: 180px;
+    height: 180px;
+    background-color: rgba(22, 22, 22, 0.681);
+    opacity: 0;
+}
+
+.devteam:hover .devteam-info {
+    opacity: 1;
+}
+
+.devteam-icones {
+    width: 20px;
+    height: 20px;
+}
+
+
+/*descrição*/
+
+.nomeparc {
+    font-family: comfortaa;
+}
+
+.descricao {
+    font-family: comfortaa;
+    max-width: 130px;
+    text-align: justify;
+    color: white;
+    font-size: 6.5px;
+}
+
+
+/*FIM DE PARCEIROS*/
+
+
+/*BOTAO*/
+
+.botao {
+    font-family: adam;
+    border: none;
+    background: rgb(98, 131, 100);
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px;
+    width: 200px;
+    color: rgb(181, 221, 188);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+.botao:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+input {
+    font-family: comfortaa;
+    font-size: 13px;
+    background: rgb(223, 231, 223);
+}
+
+input:enabled {
+    background: rgb(223, 231, 223);
+    box-shadow: none;
+    border: none;
+}
+
+textarea {
+    font-family: comfortaa;
+    font-size: 13px;
+    background: rgb(223, 231, 223);
+}
+
+textarea:enabled {
+    background: rgb(223, 231, 223);
+    box-shadow: none;
+    border: none;
+}
+
+textarea:valid {
+    border: none;
+}

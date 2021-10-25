@@ -7,6 +7,7 @@ import { Usuario } from '../model/Usuario';
 import { AuthService } from '../service/auth.service';
 import { CarrinhoService } from '../service/carrinho.service';
 import { ProdutoService } from '../service/produto.service';
+import { UsuarioService } from '../service/usuario.service';
 
 @Component({
   selector: 'app-carrinho',
@@ -28,16 +29,16 @@ export class CarrinhoComponent implements OnInit {
     private route: ActivatedRoute,
     private produtoService: ProdutoService,
     private carrinhoService: CarrinhoService,
+    private usuarioService: UsuarioService,
     public auth: AuthService
   ) {   }
 
   ngOnInit() {
-    if (environment.id == 0) {
+   if (environment.id == 0) {
       alert("Opá! Você precisa logar para acessar seu carrinho de compras...")
       this.router.navigate(["/inicio"])
     }
     this.auth.findByIdVenda()
-    
   }
   
   
@@ -46,7 +47,7 @@ export class CarrinhoComponent implements OnInit {
       this.produto = resp 
     })
   }
-
+/*
   findByIdVenda(id: number){
     if (id == 0) {
       alert("Opá! Você precisa logar para acessar seu carrinho de compras...")
@@ -58,7 +59,7 @@ export class CarrinhoComponent implements OnInit {
       })
     }
   }
-  /*
+  
   calculoTotal(){     
     let total = 0
     this.statusVenda.listaProduto.forEach(element => {
@@ -69,5 +70,6 @@ export class CarrinhoComponent implements OnInit {
       return this.valorTotal
     });
   }*/
-  
+ 
+
 }

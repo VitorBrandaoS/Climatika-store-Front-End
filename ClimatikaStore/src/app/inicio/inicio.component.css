@@ -1,39 +1,44 @@
-
 .mouse-link {
     cursor: pointer;
-
 }
+
+h5 {
+    font-family: comfortaa;
+    color: rgb(141, 173, 148);
+}
+
 
 /*CARROSEL*/
 
-.fad{
+.fad {
     filter: brightness(50%)
 }
 
 
 /*CARDS*/
+
 .card {
-	width: 300px;
-	display: inline-block;
-	margin: 1rem;
-	border-radius: 4px;
-	box-shadow: 0 -1px 1px 0 rgba(65, 87, 69, 0.05), 0 1px 2px 0 rgba(0,0,0,.2);
-	transition: all .2s ease;
-	background: #fff;
-	position: relative;
-	overflow: hidden;
+    width: 300px;
+    display: inline-block;
+    margin: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 -1px 1px 0 rgba(65, 87, 69, 0.05), 0 1px 2px 0 rgba(0, 0, 0, .2);
+    transition: all .3s ease;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
 }
 
-.card:hover{
+.card:hover {
     transform: translateY(-4px);
-	box-shadow: -7px 7px rgba(79, 110, 74, 0.288);
+    transform: scale(1.1);
+    box-shadow: -7px 7px rgba(79, 110, 74, 0.288);
     cursor: pointer;
 }
-.card:hover .card-img{
+
+.card:hover .card-img {
     box-shadow: 0 3px 0 0 #99b392;
 }
-
-
 
 .hover {
     background: #dee9de;
@@ -49,22 +54,19 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-   
 }
 
-
-.nomeProduto{
+.nomeProduto {
     color: rgb(146, 180, 157);
     font-family: 'Saira Condensed', sans-serif;
-
 }
 
-.marca{
+.marca {
     font-size: 13px;
     font-family: 'Saira Condensed', sans-serif;
 }
 
-.preco{
+.preco {
     font-family: 'Saira Condensed', sans-serif;
     color: rgb(110, 131, 116);
 }

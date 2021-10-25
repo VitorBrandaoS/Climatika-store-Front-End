@@ -1,16 +1,31 @@
-a {
-    color:aliceblue !important;
+.fontnavbar{
+    font-family: comfortaa;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
+.fontproduto{
+    font-family: comfortaa;
+    font-size: 13px !important;
+}
 
+.fontproduto:hover{
+    background-color: rgb(197, 211, 203);
+    color: #445d4f !important;
+}
+
+a {
+    color:rgb(197, 211, 203) !important;
+}
+
+.bg-subcatg{
+    background-color: #61806e;
+}
 
 a:hover {
     cursor: pointer;
 }
 
-.dropitem:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-}
 
 #logo{
     width: 140px;
@@ -36,7 +51,29 @@ a:hover {
     background-color: #798e77;
 }
 
+/* MENU */
+
+.dropdown-menu{
+  max-height: 300px;
+  overflow: auto;
+}
+
+.lojadrop{
+    margin-top: 8px !important;
+    margin-left: 5px !important;
+}
+
+.lojadrop:hover{
+    color: #5D7963;
+}
+
+/* FIM DE MENU */
+
+/* INPUT */
+
 .pesquisa {
+    font-family: comfortaa;
+    font-size: 12px;
     width: 300px;
     border-radius: 10px;
 }
@@ -61,6 +98,8 @@ input:enabled{
     box-shadow: #5D7963 !important;
 }
 
+/* FIM DE INPUT */
+
 
 .hr-menu {
     border-top: 1px solid white;
@@ -71,30 +110,60 @@ input:enabled{
     background: #42594A;
 }
 
+.ola{
+    font-family: comfortaa;
+    font-size: 13px;
+}
+
+
+/* BOTOES */
+
 .btn-login {
-    background-color: aliceblue;
-    color:#42594A;
+    font-family: adam;
+    font-size: 13px;
+    background-color:#798e77;
+    color:#c9cfcb;
 }
 
 .btn-login:hover {
-    background-color: #b0c68d;
-    color: aliceblue;
-    border: 1px #42594A solid;
+    background-color: #576956;
+    color: rgb(216, 224, 219);
+}
+
+.iconemenu{
+    background-color:#798e77;
+}
+
+.iconemenu:hover{
+    background-color:#42594a;
 }
 
 .btn-verde {
-    background: #42594A;
+    background-color:#42594a;
 }
 
 .btn-adm {
-    background: #42594A;
+    background-color:#42594a;
 }
 .btn-adm:hover{
-    background-color: rgba(255, 201, 51, 0.719);
+    background-color: rgba(141, 222, 109, 0.719);
 }
 
 .btn-verde:hover {
-    background-color: #b0c68d;
-    border: 1px #42594A solid;
+    background-color: #576956;
 }
 
+/*Scroll Bar*/
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #b8c8bb;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+  }

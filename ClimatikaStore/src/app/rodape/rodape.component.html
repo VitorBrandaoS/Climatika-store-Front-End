@@ -1,27 +1,24 @@
 <div class="container-fluid">
   <hr class="ml-5 mr-5">
-  <div class="row">
-    <div class="col-md-4 col-lg-4 col-sm-4 d-flex align-items-center pl-4 pt-3 hr1">
-      <ul class="text-success list-unstyled ">
-        <h5>Dúvidas</h5>
-        <li>
-          <a routerLink='/duvidas' class="text-success">Envio</a>
-        </li>
-
-        <li>
-          <a routerLink='/duvidas' class="text-success">Cancelamento</a>
-        </li>
-
-        <li>
-          <a routerLink='/duvidas' class="text-success">Trocas</a>
-        </li>
-
-        <li>
-          <a routerLink='/duvidas' class="text-success">FAQ</a>
-        </li>
-      </ul>
+  <div class="col-md-12 col-m-0 row d-flex justify-content-center">
+    <div
+      class="col-md-6 col-lg-6 col-sm-12 col-12 col-m-0 d-flex flex-wrap align-items-center justify-content-between pl-4 pt-3">
+      <div class="col-md-6 col-sm-12 col-12 m-0 p-0">
+        <h3 class="text-center titulo">Sobre Nós</h3>
+        <p class="sobre-footer">
+          E-commerce empenhado em reduzir impactos ambientais e sociais de consumo com
+          produtos ecológicos confeccionados em parcerias com pequenos empreendedores.
+        </p>
+      </div>
+      <div class="col-md-4 col-sm-12 col-12 sobre-footer m-0 p-0">
+        <p>Contribua com a versão inicial do nosso projeto:
+        
+        <button type="button" class="btn btn-success mt-2" data-toggle="modal" data-target="#exampleModal">
+          Deixe o seu feedback!
+        </button>
+      </div>
     </div>
-    <div class="col-md-4 col-lg-4 col-sm-4 col-12 d-flex align-items-center pl-4 pt-3 mb-5 mt-1">
+    <div class="col-md-4 col-lg-4 col-sm-12 col-12 col-12 d-flex align-items-center pl-4 pt-3 mb-5 mt-1">
       <iframe width="450" height="240" src="https://www.youtube.com/embed/bwO4j7aRLg4" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen></iframe>
@@ -31,7 +28,7 @@
   </div>
 
 
-  <footer class="footer font-small bg-rodape mb-4">
+  <footer class="footer font-small bg-rodape">
     <div class="row">
 
       <div class="col-md-12 col-12 d-flex flex-wrap align-items-center justify-content-center bg-rodape">
@@ -120,5 +117,43 @@
         <p>ClimatikaStore&copy;</p>
       </div>
     </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Deixe o seu feedback!</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              O Climatika Store está em sua versão inicial. O seu 
+              feedback nos ajuda a evoluir e continuar a planejar um futuro mais consciênte. Muito obrigado!
+            </p>
+            <div class=" d-flex justify-content-center">
+              
+              <form>
+                <div class="form-group">
+                  <input class="form-control form-control-sm mb-1" type="text" placeholder="nome">
+                  <input class="form-control form-control-sm mb-1" type="email" placeholder="email">
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                    placeholder="mensagem"></textarea>
+                  <div class="d-flex justify-content-center align-items-center">
+                    <button type="submit" class="btn btn-success botao mt-3 mb-5">enviar</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </footer>
 </div>

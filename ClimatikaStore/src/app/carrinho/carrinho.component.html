@@ -1,6 +1,6 @@
 <div (click)="auth.calculoTotal()" class="container d-flex justify-content-center">
 
-    <div class="d-flex flex-row m-3 p-3 layoutCarrinho">
+    <div class="d-flex flex-row m-3 p-3 mr-2 layoutCarrinho">
         <div class="col-md-7 lista-prod">
 
             <div class="card mb-3" style="max-width: 540px;" *ngFor="let item of auth.statusVenda.listaProduto">
@@ -11,7 +11,27 @@
 
                     <div class="col-md-8">
                         <div class="d-flex flex-row justify-content-end">
-                        <a class="x mr-1 mt-1" (click)="auth.removerProduto(item.codigo)">✖</a>
+                            <a class="x mr-3 mt-1" (click)="auth.removerProduto(item.codigo)">✖</a>
+                        </div>
+
+                        <h5 class="card-title">{{item.nomeProduto}}</h5>
+                        <p class="card-text text ml-3">{{item.descricao}}</p>
+                        <p class="card-text mb-5 valor"><small class="text-muted">R${{item.preco}}</small></p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--
+            <div class="card mb-3" style="max-width: 540px;" *ngFor="let item of auth.statusVenda.listaProduto">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="{{item.foto}}" class="card-img" alt="...">
+                    </div>
+
+                    <div class="col-md-8">
+                        <div class="d-flex flex-row justify-content-end">
+                            <a class="x mr-3 mt-1" (click)="auth.removerProduto(item.codigo)">✖</a>
                         </div>
                         <div class="card-body">
                             <h5 class="card-title">{{item.nomeProduto}}</h5>
@@ -20,21 +40,21 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
         </div>
 
 
-        <div class="col-md-5 ml-1 pt-3 pl-3 fundoCarrinho">
-            
-            <div class="d-block mt-4">
-                <h2>Carrinho de Compras</h2>
+        <div class="col-md-5 ml-1 pt-3 pl-3 pr-3 fundoCarrinho">
+
+            <div class="d-block mt-4 mb-4">
+                <h2 class="ml-4 text-secondary">Carrinho de Compras</h2>
                 <hr class="mb-4">
                 <!--<a (click)="calculoTotal()"><button class="btn btn-secondary" ></button></a>{{auth.calculoTotal()}}-->
                 <!--<p>Subtotal:{{auth.calculoTotal()}}</p>-->
                 <!--<input type="text" value="R${{auth.valorTotal.toLocaleString('pt-br', {minimumFractionDigits: 2})}}" readonly>-->
-                <h5 class="m-0 ml-1 font-italic">Valor Total:</h5>
-                <p class="tot ml-4">R${{auth.valorTotal.toLocaleString('pt-br', {minimumFractionDigits: 2})}}</p>
+                <h5 class="m-0 ml-4 font-italic fonte text-black-50">Valor Total:</h5>
+                <p class="tot ml-4 fonte text-black-50">R${{auth.valorTotal.toLocaleString('pt-br', {minimumFractionDigits: 2})}}</p>
                 <div class="mt-5 d-flex justify-content-center">
                     <button class="btn btn-success" routerLink="/finalizar-compra">Finalizar Compra</button>
                 </div>
@@ -42,7 +62,7 @@
                     <a routerLink="/inicio" class="text-secondary">← Continuar Comprando</a>
                 </div>
             </div>
-            
+
         </div>
     </div>
 

@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment.prod';
+import { StatusVenda } from '../model/StatusVenda';
 import { Usuario } from '../model/Usuario';
+import { AuthService } from '../service/auth.service';
+import { CarrinhoService } from '../service/carrinho.service';
 import { UsuarioService } from '../service/usuario.service';
 
 @Component({
@@ -13,26 +16,28 @@ export class FinalizarCompraComponent implements OnInit {
   usuario: Usuario = new Usuario
 
   constructor(
-    private usuarioService: UsuarioService
+    private usuarioService: UsuarioService,
+    public auth: AuthService,
+    private carrinhoService: CarrinhoService
   ) { }
 
   ngOnInit() {
     this.findUserById()
+    this.auth.findByIdVenda()
   }
 
   findUserById(){
     this.usuarioService.getByIdUsuario(environment.id).subscribe((resp: Usuario) =>{
       this.usuario = resp
     })
-
   }
 
-  /*
-  findByCategoriaFilha(nome: string){  
-    this.produtoService.getByCategoriaFilha(nome).subscribe((resp: Produto[]) =>{
-      this.listaProduto = resp
+  limpar(){
+    this.carrinhoService.limparLista(environment.id).subscribe((resp: StatusVenda) => {
+      this.auth.statusVenda = resp
     })
-}
-*/
+  }
+
+  
 
 }

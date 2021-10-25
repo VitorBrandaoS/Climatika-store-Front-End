@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { environment } from 'src/environments/environment.prod';
 import { StatusVenda } from '../model/StatusVenda';
 import { Usuario } from '../model/Usuario';
 import { AuthService } from '../service/auth.service';
 import { CarrinhoService } from '../service/carrinho.service';
+import { UsuarioService } from '../service/usuario.service';
 
 
 @Component({
@@ -14,7 +14,7 @@ import { CarrinhoService } from '../service/carrinho.service';
 })
 export class CadastrarComponent implements OnInit {
 
-  usuario: Usuario = new Usuario
+  usuario: Usuario = new Usuario()
   confirmarSenha: string
   idVenda: number
   statusVenda: StatusVenda = new StatusVenda()
@@ -22,7 +22,8 @@ export class CadastrarComponent implements OnInit {
   constructor(
     private authService: AuthService,
     private router: Router,
-    private carrinhoService: CarrinhoService
+    private carrinhoService: CarrinhoService,
+    private usuarioService: UsuarioService
   ) { }
 
   ngOnInit() {
@@ -33,25 +34,37 @@ export class CadastrarComponent implements OnInit {
     this.confirmarSenha = event.target.value
   }
 
-  openStatusVenda(){
-    this.statusVenda.idUsuario = this.usuario
-    this.carrinhoService.criarStatusVenda(this.statusVenda).subscribe((resp: StatusVenda) => {      
+  openStatusVenda(statusVenda: StatusVenda){
+    this.carrinhoService.criarStatusVenda(statusVenda).subscribe((resp: StatusVenda) => {
       this.statusVenda = resp
-    })   
+    })
+  }
+
+  findByIdUser(id: number){
+    this.usuarioService.getByIdUsuario(id).subscribe((resp: Usuario) =>{
+      this.usuario = resp
+      return this.usuario 
+    })
   }
 
   cadastrar() {
     if (this.usuario.senha != this.confirmarSenha) {
       alert("As senhas estão incorretas.")
     } else {
-      this.authService.cadastrar(this.usuario).subscribe((resp: Usuario) => {
+      this.authService.cadastrar(this.usuario).subscribe((resp: Usuario) => {        
         this.usuario = resp
-        this.openStatusVenda()
-        this.router.navigate(["/entrar"])
-        alert("Usuário cadastrado com sucesso!")
       })
-      
+      console.log(this.usuario.id)
+      console.log(this.usuario.nomeCompleto)
+      console.log(this.usuario.email)
+      console.log(this.usuario.senha)
+      console.log(this.usuario.tipoUsuario)
+      console.log(this.usuario.celular)
+      console.log(this.usuario.cidade)
+      console.log(this.usuario.estado)
+      alert("Usuario cadastrado com sucesso!")
+      this.router.navigate(["/entrar"])
     }
-
   }
+
 }

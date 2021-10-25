@@ -1,36 +1,144 @@
-.devteam {
+    .devteam {
+        width: 180px;
+        height: 180px;
+        background-position: center;
+        background-size: 180px;
+    }
     
-    width: 180px;
-    height: 180px;
-
-    background-position: center;
-    background-size: 180px;
-}
-
-.devteam:hover {
-    border: 2px solid rgb(10, 10, 10);
-
-}
-
-.devteam-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow:column;
-    width: 180px;
-    height: 180px;
-    background-color: rgba(22, 22, 22, 0.582);
-    opacity: 0;
-
-}
-
-.devteam:hover .devteam-info {
-    opacity: 1;
-}
-
-.devteam-icones {
-    width: 20px;
-    height: 20px;
+    .devteam:hover {
+        border: 2px solid rgb(10, 10, 10);
+    }
     
-
-}
+    .devteam-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        width: 180px;
+        height: 180px;
+        background-color: rgba(22, 22, 22, 0.582);
+        opacity: 0;
+    }
+    
+    .devteam:hover .devteam-info {
+        opacity: 1;
+    }
+    
+    .devteam-icones {
+        width: 20px;
+        height: 20px;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-weight: 400;
+        color: #777;
+    }
+    
+    a {
+        color: rgb(33, 109, 33);
+        text-decoration: none;
+    }
+    
+    a:hover {
+        background-color: rgb(148, 171, 152);
+    }
+    
+    h1 {
+        font-family: comfortaa;
+        font-size: 20px;
+        color: rgb(138, 165, 134);
+    }
+    
+    h3 {
+        font-size: 24px;
+        color: #333;
+        font-weight: bold;
+    }
+    
+    h4 {
+        font-family: comfortaa;
+        font-size: 18px;
+        color: rgb(90, 109, 87);
+    }
+    
+    p,
+    h6 {
+        font-family: comfortaa;
+        font-size: 13px;
+        color: rgb(114, 130, 110);
+        text-align: justify;
+        margin-top: 12px;
+    }
+    
+    #team img {
+        margin-top: -50px;
+    }
+    
+    #team i {
+        font-size: 26px;
+        color: #555;
+    }
+    
+    #team p {
+        font-weight: 500;
+    }
+    
+    #team.card {
+        background: #eef0ed;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-top: 55px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 3px 3px 2px#b4be9f;
+        transition: all 0.3s ease-in;
+        -webkit-transition: all 0. 3s ease-in;
+        -moz-transition: all 0.3s ease-in;
+        width: 200px;
+        height: 300px;
+    }
+    
+    #team.card:hover a:hover {
+        background-color: transparent;
+    }
+    
+    #team.card:hover {
+        transform: scale(1.1);
+        color: #fff !important;
+        border-radius: 10px;
+        border: none;
+        box-shadow: 5px 5px 10 #9e9e9e;
+    }
+    
+    #team .card:hover h3,
+    #team .card:hover i {
+        color: #ffffff
+    }
+    
+    h3 {
+        font-family: comfortaa;
+        font-size: 17px;
+        color: rgb(79, 110, 79);
+    }
+    
+    h5 {
+        font-family: comfortaa;
+        font-size: 12px;
+        color: rgb(142, 142, 142);
+    }
+    
+    .devdesc {
+        font-family: comfortaa;
+        font-size: 10px;
+        color: rgb(138, 153, 135) !important;
+    }
+    
+    .sobre {
+        font-size: 11px;
+        color: rgb(174, 174, 174) !important;
+    }

@@ -14,6 +14,16 @@
     src: url(assets/font/AnotherDayV2.ttf) format('truetype');
 }
 
+@font-face {
+    font-family: caviar;
+    src: url(assets/font/CaviarDreams.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: comfortaa;
+    src: url(assets/font/Comfortaa-Regular.ttf) format('truetype');
+}
+
 
 /*FIM DE FONTES*/
 

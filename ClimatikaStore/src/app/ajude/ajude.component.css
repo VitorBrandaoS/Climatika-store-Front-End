@@ -1,0 +1,104 @@
+    [style*="--aspect-ratio"]> :first-child {
+        width: 100%;
+    }
+    
+    [style*="--aspect-ratio"]>img {
+        height: auto;
+    }
+    
+    @supports (--custom:property) {
+        [style*="--aspect-ratio"] {
+            position: relative;
+        }
+        [style*="--aspect-ratio"]::before {
+            content: "";
+            display: block;
+            padding-bottom: calc(100% / (var(--aspect-ratio)));
+        }
+        [style*="--aspect-ratio"]> :first-child {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+        }
+    }
+    /*ESTILIZACAO*/
+    
+    .titulo {
+        font-family: comfortaa;
+        font-size: 20px;
+        color: rgb(177, 194, 170);
+    }
+    
+    h5 {
+        font-family: comfortaa;
+        font-size: 18px;
+        margin-top: 30px;
+        color: rgb(100, 114, 94);
+    }
+    
+    p {
+        font-family: comfortaa;
+        font-size: 13px;
+        text-align: justify;
+        color: rgb(143, 158, 137);
+    }
+    
+    a {
+        color: rgb(54, 167, 9);
+    }
+    
+    a:hover {
+        text-decoration: none;
+        color: green;
+    }
+    /*PARCERIA*/
+    
+    .parceiros {
+        width: 180px;
+        height: 180px;
+        background-position: center;
+        background-size: 180px;
+        transition: transform 1s;
+    }
+    
+    .parceiros:hover {
+        transform: scale(1.5);
+    }
+    
+    .parceiros-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        width: 180px;
+        height: 180px;
+        background-color: rgba(22, 22, 22, 0.681);
+        opacity: 0;
+    }
+    
+    .parceiros:hover .parceiros-info {
+        opacity: 1;
+    }
+    
+    .parceiros-icones {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .eletri {
+        box-shadow: inset 0px 0px 10px rgba(209, 188, 157, 0.575);
+        ;
+    }
+    
+    .nomeparc {
+        font-family: comfortaa;
+    }
+    
+    .descricao {
+        font-family: comfortaa;
+        max-width: 130px;
+        text-align: justify;
+        color: white;
+        font-size: 6.5px;
+    }

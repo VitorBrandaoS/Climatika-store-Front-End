@@ -34,3 +34,129 @@ ul.social-network li{
 a{
   text-decoration: none;
 }
+
+.sobre-footer {
+  color: #798e77;
+  text-align: center;
+  line-height: normal;
+}
+
+.sobre-footer a {
+  color: #479f58;
+}
+
+.titulo {
+  color: rgb(138, 165, 134);
+}
+
+/* Modal Feedback */
+form {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+  text-align: center;
+}
+
+input {
+  font-family: adam;
+  border-radius: 0%;
+  background-color: transparent;
+}
+
+input:enabled {
+  background-color: transparent;
+}
+
+input::selection {
+  background-color: rgb(191, 216, 195);
+}
+
+input:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0;
+}
+
+
+.wrapper .form-group {
+  height: 40px;
+  width: 100%;
+  position: relative;
+}
+
+.wrapper .form-group input {
+  height: 100%;
+  width: 90%;
+  border: none;
+  font-size: 15px;
+  border-bottom: 2px solid #8db39c;
+}
+
+.form-group input:focus~label, .form-group input:valid~label {
+  transform: translateY(-20px);
+  font-size: 10px;
+  color: #81b194;
+}
+
+.wrapper .form-group label {
+  font-family: adam;
+  position: absolute;
+  bottom: 1px;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.form-group .underline {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  bottom: 0;
+}
+
+.form-group .underline:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 50%;
+  background: #8db39c;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.form-group input:focus~.underline:before, .form-group input:valid~.underline:before {
+  transform: scaleX(1);
+}
+
+input {
+  font-family: comfortaa;
+  font-size: 13px;
+  background: rgb(223, 231, 223);
+}
+
+input:enabled {
+  background: rgb(223, 231, 223);
+  box-shadow: none;
+  border: none;
+}
+
+textarea {
+  font-family: comfortaa;
+  font-size: 13px;
+  background: rgb(223, 231, 223);
+}
+
+textarea:enabled {
+  background: rgb(223, 231, 223);
+  box-shadow: none;
+  border: none;
+}
+
+textarea:valid {
+  border: none;
+}

@@ -1,15 +1,15 @@
-.layoutCarrinho{
+.layoutCarrinho {
     width: 80%;
     height: 500px;
     border: 2px;
     border-style: groove;
     border-radius: 30px;
-    border-color: #5b866e9d;
+    border-color: #d9e4d639;
 }
 
-.fundoCarrinho{
+.fundoCarrinho {
     background-image: url("../../assets/img/logincadastro/patternlogin.png");
-    border-radius: 30px;
+    border-radius: 25px;
 }
 
 .lista-prod {
@@ -19,18 +19,110 @@
     margin-bottom: 30px;
 }
 
+.x {
+    color: rgb(0, 0, 0);
+}
+
+.x:hover {
+    color: rgb(128, 19, 19);
+}
+
 a {
+    font-family: comfortaa;
+    font-size: 13px;
     cursor: pointer;
     text-decoration: none;
+}
+
+h2 {
+    font-family: comfortaa;
+    font-size: 25px;
+    margin-top: 80px;
+}
+
+.fonte {
+    font-family: comfortaa;
 }
 
 .x {
     font-size: 10pt;
 }
 
-
-.tot{
+.tot {
     align-items: center;
     font-size: 30pt;
-    
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #8da088;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+/*CARD*/
+
+.card {
+    max-height: 152px;
+    border-radius: 30px;
+}
+
+.card-img {
+    object-fit: cover;
+    max-height: 150px;
+    max-width: 150px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px !important;
+}
+
+.card-title {
+    margin-top: 0% !important;
+    font-family: comfortaa;
+    font-size: 15px;
+}
+
+.card-text {
+    font-family: comfortaa;
+    font-size: 11px;
+}
+
+.valor {
+    font-size: 15px !important;
+}
+
+.text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+/*BOTOES*/
+
+button {
+    font-family: adam;
+    margin-top: 20px;
+    border: none;
+    background: rgb(98, 131, 100);
+    cursor: pointer;
+    border-radius: 3px;
+    width: 200px;
+    color: rgb(181, 221, 188);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: rgb(98, 131, 100);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*FIM DE BOTOES*/

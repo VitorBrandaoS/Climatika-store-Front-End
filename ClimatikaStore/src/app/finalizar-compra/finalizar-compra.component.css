@@ -1,9 +1,206 @@
-.frete {
-    
-    border-radius: 15px;
-    text-align: center;
+.boleto {
+    border-radius: 30px;
+    width: 300px;
+    height: 100px;
 }
 
-.frete p{
-    margin: 0px;
+.pix {
+    border-radius: 30px;
+    width: 300px;
+    height: 100px;
+}
+
+.pickpay {
+    border-radius: 30px;
+    width: 300px;
+    height: 200px;
+}
+
+.flex-container {
+    box-shadow: 0px 0px 5px rgb(213, 218, 214);
+    border-radius: 0%;
+    width: 110vh;
+    text-align: left;
+    padding: 25px;
+}
+
+
+/*CONTAINER ENTREGA*/
+
+h4 {
+    color: rgb(116, 129, 116);
+    font-family: comfortaa;
+    font-size: 17px;
+}
+
+.titulo {
+    font-family: comfortaa;
+    color: rgb(177, 194, 170);
+}
+
+.hrinit {
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+p {
+    color: rgb(139, 153, 139);
+    font-family: comfortaa;
+    font-size: 13px;
+}
+
+label {
+    color: rgb(139, 153, 139);
+    font-family: comfortaa;
+    font-size: 13px;
+}
+
+.paypal {
+    color: rgb(196, 196, 196) !important;
+}
+
+.flex-container .frete {}
+
+.endereco img {
+    margin-left: 10px;
+}
+
+.flex-container .endereco {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.endereco {
+    background-image: url('../../assets/img/logincadastro/sadasd.png');
+    background-repeat: no-repeat;
+    box-shadow: -2px -2px 7px rgb(213, 218, 214);
+    border-radius: 0%;
+    border-top-left-radius: 30px;
+    width: 110vh;
+    text-align: left;
+    padding: 25px;
+}
+
+.flex-container .endereco a {
+    margin-left: 80px;
+    color: rgb(150, 168, 132);
+    text-decoration: none;
+}
+
+
+/* FIM DE ENTREGA */
+
+
+/* CONTAINER PRODUTOS */
+
+.flex-container .frete {
+    min-height: 200px;
+}
+
+.fotofrete {
+    object-fit: contain;
+}
+
+.fotoProd {
+    height: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.pedidos {
+    display: flex;
+    justify-content: center !important;
+    flex-direction: column !important;
+}
+
+.produto-div {
+    border-radius: 0%;
+    width: auto;
+    text-align: left;
+    padding: 5px;
+    margin: 25px;    
+}
+
+.bbp {
+    border-radius: 10px;
+    border-bottom: 1px double;
+    border-color:  #bfd1b6;
+}
+
+.scrollProd {
+    overflow: auto;
+    max-height: 300px !important;
+}
+
+.preco {
+    color: rgb(116, 129, 116);
+    font-family: comfortaa;
+    font-size: 16px;
+}
+
+.nomeprod {
+    color: rgb(149, 164, 149);
+    font-size: 16px;
+}
+
+
+/* FIM DE PRODUTOS */
+
+
+/*PAGAMENTO */
+
+.container2 {
+    background-image: url('https://i.imgur.com/j8yT5mT.gif');
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 100px;
+    padding: 25px;
+    box-shadow: 2px 2px 7px rgb(213, 218, 214);
+    width: 110vh;
+    border-bottom-right-radius: 20px;
+}
+
+.form-check-input {
+    margin-left: 81px;
+}
+
+.metodo {
+    border-bottom-right-radius: 30px;
+    box-shadow: 2px 2px 5px rgb(187, 196, 189);
+}
+
+
+/*BOTAO*/
+
+button {
+    font-family: adam;
+    border: none;
+    background: rgb(98, 131, 100);
+    cursor: pointer;
+    border-radius: 3px;
+    width: 200px;
+    color: rgb(181, 221, 188);
+    margin-left: 25px;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+    background: rgb(98, 131, 100);
+    color: rgb(181, 221, 188);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4c6b5a;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
 }

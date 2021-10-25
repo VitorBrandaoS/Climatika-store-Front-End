@@ -1,90 +1,132 @@
-<div class="container-fluid bg-cinza">
-    <div class="row d-flex justify-content-center">
-        <div class="col-md-6 mt-3 mb-4">
-            <h1 class="text-center">Atualizar Produto</h1>
-            <div class="form-group">
-                <div class="form-group">
-                    <label for="Nome">Nome do Produto</label>
-                    <input [(ngModel)]='produto.nomeProduto' class="form-control"  autocomplete="off" type="text" name="nome" id="nome"
-                        placeholder="Nome do Produto">
-                </div>
+<main class="m-0 p-0" id="main">
 
-                <div class="form-group">
-                    <label for="Nome">Marca</label>
-                    <input [(ngModel)]='produto.marca' class="form-control" type="text" name="marca" id="marca" placeholder="Marca do Produto">
-                </div>    
-                
-                <div class="form-group">
-                    <label for="categoriaMae">Categoria do Produto</label>
-                    <select [(ngModel)]='produto.categoriaMae' for="categoriaMae" class="form-control">
-                        <option>Selecione a categoria</option>
-                        <option value="Cozinha">Cozinha</option>
-                        <option value="Banheiro">Banheiro</option>
-                        <option value="Jardim">Jardim</option>                      
-                        <option value="Moda e Beleza">Moda e Beleza</option>        
-                        <option value="Higiene Pessoal">Higiene Pessoal</option>
-                        <option value="Pet">Pet</option>                     
-                    </select>
-                </div>
+    <div class="d-flex justify-content-center">
 
-                <div class="form-group">
-                    <label for="categoriaFilha">Sub-Categoria do Produto</label>
-                    <select [(ngModel)]='produto.categoriaFilha' for="categoriaFilha" class="form-control">
-                        <option>Selecione a Sub-Categoria</option>
-                        <option>----Cozinha----</option>
-                        <option value="Cozinha Limpeza">Limpeza</option>
-                        <option value="Lava-Louças">Lava-Louças</option>
-                        <option value="Utensílios">Utensílios</option>
-                        <option value="Embalagens">Embalagens</option>
-                        <option>----Banheiro----</option>
-                        <option value="Banheiro Limpeza">Limpeza</option>
-                        <option value="Aromatizantes">Aromatizantes</option>
-                        <option value="Acessórios">Acessórios</option>
-                        <option value="Toalhas">Toalhas</option>
-                        <option>----Moda e Beleza----</option>
-                        <option value="Acessórios de Moda">Acessórios de Moda</option>
-                        <option value="Maquiagens">Maquiagens</option>
-                        <option value="Roupas">Roupas</option>
-                        <option value="Cosméticos">Cosméticos</option>
-                        <option>----Pet----</option>
-                        <option value="Roupas e Acessórios para Pets">Roupas e Acessórios para Pets</option>
-                        <option>----Jardim---</option>
-                        <option value="Vasos">Vasos</option>
-                        <option value="Kits de Compostagem">Kits de Compostagem</option>
-                        <option value="Jardim Limpeza">Limpeza</option>
-                        <option>----Higiene Pessoal---</option>
-                        <option value="Higiene Pele">Pele</option>
-                        <option value="Sabonetes para o Corpo">Sabonetes para o Corpo</option>
-                        <option value="Cabelo">Cabelo</option>
-                        <option value="Higiene Bucal">Higiene Bucal</option>
-                    </select>
-                </div>
 
-                <div class="form-group">
-                    <label for="preco">Preço do Produto</label>
-                    <input [(ngModel)]='produto.preco' class="form-control" type="number" name="preco" autocomplete="off"
-                        id="endereco" placeholder="Preço do produto">
-                </div>
-
-                <div class="form-group">
-                    <label for="descricao">Descrição do Produto</label>
-                    <textarea [(ngModel)]='produto.descricao' class="form-control" type="email" name="email" id="email" autocomplete="off" 
-                        placeholder="Descrição do produto"></textarea>
-                </div>              
-
-                <div class="form-group">
-                    <label for="foto">Foto do produto</label>
-                    <input [(ngModel)]='produto.foto' class="form-control" type="text" name="foto" id="foto" autocomplete="off"
-                        placeholder="Foto do produto">
-                </div>
-
-                <div class="d-flex justify-content-center fontpix">
-                    <button type="submit" class="btn btn-danger mr-4 botaocanc" routerLink='/editar-produto'>Cancelar</button>
-                    <button type="submit" class="btn btn-success botaocad" (click)='atualizar()'>Atualizar</button>
+        <div class="container d-flex justify-content-end mt-5 mb-5 fundo pr-0">
+            <!--Atualizar Produto-->
+            <div class="col-md-5 d-flex justify-content-center mt-5 mb-5">
+                <div class="card fundo-card" style="width: 18rem;">
+                    <img src="{{produto.foto}}" class="card-img-top img-prod" alt="Imagem do produto">
+                    <div class="card-body d-flex flex-column">
+                        <div>
+                            <h1 style="font-size: large;">{{produto.nomeProduto}}</h1>
+                            <h2 style="font-size: small ;" class="text-muted">{{produto.marca}}</h2>
+                            <hr>
+                            <p class="card-text mt-0 mb-0" style="height: 80px; overflow: auto;">{{produto.descricao}}</p>
+                        </div>
+                        <div class="">
+                            <hr>
+                            <h3>R${{produto.preco}}</h3>
+                            <p class="text-muted mt-0">{{produto.categoriaMae}} → {{produto.categoriaFilha}}</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!--Cadastro De Produto-->
+            <div class="col-md-7 wrapper">
+                <div class="pl-5">
+                    <h3 class="text-center mb-4">Atualizar Produto</h3>
+                    <div class="form-group">
+                        <input [(ngModel)]='produto.nomeProduto' class="form-control" autocomplete="off" type="text"
+                            name="nomeProduto" id="nomeProduto" required>
+                        <div class="underline"></div>
+                        <label>Nome do Produto</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input [(ngModel)]='produto.marca' class="form-control" type="text" name="marca" id="marca"
+                            autocomplete="off" required>
+                        <div class="underline"></div>
+                        <label>Marca</label>
+                    </div>
+
+                    <div class="sel d-flex flex-column">
+                        <div class="underline"></div>
+                        <label for="categoriaMae" class="mb-0">Categoria do Produto</label>
+
+                        <select [(ngModel)]='produto.categoriaMae' for="categoriaMae" class="mb-2">
+                            <option>Selecione a categoria</option>
+                            <option value="Cozinha">Cozinha</option>
+                            <option value="Banheiro">Banheiro</option>
+                            <option value="Jardim">Jardim</option>
+                            <option value="Moda e Beleza">Moda e Beleza</option>
+                            <option value="Higiene Pessoal">Higiene Pessoal</option>
+                            <option value="Pet">Pet</option>
+                        </select>
+                    </div>
+
+                    <div class="sel d-flex flex-column">
+
+                        <div class="underline"></div>
+                        <label for="categoriaFilha" class="mb-0">Sub-Categoria do Produto</label>
+                        <select (click)="identificador()" [(ngModel)]='produto.categoriaFilha' for="categoriaFilha"
+                            required>
+                            <option>Selecione a Sub-Categoria</option>
+                            <option *ngIf="identificador() == 'Cozinha'">----Cozinha----</option>
+                            <option *ngIf="identificador() == 'Cozinha'" value="Cozinha Limpeza">Limpeza</option>
+                            <option *ngIf="identificador() == 'Cozinha'" value="Lava-Louças">Lava-Louças</option>
+                            <option *ngIf="identificador() == 'Cozinha'" value="Utensílios">Utensílios</option>
+                            <option *ngIf="identificador() == 'Cozinha'" value="Embalagens">Embalagens</option>
+                            <option *ngIf="identificador() == 'Banheiro'">----Banheiro----</option>
+                            <option *ngIf="identificador() == 'Banheiro'" value="Banheiro Limpeza">Limpeza</option>
+                            <option *ngIf="identificador() == 'Banheiro'" value="Aromatizantes">Aromatizantes</option>
+                            <option *ngIf="identificador() == 'Banheiro'" value="Acessórios">Acessórios</option>
+                            <option *ngIf="identificador() == 'Banheiro'" value="Toalhas">Toalhas</option>
+                            <option *ngIf="identificador() == 'Moda e Beleza'">----Moda e Beleza----</option>
+                            <option *ngIf="identificador() == 'Moda e Beleza'" value="Acessórios de Moda">Acessórios de
+                                Moda</option>
+                            <option *ngIf="identificador() == 'Moda e Beleza'" value="Maquiagens">Maquiagens</option>
+                            <option *ngIf="identificador() == 'Moda e Beleza'" value="Roupas">Roupas</option>
+                            <option *ngIf="identificador() == 'Moda e Beleza'" value="Cosméticos">Cosméticos</option>
+                            <option *ngIf="identificador() == 'Pet'">----Pet----</option>
+                            <option *ngIf="identificador() == 'Pet'" value="Roupas e Acessórios para Pets">Roupas e
+                                Acessórios para Pets</option>
+                            <option *ngIf="identificador() == 'Jardim'">----Jardim---</option>
+                            <option *ngIf="identificador() == 'Jardim'" value="Vasos">Vasos</option>
+                            <option *ngIf="identificador() == 'Jardim'" value="Kits de Compostagem">Kits de Compostagem
+                            </option>
+                            <option *ngIf="identificador() == 'Jardim'" value="Jardim Limpeza">Limpeza</option>
+                            <option *ngIf="identificador() == 'Higiene Pessoal'">----Higiene Pessoal---</option>
+                            <option *ngIf="identificador() == 'Higiene Pessoal'" value="Higiene Pele">Pele</option>
+                            <option *ngIf="identificador() == 'Higiene Pessoal'" value="Sabonetes para o Corpo">
+                                Sabonetes para o Corpo</option>
+                            <option *ngIf="identificador() == 'Higiene Pessoal'" value="Cabelo">Cabelo</option>
+                            <option *ngIf="identificador() == 'Higiene Pessoal'" value="Higiene Bucal">Higiene Bucal
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="form-group mt-3">
+                        <input [(ngModel)]='produto.preco' class="form-control" type="text" name="marca" id="marca"
+                            autocomplete="off" required>
+                        <div class="underline"></div>
+                        <label>Preço do Produto</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input [(ngModel)]='produto.descricao' class="form-control" type="text" name="descricao"
+                            id="descricao" autocomplete="off" required>
+                        <div class="underline"></div>
+                        <label for="descricao">Descrição do Produto</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input [(ngModel)]='produto.foto' class="form-control" type="text" name="foto" id="foto"
+                            autocomplete="off" required>
+                        <div class="underline"></div>
+                        <label for="descricao">Foto do Produto</label>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center fontpix mt-5">
+                    <button type="submit" class="btn btn-danger mr-4 botaocanc" routerLink='/editar-produto'>Cancelar</button>
+                    <button type="submit" class="btn btn-success botaocad"
+                        (click)='atualizar()'>Atualizar</button>
+                </div>
+
+            </div>
+
         </div>
     </div>
-</div>
 
-
+</main>

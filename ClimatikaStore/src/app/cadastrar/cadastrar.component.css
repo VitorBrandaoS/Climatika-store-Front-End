@@ -1,6 +1,9 @@
 .fundo{
   background-image: url('../../assets/img/logincadastro/backgroundforest1.jpg');
   margin: 0;
+  min-height: 969px !important;
+  width: auto;
+  background-position: center;
 }
 
 body, html{
@@ -88,13 +91,14 @@ form {
 
 
 .container {
+  margin-top: 10% !important;
 	background-color: #fff;
 	border-radius: 100px 5px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 	position: relative;
 	overflow: hidden;
 	width: 1000px;
-  height: 90vh;
+  height: 560px;
 	max-width: 100%;
 	min-height: 480px;
 }
@@ -208,6 +212,7 @@ input:focus{
   position: relative;
 }
 .wrapper .form-group input{
+  font-family: adam;
   height: 100%;
   width: 90%;
   border: none;
@@ -273,7 +278,6 @@ input:focus{
   }
 
   .wrapper .sel select{
-    font-family: adam;
     height: 100%;
     width: 27%;
     border: none;

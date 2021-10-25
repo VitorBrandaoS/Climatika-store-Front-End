@@ -16,7 +16,7 @@ import { UsuarioService } from './usuario.service';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthService{
+export class AuthService {
 
   listaProduto: Produto[]
   valor: string
@@ -33,16 +33,16 @@ export class AuthService{
   ) { }
 
 
-  token={
+  token = {
     headers: new HttpHeaders().set('Authorization', environment.token)
   }
 
-  entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin>{
+  entrar(usuarioLogin: UsuarioLogin): Observable<UsuarioLogin> {
     return this.http.post<UsuarioLogin>('https://climatika-store-ecommerce.herokuapp.com/climatika/usuario/login', usuarioLogin)
 
   }
 
-  cadastrar(usuario: Usuario): Observable<Usuario>{
+  cadastrar(usuario: Usuario): Observable<Usuario> {
     return this.http.post<Usuario>('https://climatika-store-ecommerce.herokuapp.com/climatika/usuario/cadastrar', usuario)
 
   }
@@ -55,7 +55,7 @@ export class AuthService{
 
   logado() {
     let ok = false
-    if(environment.token != ''){
+    if (environment.token != '') {
       ok = true
     }
     return ok
@@ -64,72 +64,80 @@ export class AuthService{
   // admin
   logadoAdmin() {
     let ok = false
-    if(environment.token != '' && environment.tipoUsuario == 'adm'){
+    if (environment.token != '' && environment.tipoUsuario == 'adm') {
       ok = true
     }
     return ok
   }
 
-  getAllProdutos(){
-    this.produtoService.getAllProduto().subscribe((resp: Produto[])=>{
+  getAllProdutos() {
+    this.produtoService.getAllProduto().subscribe((resp: Produto[]) => {
       this.listaProduto = resp
     })
   }
 
-  findByCategoriaMae(nome: string){
-        this.produtoService.getByCategoriaMae(nome).subscribe((resp: Produto[] ) =>{
-        this.listaProduto = resp
-      })
-    
-  }
-  
-  findByCategoriaFilha(nome: string){  
-      this.produtoService.getByCategoriaFilha(nome).subscribe((resp: Produto[]) =>{
-        this.listaProduto = resp
-      })
+  findByCategoriaMae(nome: string) {
+    this.produtoService.getByCategoriaMae(nome).subscribe((resp: Produto[]) => {
+      this.listaProduto = resp
+    })
+
   }
 
-  findByNomeProduto(){
+  findByCategoriaFilha(nome: string) {
+    this.produtoService.getByCategoriaFilha(nome).subscribe((resp: Produto[]) => {
+      this.listaProduto = resp
+    })
+  }
+
+  findByNomeProduto() {
     if (this.valor == "") {
       this.getAllProdutos()
-    }else{
+    } else {
       this.produtoService.getByNomeProduto(this.valor).subscribe((resp: Produto[]) => {
         this.listaProduto = resp
       })
     }
-      
+
   }
-  
-  telaCadastro(){
+
+  telaCadastro() {
     let ok = true
     let url_atual = window.location.href;
     if (url_atual == "http://localhost:4200/cadastrar" || url_atual == "http://localhost:4200/entrar") {
-       ok = false
+      ok = false
     }
     return ok
   }
 
-  findByIdVenda(){    
-      this.carrinhoService.getByIdVenda(environment.id).subscribe((resp: StatusVenda) => {
-        this.statusVenda = resp
-        return this.statusVenda
-      })   
+  findByIdVenda() {
+    this.carrinhoService.getByIdVenda(environment.id).subscribe((resp: StatusVenda) => {
+      this.statusVenda = resp
+    })
   }
 
-  findByIdUsuario(){    
+  findByIdUsuario() {
     this.usuarioService.getByIdUsuario(environment.id).subscribe((resp: Usuario) => {
       this.usuario = resp
     })
- 
-}
 
-  calculoTotal(){ 
-    console.log("Inicio do calculo")
+  }
+
+  total() {
+    console.log("Calculando total!")
+    this.carrinhoService.calculoTotal(environment.id).subscribe((resp: number) => {
+      this.valorTotal = resp
+      return this.valorTotal
+    })
+  }
+/*
+  calculoTotal() {
+
     this.findByIdVenda()
     let total = 0
     if (this.statusVenda.listaProduto.length == 0) {
       this.valorTotal = 0
-    }else{
+    } else {
+      console.log("Inicio do calculo")
       this.statusVenda.listaProduto.forEach((element) => {
         //let valor = element.preco
         //let quant = element.quant
@@ -141,12 +149,13 @@ export class AuthService{
     }
     console.log("Término do calculo")
   }
-  
-  removerProduto(idProduto: number){
+*/
+  removerProduto(idProduto: number) {
     this.carrinhoService.removerItem(idProduto, environment.id).subscribe((resp: StatusVenda) => {
       this.statusVenda = resp
-      this.calculoTotal()
+      this.total()
     })
+    
   }
 
 }

@@ -40,7 +40,9 @@ export class CarrinhoService {
     return this.http.post<StatusVenda>(`https://climatika-store-ecommerce.herokuapp.com/climatika/status/limpa-carrinho/${id}`, this.token)
   }
 
- 
+  calculoTotal(id: number): Observable<number> {
+    return this.http.post<number>(`https://climatika-store-ecommerce.herokuapp.com/climatika/status/calculo-total/${id}`, this.token)
+  }
 
 
 }

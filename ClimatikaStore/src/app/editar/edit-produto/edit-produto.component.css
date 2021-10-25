@@ -51,21 +51,25 @@
 /*BOTAO*/
 
 .editar {
+    width: 80px;
+    color: aliceblue;
     background-color: rgb(120, 145, 120);
-    transition: transform 1s;
+    transition: transform 0.5s;
 }
 
 .editar:hover {
     background-color: rgb(120, 145, 120);
-    transform: scale(0.5);
+    transform: scale(0.8);
 }
 
 .apagar {
+    width: 80px;
+    color: aliceblue;
     background-color: rgb(241, 113, 113);
-    transition: transform 1s;
+    transition: transform 0.5s;
 }
 
 .apagar:hover {
     background-color: rgb(241, 113, 113);
-    transform: scale(0.5);
+    transform: scale(0.8);
 }

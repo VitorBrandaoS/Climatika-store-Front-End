@@ -33,7 +33,22 @@ Temos um compromisso com o planeta e, alinhado às ODS, nosso foco é combater m
         combater as mudanças climáticas e seus impactos”. A Meta a serem alcançadas até 2030. Alguns objetivos a ser
         atingidos pela ODS 13. 🍃
 
+   
+   <br>
+   
+   
+   
+   
+<h1  align="center"> Nosso Planeta Pede Ajuda!🌏 </H1>
+<p align="center">
 
+  <img  src="https://media.giphy.com/media/ls4PD8poRmtaxjxoRL/giphy.gif" width="400">
+ 
+</p>
+🌏  Nosso planeta têm sofrido constantes ataques em todo o mundo. Queima das florestas e de combustíveis fósseis, atividades agropecuárias e industriais irresponsáveis, o consumo desvairado. Tudo isso afetas diretamente a nossa agua, o nosso ar, nossa Terra. 🍃
+
+   
+   <br>
 
 <h2 align="center"> ♻ Nossos parceiros 🌱</h2>
   

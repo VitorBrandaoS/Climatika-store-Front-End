@@ -1,75 +1,83 @@
-.mouse-link {
-    cursor: pointer;
-}
-
-h5 {
-    font-family: comfortaa;
-    color: rgb(141, 173, 148);
-}
-
-
-/*CARROSEL*/
-
-.fad {
-    filter: brightness(50%)
-}
-
-
-/*CARDS*/
-
-.card {
-    width: 300px;
-    display: inline-block;
-    margin: 1rem;
-    border-radius: 4px;
-    box-shadow: 0 -1px 1px 0 rgba(65, 87, 69, 0.05), 0 1px 2px 0 rgba(0, 0, 0, .2);
-    transition: all .3s ease;
-    background: #fff;
-    position: relative;
-    overflow: hidden;
-}
-
-.card:hover {
-    transform: translateY(-4px);
-    transform: scale(1.1);
-    box-shadow: -7px 7px rgba(79, 110, 74, 0.288);
-    cursor: pointer;
-}
-
-.card:hover .card-img {
-    box-shadow: 0 3px 0 0 #99b392;
-}
-
-.hover {
-    background: #dee9de;
-    border: none;
-}
-
-.card-img {
-    position: relative;
-    height: 224px;
-    width: 100%;
-    background-color: #ced8cc;
-    transition: opacity .2s ease;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.nomeProduto {
-    color: rgb(146, 180, 157);
-    font-family: 'Saira Condensed', sans-serif;
-}
-
-.marca {
-    font-size: 13px;
-    font-family: 'Saira Condensed', sans-serif;
-}
-
-.preco {
-    font-family: 'Saira Condensed', sans-serif;
-    color: rgb(110, 131, 116);
-}
-
-
-/* FIM DE CARDS*/
+    .mouse-link {
+        cursor: pointer;
+    }
+    
+    h5 {
+        font-family: comfortaa;
+        color: rgb(141, 173, 148);
+    }
+    /*CARROSEL*/
+    
+    .fad {
+        filter: brightness(50%);
+        animation: zoom 25s;
+    }
+    
+    @keyframes zoom {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.5);
+        }
+    }
+    
+    .alinhartexto {
+        margin-bottom: 15%;
+    }
+    /*CARDS*/
+    
+    .card {
+        width: 300px;
+        display: inline-block;
+        margin: 1rem;
+        border-radius: 4px;
+        box-shadow: 0 -1px 1px 0 rgba(65, 87, 69, 0.05), 0 1px 2px 0 rgba(0, 0, 0, .2);
+        transition: all .3s ease;
+        background: #fff;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .card:hover {
+        transform: translateY(-4px);
+        transform: scale(1.1);
+        box-shadow: -7px 7px rgba(79, 110, 74, 0.288);
+        cursor: pointer;
+    }
+    
+    .card:hover .card-img {
+        box-shadow: 0 3px 0 0 #99b392;
+    }
+    
+    .hover {
+        background: #dee9de;
+        border: none;
+    }
+    
+    .card-img {
+        position: relative;
+        height: 224px;
+        width: 100%;
+        background-color: #ced8cc;
+        transition: opacity .2s ease;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .nomeProduto {
+        color: rgb(146, 180, 157);
+        font-family: 'Saira Condensed', sans-serif;
+    }
+    
+    .marca {
+        font-size: 13px;
+        font-family: 'Saira Condensed', sans-serif;
+    }
+    
+    .preco {
+        font-family: 'Saira Condensed', sans-serif;
+        color: rgb(110, 131, 116);
+    }
+    /* FIM DE CARDS*/

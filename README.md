@@ -18,7 +18,7 @@ Temos um compromisso com o planeta e, alinhado às ODS, nosso foco é combater m
 
 - Cidades e Comunidades Sustentáveis - ODS 11: Comercializar produtos que gerem a menor quantidade de lixo possível.
 
-   <a  href="">https://climatika-store.netlify.app/produto/10</a>  💻🔗
+ 
    
    
 
@@ -196,7 +196,7 @@ O excesso de carbono é apenas uma forma de poluição do ar causada pela queima
   
   
   
-   <h2  align="center"> Habitos para reverter esse cenario 🌏♻ </H2>
+   <h2  align="center"> Habitos para reverter esse Cenário 🌏♻ </H2>
 
   
   
@@ -222,6 +222,27 @@ O excesso de carbono é apenas uma forma de poluição do ar causada pela queima
   7.Reduza o consumo de água. ...
 
  8.Reduza o consumo de energia elétrica.
+
+</div>
+
+
+  
+  
+  
+   <h2  align="center"> 🍃 Gostou da nossa ideia e deseja ajudar o planeta? No nosso site Você pode encontrar produtos sustentável ajudando o planeta ♻🌏</H2>
+
+  
+  
+    
+ <p align="center">
+<img src="https://media.giphy.com/media/bMiOdrn2vMjaAgGXfN/giphy-downsized-large.gif" style="width: 50%;">
+</p>
+   <br>
+  
+ <div align="center">
+ 
+    💻  <a  href="">https://climatika-store.netlify.app/produto/10</a> 🔗
+                   
 
 </div>
 

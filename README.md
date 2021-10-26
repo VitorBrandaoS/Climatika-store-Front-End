@@ -5,7 +5,7 @@
 
   
  <p align="center">
-<img src="https://media.giphy.com/media/mARaEcPCTBntTioIQh/giphy.gif" style="width: 65%;">
+<img src="https://media.giphy.com/media/ZRrZLZACnovZUsbzqv/giphy.gif" style="width: 65%;">
 </p>
 
  ♻ E-commerce empenhado em reduzir impactos ambientais e sociais de consumo com produtos ecológicos confeccionados em parcerias com pequenos empreendedores.

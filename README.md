@@ -229,22 +229,20 @@ O excesso de carbono é apenas uma forma de poluição do ar causada pela queima
   
   
   
-   <h2  align="center"> 🍃 Gostou da nossa ideia e deseja ajudar o planeta? No nosso site Você pode encontrar produtos sustentável ajudando o planeta ♻🌏</H2>
+   <h2  align="center"> 🍃 Gostou da nossa ideia e deseja ajudar o planeta? No nosso site Você pode encontrar produtos sustentável contribuindo para o meio ambiente ♻🌏</H2>
 
   
-  
+   <div align="center">
     
- <p align="center">
-<img src="https://media.giphy.com/media/bMiOdrn2vMjaAgGXfN/giphy-downsized-large.gif" style="width: 50%;">
-</p>
-   <br>
-  
- <div align="center">
  
-    💻  <a  href="">https://climatika-store.netlify.app/produto/10</a> 🔗
-                   
+<img src="https://media.giphy.com/media/bMiOdrn2vMjaAgGXfN/giphy-downsized-large.gif" style="width: 50%;">
+  
+  <a   href="">https://climatika-store.netlify.app/produto/10</a> 🔗
 
-</div>
+  
+ </div>
+  
+
 
 
 

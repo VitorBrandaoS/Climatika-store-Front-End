@@ -163,6 +163,68 @@ Temos um compromisso com o planeta e, alinhado às ODS, nosso foco é combater m
       <a href="https://github.com/VitorBrandaoS" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
   </tr>
 </table>
+  <br>
+  
+  
+  
+   <h2  align="center">Alguns problemas ambientais 🌡🔥</H2>
+
+  
+  
+    
+ <p align="center">
+<img src="https://media.giphy.com/media/MP0UJ5TuJZL7OybjFB/giphy.gif" style="width:30;">
+</p>
+   <br>
+  
+  <div align="center">
+   Poluição do ar, desmatamento, extinção de espécies, degradação do solo e superpopulação representam grandes ameaças, que devem ser resolvidas para que o planeta continue sendo um lar para todas as espécies.
+  
+  
+  O problema: a atmosfera e os oceanos estão sobrecarregados de carbono. O CO2 atmosférico absorve e reemite radiação infravermelha, o que faz com que o ar, os solos e as águas superficiais dos oceanos fiquem mais quentes –em princípio, isso é bom: o planeta estaria congelado se isso não acontecesse.
+
+Mas há muito carbono no ar. A queima de combustíveis fósseis, o desmatamento para a agricultura e as atividades industriais aumentaram as concentrações atmosféricas de CO2 de 280 partes por milhão (ppm), há 200 anos, para cerca de 400 ppm. Isso é um aumento sem precedentes, tanto em escala quanto em velocidade. O resultado: perturbações climáticas.
+
+O excesso de carbono é apenas uma forma de poluição do ar causada pela queima de carvão, petróleo, gás e lenha. A Organização Mundial da Saúde (OMS) estimou recentemente que uma em cada nove mortes em 2012 está relacionada com doenças causadas por agentes cancerígenos e outros venenos presentes no ar.
+
+    
+
+</div>
+  
+  
+  
+  
+  
+  
+   <h2  align="center"> Habitos para reverter esse cenario 🌏♻ </H2>
+
+  
+  
+    
+ <p align="center">
+<img src="https://media.giphy.com/media/5qGcsZjNTHNBFkrMeu/giphy.gif" style="width: 50%;">
+</p>
+   <br>
+  
+ <div align="center">
+   1.Preserve as árvores. ...
+
+   2.Cuide bem dos cursos de água. ...
+
+   3.Não pare agora... ...
+ 
+   4.Nunca compre animais silvestres sem registro. ...
+ 
+   5.Cuide bem do seu lixo. ...
+
+   6.Reutilize, reaproveite e recicle tudo que for possível. ...
+
+  7.Reduza o consumo de água. ...
+
+ 8.Reduza o consumo de energia elétrica.
+
+</div>
+
 
 
 

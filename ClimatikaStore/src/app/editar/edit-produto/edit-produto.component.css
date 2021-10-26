@@ -47,12 +47,17 @@
     height: 130px !important;
 }
 
+.corpo {
+    border-radius: 30px !important;
+}
+
 
 /*BOTAO*/
 
 .editar {
+    font-family: adam;
     width: 80px;
-    color: aliceblue;
+    color: rgb(188, 211, 187);
     background-color: rgb(120, 145, 120);
     transition: transform 0.5s;
 }
@@ -63,8 +68,9 @@
 }
 
 .apagar {
+    font-family: adam;
     width: 80px;
-    color: aliceblue;
+    color: rgb(241, 194, 194);
     background-color: rgb(241, 113, 113);
     transition: transform 0.5s;
 }

@@ -8,7 +8,17 @@
 <img src="https://media.giphy.com/media/mARaEcPCTBntTioIQh/giphy.gif" style="width: 65%;">
 </p>
 
- ♻ Um e-commerce empenhado em reduzir impactos ambientais e sociais de consumo com produtos ecológicos e parcerias com pequenos empreendedores. O projeto foi desenvolvido de maneira ágil, utilizando Java, Springboot, Angular, PostgreSQL, Bootstrap.
+ ♻ E-commerce empenhado em reduzir impactos ambientais e sociais de consumo com produtos ecológicos confeccionados em parcerias com pequenos empreendedores.
+
+Temos um compromisso com o planeta e, alinhado às ODS, nosso foco é combater mudança global do clima (ODS 13 conheça mais clicando aqui) alcançando também causas importantes como:
+
+- Fome Zero e Agricultura Sustentável - ODS 2: Temos como objetivo criar parcerias com pequenos empreendedores, com setores da agricultura familiar e da economia circular.
+
+- Igualdade de Gênero - ODS 5: Buscamos fazer parcerias com pequenas empreendedoras para valorizar e colaborar para que elas possam produzir e vender mais os seus produtos.
+
+- Cidades e Comunidades Sustentáveis - ODS 11: Comercializar produtos que gerem a menor quantidade de lixo possível.
+
+
    
    
 
@@ -31,7 +41,7 @@
   <tr>
     <td align="center">
     <img  src="https://media.giphy.com/media/hSbk0M4YCb4iKPgIVb/giphy.gif" style="width: 100px; border-radius: 50%">
-    <h4><b>Action for Life</b></h4>
+    <h4><b>Action for Life </b></h4>
       <h5><b> Nossos produtos são naturais ou de materiais recicláveis. </b><h5>
     <td align="center">
     <img  src="https://media.giphy.com/media/wC2RdEkg4hvgGjY2KL/giphy.gif" style="width: 100px; border-radius: 50%">
@@ -107,12 +117,12 @@
   <tr>
     <td align="center">
     <img  src="https://media-exp1.licdn.com/dms/image/C4D03AQEieL2EMiXpFw/profile-displayphoto-shrink_200_200/0/1631643399594?e=1640217600&v=beta&t=9UxsV_7-b_NRKamYOuMHrj2mf6tw5SQ_-MiqprRn4Ao" style="width: 400px; border-radius: 10%">
-    <h4><b>Agatha </b></h4>
+    <h4><b>Agatha</b></h4>
       <a href="https://www.linkedin.com/in/gthlbrc/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
       <a href="https://github.com/alyen404" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
     <td align="center">
     <img  src="https://avatars.githubusercontent.com/u/49243663?v=4" style="width: 400px; border-radius: 5%">
-    <h4><b>Isaias Rodrigues</b></h4>
+    <h4><b>Isaias Rodrigues  </b></h4>
       <a href="https://www.linkedin.com/in/isaiasz/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
       <a href="https://github.com/isaiaszanoni" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
     <td align="center">
@@ -132,7 +142,7 @@
       <a href="https://github.com/Razzkz" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
     <td align="center">
     <img  src="https://avatars.githubusercontent.com/u/87865243?v=4" style="width: 400px; border-radius: 5%">
-    <h4><b>Vitor Brandão</b></h4>
+    <h4><b>Vitor Brandã</b></h4>
       <a href="https://www.linkedin.com/in/vitorbsilva/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
       <a href="https://github.com/VitorBrandaoS" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
   </tr>

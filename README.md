@@ -18,7 +18,7 @@ Temos um compromisso com o planeta e, alinhado às ODS, nosso foco é combater m
 
 - Cidades e Comunidades Sustentáveis - ODS 11: Comercializar produtos que gerem a menor quantidade de lixo possível.
 
-
+   <a  href="">https://climatika-store.netlify.app/produto/10</a>  💻🔗
    
    
 

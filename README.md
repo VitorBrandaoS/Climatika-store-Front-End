@@ -186,7 +186,7 @@ Temos um compromisso com o planeta e, alinhado às ODS, nosso foco é combater m
   <tr>
     <td align="center">
     <img  src="https://media-exp1.licdn.com/dms/image/C4D03AQEieL2EMiXpFw/profile-displayphoto-shrink_200_200/0/1631643399594?e=1640217600&v=beta&t=9UxsV_7-b_NRKamYOuMHrj2mf6tw5SQ_-MiqprRn4Ao" style="width: 400px; border-radius: 10%">
-    <h4><b>Agatha</b></h4>
+    <h4><b>Agatha alberico</b></h4>
       <a href="https://www.linkedin.com/in/gthlbrc/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
       <a href="https://github.com/alyen404" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
     <td align="center">
@@ -195,7 +195,7 @@ Temos um compromisso com o planeta e, alinhado às ODS, nosso foco é combater m
       <a href="https://www.linkedin.com/in/isaiasz/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
       <a href="https://github.com/isaiaszanoni" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
     <td align="center">
-    <img  src="https://avatars.githubusercontent.com/u/82923237?v=4" style="width: 400x; border-radius: 5%">
+    <img  src="https://avatars.githubusercontent.com/u/82923237?v=4" style="width: 400Px; border-radius: 5%">
        <h4><b>Jaqueline Ferreira</b></h4>
       <a href="https://www.linkedin.com/in/jaqueline-ferreira-484403210/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
       <a href="https://github.com/Jaqueline-Ferreira" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
@@ -211,7 +211,7 @@ Temos um compromisso com o planeta e, alinhado às ODS, nosso foco é combater m
       <a href="https://github.com/Razzkz" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
     <td align="center">
     <img  src="https://avatars.githubusercontent.com/u/87865243?v=4" style="width: 400px; border-radius: 5%">
-    <h4><b>Vitor Brandã</b></h4>
+    <h4><b>Vitor Brandão</b></h4>
       <a href="https://www.linkedin.com/in/vitorbsilva/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a> 
       <a href="https://github.com/VitorBrandaoS" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" target="_blank"></a> 
   </tr>

@@ -7,7 +7,7 @@
 
   
  <p align="center">
-<img src="https://media.giphy.com/media/ZRrZLZACnovZUsbzqv/giphy.gif" style="width: 65%;">
+<img src="https://cdn.discordapp.com/attachments/897218563671212042/897218713017786448/ClimatikaStore1.png" style="width: 65%;">
 </p>
 
  ♻ E-commerce empenhado em reduzir impactos ambientais e sociais de consumo com produtos ecológicos confeccionados em parcerias com pequenos empreendedores.

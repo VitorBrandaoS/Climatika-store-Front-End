@@ -180,7 +180,7 @@ Temos um compromisso com o planeta e, alinhado às ODS, nosso foco é combater m
 <br>
 
 
-<h2 align="center"> 🛠 DevTeams 👨‍💻</h2>
+<h2 align="center"> 🛠 DevTeams </h2>
   
   <table align="center">
   <tr>

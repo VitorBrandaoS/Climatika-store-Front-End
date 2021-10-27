@@ -235,7 +235,8 @@ O excesso de carbono é apenas uma forma de poluição do ar causada pela queima
  
 <img src="https://media.giphy.com/media/bMiOdrn2vMjaAgGXfN/giphy-downsized-large.gif" style="width: 50%;">
   
-  <a   href="">https://climatika-store.netlify.app/produto/10</a> 🔗
+   
+   - [Climatika](https://climatika-store.netlify.app/) 🔗
 
   
  </div>

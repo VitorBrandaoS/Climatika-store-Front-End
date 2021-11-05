@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="form-group">
-                        <input [(ngModel)]="usuario.celular" class="form-control" type="text" name="celular" autocomplete="off"
+                        <input [(ngModel)]="usuario.celular" (input)="confirmCelular($event)" class="form-control" type="text" name="celular" autocomplete="off"
                             id="celular" required>
                             <div class="underline"></div>
                             <label>celular</label>
